@@ -1,0 +1,832 @@
+﻿
+[ File output by Morphobank v3.0 (http://www.morphobank.org); 2018-11-22 12.10.42 ]
+
+
+Phenotypic characters (numbered in Nexus format)
+
+
+
+Array characters
+  
+1. Upper incisors direction of projection of tooth shaft [[From Giannini and Simmons (2005: character 57).  This is measured relative to a vertical line through the middle of the root of the incisor where it emerges from the alveolus.  Best seen in lateral view.  In the orthodont condition, the crown shaft of incisor lies directly on the line (so the tooth appears directed straight vertially).  In the proodont condition, the crown shaft of the incisor lies anterior to the line (so the tooth appears to be procumbent and project anteriorly).  This character can be scored when only one upper incisor is present since it is uniform across the incisor dentition (as far as we know).]] orthodont (0); proodont (1).
+  
+
+2. Upper incisors orientation of tip of crown [[From Giannnini and Simmons (2005: character 61).  Orthoclivous = tips directed in the same direction as the long axis of the shaft of the tooth; retroclivous = tips directed posteriorly, at an angle to the long axis of the shaft of the tooth.  In the retroclivous condition, the tip apprear slightly recurved.  This varies independently of the orientation of the tooth shaft (see preceeding character).   This character can be scored when only one upper incisor is present since it is uniform across the incisor dentition (as far as we know).]] orthoclivous (0); retroclivous (1).
+  
+
+3. Upper I1 presence [[Modified from Simmons and Geisler (1998: character 16).]] I1 present (0); absent (1).
+  
+
+4. Upper I1 crown differentiation [[Modified from Giannini and Simmons (2005: character 56).  ]] crown clearly differentiated from root shaft  (0); not differentiated from root shaft (1).
+  
+
+5. Upper I1 shape of occlusal margin [[Modified from Wetterer et al. (200: character 50); Simmons and Conway (2001: character 29).  Describes the shape of the occlusal margin (cutting edge of the tooth) as seen in labial view.  Unordered.]] large main cusp that tapers to a blunt point (additional lateral cusp may be present) (0); straight or slighlty convex and rounded (1); bilobed (2); blade-like with concave C-shaped cutting edge (3).
+  
+
+6. Upper I1 form of lobes [[Can only be scored in taxa with biolobed upper I1.  Ordered]] mesial lobe smaller than distal lobe (0); lobes of equal size (1); mesial lobe larger than distal lobe (2).
+  
+
+7. Upper I1 direction of lobe projection [[Can only be scored in taxa with a bilobed I1]] ventrally (0); mesially (1).
+  
+
+8. Upper I1 position of pointed main cusp [[From Wetterer et al. (2000: character 51).  Refers to the position of the main cusp relative to the central axis of the tooth (axis through root shaft and crown).  Can be scored only in taxa with a pointed main cusp on I1.  Ordered.]] main cusp offset mesially from axis of tooth (0); main cusp in center of tooth (so tooth crown is roughly bilaterally symmetrical) (1); main cusp offset distally from axis of tooth (2).
+  
+
+9. Upper I1 distal accessory cusp [[ ]] absent (0); present (1).
+  
+
+10. Upper I1 relative size of pointed mesial cusp [[From Wetterer et al. (2000: character 52).  Can be scored only in taxa with a large main cusp that is mesially offset and a distal cusp is present (see preceding character)s.  ]] mesial cusp 2x the height of distal cusp (0); pointed mesial cusp only slightly higher than distal cusp (1).
+  
+
+11. Upper I1 lingual cingulum presence [[Modified from Simmons and Conway (2001: character 31).  Treated separately from a similar characer for I2 because distribution varies in some taxa (e.g., Myotis lucifugus has a cingulum on I2 but not I1).  Should not be scored in taxa where the crown of the tooth is not differentiated from the root shaft.]] absent (0); present (1).
+  
+
+12. Upper I1 occlusion [[From Wetterer et al. (200: character 55).  Unordered.]] I1 in contact with i1 or separated by a small gap when cheek teeth are in occlusion (0); I1 separated from i1 by a large gap when cheek teeth are in occlusion (1); I1 occludes with mesial side of i2 (2); I1 occludes with anterior cingulum of lower canine. (3); I1 occludes with cingular shelf on lower canine, well posterior to i1 (4); I1 occludes posterior to i1 in mandibular fossa (5).
+  
+
+13. Upper incisors relative crown height [[Modified from Wetterer et al. (2000:  character 49), Simmons and Conway (2001: character 30).  Describes the relative crown height of the two incisors when seen in labial view, as measured from the base of the tooth to the tip of the highest cusp.  Can only be scored in taxa with both I1 and I2 present.  Ordered.]] height of I1 less than height of I2 (0); I1 and I2 subequal in height (1); height of I1 greater than height of I2 but less than twice the height of I2 (2); height of I1 at least twice that of I2 (3).
+  
+
+14. Upper I2 occlusal exposure [[Modified from Simmons (1996: character 20).  It is possible that this character should be scored only in taxa that have I2 shorter than I1 since exclusion from the occlusal row may be related to reduction in size of I2.  Simmons (1996) included reduction or loss of I2 as part of state 1 of this character, but we treat those conditions in separate characters.  This character can be scored only in taxa that have both I1 and I2 present.]] I2 in normal position between I1 and C, not excluded from occlusion toothrow (0); I2 moved dorsally and excluded from occlusal toothrow by close apposition of I1 and C (1); I2 moved ventrally and excluded from occlusal toothrow by close apposition of I1 and C (2).
+  
+
+15. Upper I2 presence [[From Simmons and Geisler (1998: character 16); Wetterer et al. (2000: character 48); Simmons and Conway (2001: character 28); Simmons and Giannini (2005: character 59).]] I2 present (0); absent (1).
+  
+
+16. Upper I1 and I2 relative position [[In state 0 the incisor arcade may be either u- or v-shaped when there is no gap between right and left incisors.  When I1 and I2 are different sizes, this character should be scored by comparing the locations of the posteriormost limits of the alveoli of the two teeth. Ordered.]] I2 located more posterior than I1 (0); I2 lateral to I1, not displaced posteriorly or anteriorly, incisors form transverse line (1); I2 displaced anteriorly (2).
+  
+
+17. Upper I2 crown morphology [[Modified from Giannini and Simmons (2005: character 59).]] well developed crown morphology (0); simplified (1).
+  
+
+18. Upper I2 lingual cingulum presence [[From Giannini and Simmons (2005: character 60).  This character needs clarification; see differences between Onychonycteris and Pteronotus.  Originally referred to as a "posterobasal" cingulum but here termed a lingual cingulum.  Taxa scored as having a "simplified" I2 crown in the preceding character should be scored as inapplicable for this one.]] absent (0); cingulum present (1).
+  
+
+19. Upper I2 and C diastema presence [[Simmons and Conway (2001: character 32).  Cannot be scored in taxa lacking I2.  The lower canine fits into the space created by this diastema in at least some taxa (e.g., Onychonycteris).  This character should be scored as inapplicable in taxa lacking I2.]] diastema present (0); diastema absent between I2 and C, teeth in contact (1).
+  
+
+20. Upper C crown height [[From Simmons (1996: character 19).  Refers to height of teeth as seen in labial view as measured from the base of the tooth to the highest point on the crown of the tooth.]] upper C greater than or equal to twice the height of I1 (0); upper C much less than twice the height of I1 (1).
+  
+
+21. Upper C crown proportions [[Based on Gunnell et al. (2008: pg. 3).]] not (0); anteroposteriorly elongated (1).
+  
+
+22. Upper C labially swollen [[Based on Storch et al. (2002).]] not (0); upper C labially swollen (1).
+  
+
+23. Upper C anteromedial accessory cusp [[Modified from Hand and Kirsch (1998: character 41; 2003) and Giannini and Simmons (2005: character 63); Hand (1996: Figure 3).  Ordered.]] no raised cingulum or cusp (0); raised cingulum present but cusp absent (1); cusp present but low (2); cusp tall, greater than half height of main cusp (3).
+  
+
+24. Upper C anteromedial groove [[From Giannini and Simmons (2005: character 65).  Probably should be called an "anterior or mesial" groove.]] groove absent (0); anteromedial groove present (1).
+  
+
+25. Upper C lingual cingulum  [[Modified from Giannini and Simmons (2005: character 64).  Ordered.  ]] lingual cingulum absent (0); faint lingual cingulum present (1); narrow well-developed cingulum present (2); wide well-developed cingulum present (3).
+  
+
+26. Upper C lingual cingulum indentation [[Can only be scored in taxa that have lingual cingulum. Ordered.]] absent (0); weakly developed (1); strongly developed (2).
+  
+
+27. Upper C lingual cingulum cusp [[Modified from Giannini and Simmons (2005: character 64).  Can only be scored in taxa that have a well-developed lingual cingulum.]] absent (0); present (1).
+  
+
+28. Upper C lingual cingulum slope [[Based on Gunnell et al. (2008: pg. 5).]] not steep (0); steep (1).
+  
+
+29. Upper C labial cingulum development [[Modified from Gunnell et al. (2008: pg. 3); Storch et al. (2002: pg. 191).  Ordered.]] cingulum well developed and complete (0); cingulum weakly developed but complete (1); cingulum weakly developed and incomplete (2); cingulum absent (3).
+ 
+
+30. Upper C labial cingulum incompleteness [[Modified from Gunnell et al. (2008: pg. 3); Storch et al. (2002: pg. 191).  Can only be scored in taxa with an incomplete labial cingulum.  Ordered.]] incomplete anteriorly (0); incomplete in the middle (1); incomplete posteriorly (2).
+  
+
+31. Upper C distal cingulum [[Based on Gunnell et al. (2008: pg. 5). Sometimes called the "posterior cingulum."  The relationships between this and the lingual and labial cingulae need to be explored, it may be best to treat them in a single set of characters.  Ordered.]] absent (0); cingulum small (1); large (2).
+  
+
+32. Upper C posteromedial ridge [[From Giannini and Simmons (2005: character 66).  Ordered.]] ridge absent (0); posteromedial ridge present (1); two posteromedial ridges present forming a groove (2).
+  
+33. Upper C posterolingual surface [[Based on Gunnell et al. (2008: pg. 3).]] rounded (0); posterolingual surface flattened (1).
+  
+
+34. Upper C posterolateral accessory cusp [[Modified from Hand and Kirsch (1998: character 40); Bogdanowicz and Owen (1998: character 20); Giannini and Simmons (2005: character 62). Ordered.]] cusp absent (0); trace of cusp present (1); cusp tall and conspicuous but less than half the height of the main cusp (2); cusp very tall, equal to or greater than half the height of the main cusp (3).
+  
+
+35. Upper C posterolateral accessory cusp form [[Based on Hand (1996: Figure 3).  Can be scored only in taxa that have a well-defined cusp (states 2 & 3 of the preceding character).]] conical and well separated from main cusp (0); bladelike (1).
+  
+
+36. Upper C posterolateral accessory cusp position [[Can only be scored in taxa with a posterolateral accessory cusp.]] cusp located on posterior cingulum, well seperated from main canine cusp (0); cusp originates on posterior face of main canine cusp, not well seperated from that cusp (1).
+  
+
+37. Upper C posterolabial surface [[Based on Gunnell et al. (2008: pg. 5).]] rounded (0); posterolabial surface flattened (1).
+  
+
+38. Upper C curvature [[Based on Storch et al. (2002: pg. 194).]] less recurved (0); more recurved (1).
+  
+
+39. Upper C angle of projection [[Based on Storch et al. (2002: pg. 194).  Documenting this character normally requires a lateral view of the skull showing both the canine and the molar toothrow in labial view, although it may also be scored (with care) in fossils that can be examined only in occlusal view.]] does not project anteriorly; long axis of tooth shaft is perpendicular to plane of occlusal surface of molar toothrow (0); projects anteriorly; long axis of tooth shaft forms an oblique angle with the plane of the occlusal surface of the molar toothrow (1).
+  
+
+40. Upper P1 development [[Modified from Simmons and Geisler (1998: character 18 and Table 3); Simmons and Conway (2001: character 36); Giannini and Simmons (2005: character 67); Storch et al. (2002: pg. 191).  Ordered.  This tooth is sometimes identified as P2 in taxa with 3 premolars (e.g., Storch et al., 2002).  Taxa with states 1 & 2 should be scored as inapplicable for subsequent characters describing details of P1 crown morphology.]] P1 with well-developed crown that is greater in diameter than the root, crown conical, triangular, or lenticular in labial view (0); P1 peglike, crown simplified and flattened, crown diamenter subequal to or only slightly larger than root diameter (1); P1 present as a tiny spicule with crown diameter less then or equal to root diameter (2); P1 absent (3).
+  
+
+41. Upper P1 number of roots [[]] 1 root (0); 2 roots (1).
+  
+
+42. Upper P1 labial cingulum presence [[Based on Storch et al. (2002: pg. 194).  Score only in taxa with a well developed crown on P1 (state 0 of the preceeding character).]] absent (0); labial cingulum present (1).
+  
+
+43. Upper P1 position [[Based on Hand and Kirsch (1998: character 43).  They called this tooth P2; it is the anteriormost premolar in taxa with 2 premolars, which may be either P1 or P4 following our terminology (although the homologies of teeth need to be assessed individually for all taxa with only two upper premolars).  Ordered. Taxa with partial extrusion (states 1 and 3) should be checked to make sure that they are scored correctly.]] P1 labially extruded from toothrow, P5 directly contacts tooth anterior to it (usually C) while P1 is located labial to this contact (0); P1 partially extruded from toothrow on labial side but still partially separates teeth anterior and posterior to it. (1); P1 lies in line with C, P5, and M1-2 (2); P1 partially extruded from toothrow on lingueal side but still partially separates teeth anterior and posterior to it (3); P1 lingually extruded from toothrow, P5 directly contacts tooth anterior to it (usually C) while P1 is located lingual to this contact (4).
+  
+
+44. Upper P1 and P4 relative crown length [[Mesiodistal length.  Can only be scored in taxa that have both P1 and P4. Ordered,]] P1 shorter than P4 (0); P1 and P4 subequal (1); P1 longer than P4 (2).
+  
+
+45. Upper P4 presence [[From Simmons and Geisler (1998: character 18); Wetterer et al. (2000: character 56); Simmons and Conway (2001: charcter 37). This tooth is homologous to the tooth traditionally called P3 in taxa with 3 premolars; the terminology used here follows that of the ATOL Mammals project, which recognizes that five upper premolars are primitive for Mammalia.]] P4 present (0); absent (1).
+  46. Upper P4 number of roots [[From Simmons and Geisler (1998: character 19); Hand et al. (1994: pg. 376); Storch et al. (2002: pg. 195).  Ordered.]] three roots (0); two roots (1); one root (2).
+  
+
+47. Upper P4 position [[Based on Hand and Kirsch (1998: character 43).  They called this tooth P2; it is the anteriormost premolar in taxa with 2 premolars, which is P4 following our terminology (although the homologies of teeth need to be assessed individually for all taxa with only two upper premolars).  Ordered.]] P4 lies in line with C, P5, and M1-2 (0); P4 partially extruded from toothrow but still partially separates teeth anterior and posterior to it (1); P4 entirely extruded from toothrow, P5 directly contacts tooth anterior to P4 (usually C) (2).
+  
+
+48. Upper P4 labial cingulum development [[Based on Storch et al. (2002: pg. 196).  States need to be better defined. Split into two characters since cingulum development may vary on P4 and P5 (e.g., Pteronotus).  Ordered.]] labial cingulum well developed (0); weakly developed (1); absent (2).
+  
+
+49. Upper P4 lingual cingulum [[Modified from Simmons (1996: character 15); Storch et al. (2002: pg. 195).  Ordered.]] cingulum absent (0); weakly developed (1); well developed (2).
+  
+
+50. Upper P4 lingual cusp [[Modified from Simmons (1996: character 15); Storch et al. (2002: pg. 195).  Ordered.]] absent - no cusp or cingulum (0); raised cingulum present but no cusp (1); cusp present (2).
+  
+
+51. Upper P4 postparacrista [[Ordered.]] absent (0); single crest (1); pair of roughly parallel crests with a groove in between (2).
+  
+
+52. Upper P4 postparacrista extent [[New Character]] postparacrista decreases sharply in height near paracone and does not extend to distal edge of tooth (0); postparacrista extends as a continuous crest to the distal aspect of the tooth (1).
+  
+
+53. Upper P4 distal accessory cusps [[Ordered.]] distal accessory cusps absent (0); one distal accessory cusp present (1); two distal accessory cusps (2).
+  
+
+54. Upper P4 and P5 diastema presence [[From Wetterer et al. (2000: character 71); Simmons and Conway (2001: charcter 38).]] no diastema present between P4 and P5, teeth in contact or nearly so (0); diastema present (1).
+  
+
+55. Upper P4 and P5 relative crown length [[Refers to mesiodistal length.  Ordered.]] P4 shorter than P5 (0); P4 and P5 subequal (1); P4 longer than P5 (2).
+  
+
+56. Upper P4 and P5 relative crown height [[Modified from Simmons (1996: character 17); Simmons and Conway (2001: character 39).  Refers to crown height as seen in labial view, as measured from the base of the tooth to the tip of the highest point on the crown.  Ordered.]] P4 shorter than P5 (0); P4 and P5 subequal in height (1); P4 taller than P5 (2).
+  
+
+57. Upper P5 lingual cingulum development [[Modified from Simmons (1996: character 16) and Morgan and Czaplewski (2003: characters 15 and 16). For states 2 and 3, the comparison is between the lingual edge of P4 (as seen in occlusal view) and the tip of the protocone. Ordered.]] cingulum absent (0); lingual cingulum narrow, no lobe present (1); lingual cingulum large, forms distinct lobe, does not extend as far lingually as  protocone of M1. (2); lingual cingulum very large, forms distinct lobe, extends as far lingually or farther than protocone of M1. (3).
+  
+
+58. Upper P5 anterior margin  [[From Hand and Kirsch (1998: character 46) and Morgan and Czaplewski (2003: character 16).  Needs to be quantified.  May overlap with characters regarding accessory cusp development.]] narrow (0); wide (1).
+  
+
+59. Upper P5 lingual cingular cusp [[Modfied from Simmons (1996: character 16).  Ordered.  This structure was called the "anterolingual cingular cuspule" by Hand et al. (1994) and the "anterolingual cingular cusp" by Hand and Kirsch (1998: character 47).  Hand and Kirsch (1998: character 47) treated this as a presence/absence character for the cusp.  Ordered.]] cingulum with raised edge but no cingular cusp (0); lingual cusp weakly developed (1); lingual cusp well developed (2); two well developed lingual cusps (3).
+  
+
+60. Upper P5 labial cingulum development [[Based on Storch et al. (2002: pg. 196).  States need to be better defined. Split into two characters since cingulum development may vary on P4 and P5 (e.g., Pteronotus). Ordered.]] labial cingulum well developed (0); weakly developed (1); absent (2).
+  
+
+61. Upper P5 labial cingular cusp [[From Morgan and Czaplewski (2003: character 14). Ordered]] cusp absent (0); weakly developed (1); strongly developed (2).
+  
+
+62. Upper P5 anterolabial cusp [[This may be redundant with the preceding character describing a "labial cingular cusp" but since we are not sure where that cusp is supposed to be, I am erecting this character to score a cusp that we are sure is present in some taxa.  Ordered.]] absent (0); weakly developed (1); strongly developed (2).
+  
+
+63. Upper P5 postparacrista [[Ordered.]] absent (0); single crest (1); pair of roughly parallel crests with a groove in between (2).
+  
+
+64. Upper P5 postparacrista extent [[Based on Storch et al. (2002: pg. 195).  Sometimes called a "posterolabial wing."  This character describes the distal extent of the crest that runs distally and labially from the paracone.]] postparacrista decreases sharply in height near paracone and does not extend to distal edge of tooth (0); postparacrista extends as a continuous crest to the distal aspect of the tooth (1).
+  
+
+65. Upper P5 distal accessory cusps [[Modified from Wetterer et al.(2000: character 57).  Ordered.]] distal accessory cusps absent (0); one distal accessory cusp present (1); two distal accessory cusps (2).
+  
+
+66. Upper P5 proportions in occlusal view [[From Hand and Kirsch (1998: character 45); Hand et al. (1994: pg. 376).  Refers to maximum mesiodistal length versus maximum labiolingual width (length being measured along a plane parallel to the labial face of the tooth and width perpendicular to that). Ordered.]] P5 length less than width (0); length and width subequal (1); P5 length greater than width (2).
+  
+
+67. Upper P5 and M1 diastema presence [[From Wetterer et al. (2000: character 72)]] no diastema between P5 and M1, teeth in contact (0); diastema present (1).
+  
+
+68. Upper P5 and M1/M2 alignment [[Modified from Giannini and Simmons (2005: character 74).  Ordered.  This character should be measured by comparing the locations of the tips of each cusp as seen in occlusal view.]] not aligned (longitudinal axis through M1 and M2 paracone runs markedly labial to P5 paracone) (0); aligned (longitudinal axis through M1 and M2 paracones intersects P5 paracone) (1); not aligned (longitudinal axis through M1 and M2 paracone runs markedly lingual to P5 paracone) (2).
+  
+
+69. Upper P5 and M1 relative length [[Modified from Hand and Kirsch (1998: character 44).  They coded "size" but it is limited to length here to be less ambiguous.  Length is defined as the mesiodistal dimension.  Ordered.]] P5 length conspicuously greather than M1 length (0); P5 and M1 subequal in length (1); P5 length conspicuously less than M1 length (2).
+  
+
+70. Upper molars ectocingulum development [[Modified from Morgan and Czaplewski (2003: character 18).  Refers to a cingulum on the labial side of the tooth; it is distinct from the stylar shelf and may be either present or absent in forms with a well-developed stylar shelf and W-shaped ectoloph. Ordered.]] strongly developed (0); present but weak (1); absent (2).
+  
+
+71. Upper molars pericone presence [[Based on Hand et al. (1994: 379).  The pericone is a cusp mesial to the protocone on the lingual aspect of the tooth.  Apparently present in Wyonycteris but absent in archaic bats (Hand et al., 1994).]] absent (0); pericone present (1).
+  
+
+72. Upper M1 and M2 diastema presence [[From Wetterer et al. (2000: character 73).]] no diastema present between M1 and M2, teeth in contact (0); diastema present (1).
+  
+
+73. Upper M1 and M2 lingual cingulum [[]] absent (0); present (1).
+  
+
+74. Upper M1 and M2 stylar shelf presence [[Modified from Wetterer et al. (2000: character 60); Hand et al. (1994: pgs. 378-379).  Those authors described this feature as "presence of a W-shaped ectoloph" but we prefer to characterize it as presence of a stylar shelf, which must be present for a W-shaped ectoloph to exist.  Treating this feature this way prevents overlap with other characters describing presence/absence of the various cristae that comprise a W-shaped ectoloph (preparacrista, postparacrista, premetacrista, postmetacrista), not all of which are present in some taxa. ]] stylar shelf present on M1 and M2 (0); absent (1).
+  
+
+75. Upper M1 and M2 protocone presence [[New character.]] present (0); absent (1).
+  
+
+76. Upper M1 and M2 protocone and paracone relative height [[Based on Gunnell et al. (2008: pgs. 2-3).  ]] protocone shorter than paracone (0); protocone and paracone subequal in height (1).
+  
+
+77. Upper M1 and M2 metacone and paracone relative height [[Based on Gunnell et al. (2008: pg. 6); Hand (1996: Figure 3).  Probably needs another state for the "reduced paracone and massive metacone" condition noted by Hand (1996) in some megadermatids.  Ordered.]] metacone taller than paracone (0); metacone and paracone subequal in height (1); metacone shorter than paracone (2).
+  
+
+78. Upper M1 and M2 protocone sharpness and inclination [[Based on Storch et al. (2002: pg. 195). ]] less sharp and less inclined anteriorly (0); more sharp and more inclined anteriorly (1).
+  
+
+79. Upper M1 and M2 metacone and paracone inclination [[From Gunnell et al. (2008: pg. 3).]] not (0); paracone and metacone lingually inclined (1).
+  
+
+80. Upper M1 and M2 angle between postparacrista and premetacrista [[Based on Gunnell et al. (2008: pg. 4).  Ordered.]] very acute, cristae nearly or completely parallel (angle is 20 degrees or less) (0); acute, cristae lie at acute angle to one another (angle 21-90 degrees) (1); oblique, cristae meet at an angle somewhat more than a right angle (angle 91-120 degrees) (2); very oblique, cristae nearly or completely form straight line (angle well over 120 degrees) (3).
+  
+
+81. Upper M1 and M2 postparacrista and premetacrisita contact [[Based on Gunnell et al. (2008: pg. 3).  When the postparacrista and premetacrista are in contact on the labial edge of the tooth, this contact serves to close the trigon basin (= protofossa) labailly.  When these crista do not contact one another, the trigon basin/protofossa is open labially.]] postparactista contacts premetacrista on labial aspect of tooth, trigon closed labially (0); postparacrista does not contact premetacrista, trigon open labially (1).
+  
+
+82. Upper M1 and M2 trigon width and depth [[Based on Storch et al. (2002: pg. 195).  The trigon = protofossa = valley of the ectoloph = the space outlined by the protocone, paracone, and metacone.  It does not refer to the cleft between the paraone, metacone, and mesostyle (or the equivalent).]] wide and shallow (0); narrow and deep (1).
+  
+
+83. Upper M1 and M2 mesostyle presence and location [[Based on Gunnell et al. (2008: pg. 3).  When state 0 of this character is combined with absence of a contact between the postparacrista and premetacrista (as in Philisids) the condition conforms to what Sige (1985) called the "mesostyle dedouble."  Unordered.]] mesostyle absent (0); mesostyle formed at labial terminus of postparacrista (1); mesostyle formed at point of contact of postparacrista and premetacrista (2); mesostyle formed at labial terminus of premetacrista (3).
+  
+
+84. Upper M1 and M2 mesostyle size and labial extent [[Based on Gunnell et al. (2008: pg. 6).  Needs to be quantified somehow, perhaps combined in some way with other mesostyle characters.  Can only be scored in taxa with a distinct mesostyle. ]] large and extended labially (0); small and less labially extended (1).
+  
+
+85. Upper M1 and M2 lingual displacement of contact between postparacrista and premetacrista  [[Based on Hand (1996: Figure 3).  Score as inapplicable in taxa where these crests do not contact one another. The differences between states 1 and 2 need to be better described.  Ordered.]] not lingually displaced, lies in line with parastyle and metastyle (0); somewhat lingually displaced (1); strongly lingually displaced (2).
+ 
+ 
+86. Upper M1 and M2 mesostylar crest presence [[From Morgan and Czaplewski (2003: character 17).  When present, this sticks out like a hook or projection from the mesostyle.]] absent (0); present (1).
+  
+
+87. Upper M1 and M2 mesostylar crest direction [[Score only in taxa that have a mesostylar crest]] projects mesiolabially (0); projects distolabially (1).
+  
+
+88. Upper M1 and M2 cuspule on premetacrista presence [[From Simmons and Conway (2001: character 44).  Refers to a small cuspule that is sometimes present on the labial aspect of the premetacrista.]] cuspule absent (0); cuspule present on premetacrista (1).
+  
+
+89. Upper M1 and M2 paraconule presence [[Based on Hand et al. (1994: pg. 379).  According to Hand et al. (1994),  marked reduction in the para- and metaconules on the upper molars may be a synapomorphy of bats.]] paraconule present (0); absent (1).
+  
+
+90. Upper M1 and M2 metaloph presence [[New character]] Metaloph present (0); absent (1).
+  
+
+91. Upper M1 and M2 secondary cusp on postprotocrista [[New character.  This cusp is located distal to the protoconid but not on the hypcone shelf.  This seems to be distinct from the hypcone (which we are defining based on development on the hypcone shelf) because it is developed on on the postprotocrista. It almost looks like a split protocone in some taxa.]] absent (0); present (1).
+  
+
+92. Upper M1 parastyle presence [[New character.]] present (0); absent (1).
+  
+
+93. Upper M1 parastyle form [[New character.]] conical (0); crest (1).
+  
+
+94. Upper M1 parastyle separation from preparacrista [[New character.  In most bats, the parastyle is developed at the mesiolabial end of the preparacrista and is continuous with that crest.  However, In Saccopteryx the parastyle is a separate cusp seperated by a groove from the terminus of the preparacrista.]] not separated (0); separated (1).
+  
+
+95. Upper M1 parastyle length [[Based on Gunnell et al. (2008: pg. 6).  Score only in taxa with a crest-like parastyle.]] short (0); long (1).
+  
+
+96. Upper M1 parastyle curvature [[Based on Gunnell et al. (2008: pg. 6).  Score only in taxa with a crest-like parastyle.]] straight (0); curved (1).
+  
+
+97. Upper M1 ectoflexus [[Based on Storch et al. (2002: pg. 195).  Unordered.]] ectoflexus absent (0); single ectoflexus present labial to mesostyle (1); single ectoflexus present between mesostyle and parastyle (= pre-ectoflexus) (2); single ectoflexus present between mesostyle and metastyle (= postectoflexus) (3); pair of ectoflexi present one between mesostyle and parastyle, one between mesostyle and metastyle (4).
+  
+
+98. Upper M1 single ectoflexus development [[Modified from Simmons and Geisler (1998:  Table 3).  Describes depth of extoflexus when only one is present.  Cannot be scored if ectoflexus is absent.]] shallow ectoflexus present (0); deep ectoflexus present (1).
+  
+
+99. Upper M1 double ectoflexus development [[Score only in taxa with a double ectoflexus.  Unordered.]] both shallow (0); anterior deep, posterior shallow (1); anterior shallow, posterior deep (2); both deep (3).
+  
+
+100. Upper M1 preparacrista presence [[New character.]] present (0); absent (1).
+  
+
+101. Upper M1 relative length of preparacrista and postparacrista [[Based on Storch et al. (2002: pg. 195), who noted that reduction of the preparacrista on M1 was a significant character.  Ordered.]] preparacrista longer than postparacrista (0); preparacrista subequal in length to postparacrista (1); preparacrista shorter than postparacrista (2).
+  
+
+102. Upper M1 relative length of postmetacrista and premetacrista [[Modified from Wetterer et al. (2000: character 62); Hand and Kirsch (1998: character 58); Hand (1996: Figure 3).  Ordered.]] postmetacrista length subequal to premetacrista length (0); postmetacrista longer than premetacrista but not twice as long (1); postmetacrista 2x as long as premetacrista, or longer (2).
+  
+
+103. Upper M1 trigon basin surface texture [[New character.]] enamel smooth (0); surface with striations or small enamel folds (1).
+  
+
+104. Upper M1 postprotocrista orientation [[Modified from Storch et al. (2002: pg. 195).  The postprotocrista is a crest extending distally from the protocone.  The endoloph is a crest extending mesially from the hypocone.  Sometimes these are continuous (see following character) but frequently they are clearly separate ridges.  The orientation of the postrocrista should be scored in any taxa that has a clearly defined protocone with a distally projecting crest, regardless of whether or not this can be distinguished from an endoloph.  Ordered.]] oriented distolabially toward metacone, metaconule, or metastylar region (0); oriented toward midpoint between metastyle/metacone and hypocone region (1); oriented anteroposteriorly toward hypocone or hypocone region (2).
+  
+
+105. Upper M1 postprotocrista extent  [[From Morgan and Czaplewski (2003: character 19).  Ordered.]] postprotocrista extends only to metaconule region (irregardless of presence/absence of metaconule), does not reach metacone or metacingulum (0); joins lingual base of metacone (1); postprotocrista extends to hypoconal region (2); extends to become confluent with metacingulum or edge of hypocone shelf (3).
+  
+
+106. Upper M1 metaconule presence [[Modified from Simmons and Geisler (1998:  Table 3).  According to Hand et al. (1994),  marked reduction in the paraconules and metaconules on the upper molars may be a synapomorphy of bats.]] metaconule present (0); absent (1).
+  
+
+107. Upper M1 endoloph presence [[Modified from Storch et al. (2002: pg. 195).  Refers to a crest running along the lingual side of the tooth mesially from the hypocone or hypocone region.  Frequently when it is present, it intersects the postprotocrista at an angle, so it is clearly distinct from that crest.  Unordered.]] absent (0); present, approaches postprotocrista at an angle (1); present but continuous with postprotocrista as a single straight crest along lingual side of tooth (2); present, does not approach postprotocrista, runs lingually (3).
+  
+
+108. Upper M1 endoloph contact with postprotocrista [[This character should be scored only in taxa where the endoloph approaches the postprotocrista at an angle (in other conditions this character is redundant with states of other characters).]] endloloph contacts postprotocrista  (0); no contact (1).
+  
+
+109. Upper M1 hypocone shelf development [[Modified from Wetterer et al. (2000: character 61); Bogdanozwicz and Owen (1998: character 20). The hypocone shelf (sometimes called the talon or hypocone basin) is a large shelf that projects distally from the protocone region of the tooth; the hypocone, when present, occupies a position on the lingual edge of the shelf.  In many taxa the shelf shows identical development on M1 and M2, but Bogdanowicz and Owen (1998: character 20) implied that M1 and M2 vary independently, so we are treating each tooth separately.  The presense of a cingulum is treated as potentially homologous and scored as "present".  This cingulum is sometimes called a postprotocingulum (e.g., Gunnell et al. (2002: Pg. 2)).  Ordered.]] hypocone shelf very large, maximum mesiodistal lenght equal to or greater than distance between paracone and metacone (0); hypocone shelf large, maximum mesiodistal length greater than half the distance between paracone and metacone but not 100% of that distance (1); hypocone shelf small, well developed and clearly distinct from trigon, maximum mesiodistal length less than half the distance between the paracone and metacone (2); hypocone shelf very small, present as a cingulum but may not be clearly distinguished from the trigon (3); hypocone shelf absent (4).
+  
+
+110. Upper M1 hypocone shelf width [[Based on Storch et al. (2002: pg. 195).  Refers to labio-lingual width.  May be scored in taxa with states 0-2 of the preceding character.  This is a comparison of the labio-lingual width of the hypocone shelf versus the trigon basin.  Width of the trigon basin area is measured from the midpoint of a line between the the tip of metacone and paracone to the most lingual edge of the protocone. Narrow is when the shelf is not as large, and wider is when the shelf is larger in terms of this distance.  ]] narrower (0); wider (1).
+  
+
+111. Upper M1 hypocone development [[Modified from Wetterer et al. (2000: character 61); Storch et al. (2002: pg. 195).  Ordered. Score only in taxa that have a hypocone shelf.]] hypocone absent (0); hypocone incipient or poorly developed but not entirely absent (1); hypocone well developed (2).
+  
+112. Upper M2 presence [[Modified from Giannini and Simmons (2005: character 75).]] M2 present (0); absent (1).
+  
+
+113. Upper M2 parastyle presence [[Modified from Storch et al. (2002: pb. 195); Gunnell et al. (2008: pg. 6).  ]] present (0); absent (1).
+  
+
+114. Upper M2 parastyle form [[New character.]] conical (0); crest (1).
+  
+
+115. Upper M2 parastyle length [[Based on Gunnell et al. (2008: pg. 6). Can only be scored in taxa with a crest-like parastyle.]] short (0); long (1).
+  
+
+116. Upper M2 parastlye curvature [[Based on Gunnell et al. (2008: pg. 6).  Can only be scored in taxa with a crest-like parastyle.]] straight (0); curved (1).
+  
+
+117. Upper M2 ectoflexus [[Based on Storch et al. (2002: pg. 195).  Unordered.]] ectoflexus absent (0); single ectoflexus present labial to mesostyle (1); single ectoflexus present between mesostyle and parastyle (= pre-ectoflexus) (2); single ectoflexus present between mesostyle and metastyle (= postectoflexus) (3); pair of ectoflexi present one between mesostyle and parastyle, one between mesostyle and metastyle (4).
+  
+
+118. Upper M2 single ectoflexus development [[Modified from Simmons and Geisler (1998:  Table 3).  Score only in taxa that have a single ectoflexus.]] shallow ectoflexus (0); deep ectoflexus (1).
+  
+
+119. Upper M2 double ectoflexus development [[Score only in taxa with a double ectoflexus.  Ordered.  This feature varies across loci, e.g, in Natalus the ectoflexi are shallow on M1 and deep on M2. ]] both shallow (0); anterior ectoflexus deep, posterior extoflexus shallow. (1); both deep (2).
+  
+
+120. Upper M2 position of metacone [[New character.  In most bats the metacone is located directly posterior to the paracone on M2 so that both are roughly equidistant from the midline of the skull, and so that a line drawn through them is approximately parallel to the transverse plane through the head.  However, in some taxa (e.g., Artibeus) the metacone is shifted markedly lingually so that a line through the paracone and metacone lies at a 45 degree angle to the transverse plane]] metacone in normal position (0); metacone shifted lingually (1).
+  
+
+121. Upper M2 relative length of postmetacrista and premetacrista [[Modified from Wetterer et al. (2000: character 62); Hand and Kirsch (1998: character 58); Hand (1996: Figure 3).  Varies independently of states on M1. Ordered.]] postmetacrista absent (0); postmetacrista shorter that premetacrista (1); postmetacrista length subequal to premetacrista length (2); postmetacrista much longer than premetacrista but not twice as long (3); postmetacrista 2x longer than premetacrista, or longer (4).
+  
+
+122. Upper M2 orientation of postprotocrista [[Modified from Storch et al. (2002: pg. 195).  The postprotocrista is a crest extending distally from the protocone.  The endoloph is a crest extending mesially from the hypocone.  Sometimes these are continuous (see following character) but frequently they are clearly separate ridges.  The orientation of the postrocrista should be scored in any taxa that has a clearly defined protocone with a distally projecting crest, regardless of whether or not this can be distinguished from an endoloph.  Ordered.]] oriented distolabially toward metacone, metaconule, or metastylar region (0); oriented toward midpoint between metastyle/metacone and hypocone region (1); oriented anteroposteriorly toward hypocone or hypocone region (2).
+  
+
+123. Upper M2 endoloph presence [[Modified from Storch et al. (2002: pg. 195).  Refers to a crest running along the lingual side of the tooth mesially from the hypocone or hypocone region.  Frequently when it is present, it intersects the postprotocrista at an angle, so it is clearly distinct from that crest.  Unordered.]] absent (0); present, approaches postprotocrista at an angle (1); present but continuous with postprotocrista as a single straight crest along lingual side of tooth (2); present, does not approach postprotocrista, runs lingualy (3).
+  
+
+124. Upper M2 endoloph contact with postprotocrista [[New character]] postprotocrista and endoloph at an angle (0); postprotocrista and endoloph at an angle, but not in contact (1).
+  
+
+125. Upper M2 metaconule presence [[]] metaconule present (0); absent (1).
+  
+
+126. Upper M2 hypocone shelf development [[Modified from Wetterer et al. (2000: character 61); Bogdanozwicz and Owen (1998: character 20). The hypocone shelf (sometimes called the talon or hypocone basin) is a large shelf that projects distally from the protocone region of the tooth; the hypocone, when present, occupies a position on the lingual edge of the shelf.  In many taxa the shelf shows identical development on M1 and M2, but Bogdanowicz and Owen (1998: character 20) implied that M1 and M2 vary independently, so we are treating each tooth separately.  The presense of a cingulum is treated as potentially homologous and scored as "present".  This cingulum is sometimes called a postprotocingulum (e.g., Gunnell et al. (2002: Pg. 2)).  Ordered.]] hypocone shelf very large, maximum mesiodistal lenght equal to or greater than distance between paracone and metacone (0); hypocone shelf large, maximum mesiodistal length greater than half the distance between paracone and metacone but not 100% of that distance (1); hypocone shelf small, well developed and clearly distinct from tricon, maximum mesiodistal length less than half the distance between the paracone and metacone (2); hypocone shelf very small, present as a cingulum but may not be clearly distinguished from the trigon (3); hypocone shelf absent (4).
+  
+
+127. Upper M2 hypocone shelf width [[Based on Storch et al. (2002: pg. 195).  Refers to labio-lingual width.  May be scored in taxa with states 0-2 of the preceding character.  This is a comparison of the labio-lingual width of the hypocone shelf versus the trigon basin.  Width of the trigon basin area is measured from the midpoint between the labial terminus of the metacone and paracone to the most lingual edge of the protocone. Narrow is when the shelf is not as large, and wider is when the shelf is larger in terms of this distance.]] narrower (0); wider (1).
+  
+
+128. Upper M2 hypocone development [[Based on similar character for M1.  Score only in taxa that have a hypocone shelf.  Ordered.]] hypocone absent (0); hypocone incipient or poorly developed but not entirely absent (1); hypocone well developed (2).
+  
+
+129. Upper M3 presence [[From Wetterer et al. (2000: character 63); Simmons and Conway (2001: character 45); Giannini and Simmons (2005: character 76).]] M3 present (0); absent (1).
+  
+
+130. Upper M3 reduction [[From Hand and Kirsch (1998: character 51).  Ordeded.  Needs to be quantified somehow; Hand and Kirsch (1998) specified a comparison with the last upper premolar but did not explain why they chose that tooth.]] little reduced (M3 occlusal area >75% of M2 area) (0); moderately reduced in length and/or width (M3 area 50%-75% of M2 area) (1); very reduced in length and/or width (M3 area is >25% but <50% of M2 area) (2); extremely reduced (10%<M3 area<25% M2 area) (3); peglike (<10% area) (4).
+  
+
+131. Upper M3 anterior segment size [[From Bogdanowicz and Owen (1998: character 23).  The "anterior segment" is the part of the tooth formed by the parastyle - paracone -mesostyle triangle.  This character refers to the relative size of this area as seen in occlusal view.]] M3 anterior segment nearly as large as that of M2 (0); much smaller than that of M2 (1).
+  
+
+132. Upper M3 parastyle presence [[]] present (0); absent (1).
+  
+
+133. Upper M3 parastyle form [[New character.]] conical (0); crest (1).
+  
+
+134. Upper M3 parastyle length [[Based on Gunnell et al. (2008: pg. 6).  Can only be scored in taxa with a crest-like parastyle.]] short (0); long (1).
+  
+
+135. Upper M3 parastyle curvature [[Based on Gunnell et al. (2008: pg. 6).  Can only be scored in taxa with a crest-like parastyle.]] straight (0); curved (1).
+  
+
+136. Upper M3 paraconule presence [[]] paraconule present (0); absent (1).
+  
+
+137. Upper M3 postmetacrista [[Modfied from Wetterer et al. (2000: character 64).   ]] postmetacrista present (W-shaped ectoloph complete) (0); postmetacrista absent (ectoloph N-shaped or V-shaped) (1).
+  
+
+138. Upper M3 premetacrista development [[Modified from Simmons and Geisler (1998:  Table 3); Hand and Kirsch (1998: character 50); Wetterer et al. (2000: character 64).  Ordered.]] premetacrista longer than postparacrista (0); premetacrista and postparacrista length subequal (1); premetacrista one-half to three quarters the length of the postparacrista (2); premetacrista one-third to slightly less than one-half the length of the postparacrista (3); premetacrista present but less than one-third the length of the postparacrista (4); premetacrista absent  (5).
+  
+
+139. Upper M3 metacone [[Based on Gunnell et al. (2008: pg. 3); Storch et al. (2002: pg. 195).  Ordered.]] metacone present as a disinct cusp (0); metacone indistinct, incorperated into premetacrista (1); metacone entirely absent (2).
+  
+
+140. Upper M3 metastylar fovea presence [[Based on Gunnell et al. (2008: pg. 5).  Refers to a fovea labial to the metacone in between the premetacrista and postmetacrista.]] fovea present (0); absent (1).
+  
+
+141. Upper M3 protocone presence [[New character.]] present (0); absent (1).
+  
+
+142. Upper M3 hypocone shelf presence [[Based on Storch et al. (2002: pg. 195).  Sometimes called a "posterolingual shelf" (e.g., Storch et al., 2002).  Described as small but present in Tachypteron.  We score any cingulum in this are as equivalent to a hypcone shelf.  Can only be scored in taxa with a protocone present.]] absent (0); present (1).
+  
+
+143. Lower i1 presence [[From Simmons and Geisler (1998: character 17); Wetterer et al. (2000: character 53); Simmons and Conway (2001: character 31); Giannini and Simmons (character 40).]] i1 present (0); absent (1).
+  
+
+144. Lower i1 morphology of cutting edge [[Modified from Giannini and Simmons (2005: character 42).  Unordered.]] lobed (bilobed or trilobed or with four lobes) (0); undulate lobe structure (1); cutting edge roughly straight, without notches or grooves (2); pointed (3); peglike, no real cutting edge (4).
+  
+
+145. Lower i1 number of lobes [[Modified from Bogdanowicz and Owen (1998: character 24); Simmons (1996: character 21); Hand and Kirsch (1998: character 54); Simmons and Conway (2001: character 34); Giannini and Simmons (2005: character 42). Can be scored only in taxa with a lobed i1.  Ordered]] bilobed (0); trilobed (1); four lobes (2).
+  
+
+146. Lower i1 trilobed morphology [[Can only be scored in taxa with a trilobe cutting edge on i1.  Refers to the tooth as seen in labial (anterior) view.  Unordered.]] three lobes of equal size (0); mesial lobe very small, middle lobe large, distal lobe intermediate in size (1); mesial lobe large, middle and distal small (2); two mesial lobes small and twinned, well separated from a larger distal lobe (3).
+  
+
+147. Lower i1 crown proporitions [[Based on Hand et al. (2001: Pg. 12).  NOTE: refers to mesiodistal length versus labiolingual width.  Ordered.]] width greater than length (0); length and width subequal (1); length greater than width (2).
+  
+
+148. Lower i1 diastema between right and left teeth [[From Bogdanowicz and Owen (1998: character 25)]] absent (0); diastema present (1).
+  
+
+149. Lower i2 presence [[From Simmons and Geisler (1998: character 17); Wetterer et al. (character 54); Simmons and Conway (2001: character 33); Giannini and Simmons (2005: character 44); Hand et al. (2001: pg. 12).]] i2 present (0); absent (1).
+  
+
+150. Lower i2 morphology of cutting edge [[From Simmons (1996: character 21); Simmons and Conway (2001: character 35); Giannini and Simmons (2005: character 41).  Unordered.]] lobed (bilobed or trilobed or with more lobes) (0); cutting edge roughly straight, without notches or lobes (1); pointed (2); peglike, no real cutting edge (3).
+  
+
+151. Lower i2 number of lobes [[New character; can be scored only in taxa having a lobed i2 (see preceding character).  Ordered.]] bilobed (0); trilobed (1); four lobes (2); more than four (3).
+  
+152. Lower i1 and i2 relative size [[Modified from Hand and Kirsch (1998: character 53). Refers to both length and crown height as seen in a labial view.  Ordered.]] i2 conspicuously smaller than i1 (0); i1 and i2 subequal in size (1); i2 conspicuously larger than i1 (2).
+  
+
+153. Lower i1 and i2 position [[New character.  Refers to the position of these teeth relative to each other.  Score bats where the i2 is slightly set back beyond i1 (but still mostly lateral to it) with state 0.  In state 1, all of i2 is posterior to i1.]] i2 lateral to i1 (0); i2 posterior to i1 (1).
+  
+
+154. Lower i3 presence [[Modified from Simmons and Geisler (1998: character 17); Hand et al. (2001: pg. 12); Storch et al. (2002: pg. 191).]] i3 present (0); absent (1).
+  
+
+155. Lower i3 crown height [[New character.  Refers to height of the crown as seen in labial view.  Ordered.]] i3 height noticably less than i2 height (0); i3 height subequal to i2 height (1); i3 height noticably greater than i2 height (2).
+  
+
+156. Lower incisor alveoli spacing [[From Morgan and Czaplewski (2003: character 8).  Can be scored only in taxa with three lower incisors.]] alveoli of i1 and i2 nearly coalesced, small gap between i2 and i3 (0); alveoli of i1, i2, and i3 evenly spaced (1).
+  
+
+157. Lower incisors procumbent [[Based on Hand et al. (1998: pb. 538).  Ordered.]] not procumbent (0); somewhat procumbent (1); more procumbent (2).
+  
+
+158. Lower c anterior diastema [[From Bogdanowicz and Owen (1998: character 26); Hand et al. (2001: pg. 143).]] absent (0); diastema present between canine and last lower incisor (i1, i2, or i3) (1).
+  
+159. Lower c tip divergence [[From Giannini and Simmons (2005: character 45).]] lower canines not laterally divergent (0); canines laterally divergent, shafts slanted outward so that the tip of each tooth lies dorsal or dorsal and lateral to the lateral edge of the root where the tooth enters the alveolus (1).
+  
+
+160. Lower c space between base of left and right canines [[From Giannini and Simmons (2005: character 46).  We probably need to revise this using landmarks (e.g., which incisor tooth the lingual edge of the canine base lies directly posterior to, or something like that).  Ordered.]] lower canines well separated from one another at the base (0); bases of right and left canines adjacent or nearly so, but not in contact (1); bases of right and left canines adjacent and in contact (2).
+  
+
+161. Lower c shape [[Based on Smith et al. (2007: pg. 1007); Hand et al. (2001: pg. 143).  State 2 in nataloids according to Hand et al. (2001).  "Subterete" means not quite cylindrical - terete means cylindrical but tapering towards the end (or canine tip in this case).  The "extremely short, premolariform" condition describes the state seen in Furipterus, where the canine is smaller than P4 and P5 and looks like those teeth in lateral view.  Unordered. ]] extremely short, premolariform  (0); short and stocky (1); tall and lancoelate (2); exceptionally slender with a subterete shaft (3); bladelike (4).
+  
+
+162. Lower c anterior cuspule presence [[Based on Gunnell et al. (2008: pg. 8).]] absent (0); anterior cuspule present (1).
+  
+
+163. Lower c posterior cingulid [[Based on Gunnell et al. (2008: pgs. 3, 5, 8).  Equivalent to the "posterior heel" of Hand et al. (2001: pg. 13). Ordered.]] cingulid absent (0); cingulid present but small (1); cingulid broad (2).
+  
+
+164. Lower c posterobasal cusp [[Based on Hand et al. (2001: pg. 142).  Ordered.]] absent (0); weakly developed (1); strongly developed (2).
+  
+
+165. Lower c labially swollen [[Based on Storch et al. (2002: pg. 191).  The derived state is seen in Tachypteron.]] not (0); lower c labially swollen (1).
+  
+
+166. Lower c labial cingulum [[Based on Hand et al. (2001: pg. 142).  Ordered.]] labial cingulum absent (0); weakly developed (1); well developed (2).
+  
+
+167. Lower c labial cingular structures [[Based on Storch et al. (2002: pg. 191).  Derived state in Tachypteron.  Can not be scored in taxa lacking a labial cingulum.]] present (0); absent (1).
+  
+
+168. Lower p1 presence  [[From Simmons and Geisler (1998: character 20); Simmons and Conway (2001: character 40); Giannini and Simmons (2005: character 47); Storch et al. (2002: pg. 191). This tooth is sometimes called p2 (e.g., Miller, 1907).  As far as we know, it only ever has one root.]] p1 present (0); absent (1).
+  
+
+169. Lower p1 number of roots [[New character.]] one root (0); two roots (1).
+  
+
+170. Lower p1 shape [[Modified from Giannini and Simmons (2005: character 47).  Unordered.]] large and cuspidate (0); peg-like with flattened crown (1); tiny spicule with undifferentiated crown (2).
+  
+
+171. Lower p1 distal cuspule [[New character]] absent (0); cuspule present (1).
+  
+
+172. Lower p1 and p4 relative crown length [[Based on Gunnell et al. (2008: pg. 8); Storch et al. (2002: pg. 194). Using ATOL locus terminolgy, these are the first and second premolars in taxa with 3 premolars, so they are adjacent teeth. Ordered.]] p1 longer than p4 (0); subequal (1); p1 shorter than p4 (2).
+  
+
+173. Lower p4 presence [[Modified from Simmons and Geisler (1998: character 20); Wetterer et al. (2000: character 58); Simmons and Conway (2001: character 41).  This tooth is homologous to the tooth traditionally called p3; the terminology used here follows that of the ATOL Mammals project, which recognizes that five upper premolars are primitive for Mammalia.  In bats with 3 lower premolars, this is the middle tooth.  It is probably homologous with the tooth called p2  in many taxa with only two premolars (e.g., Hand et al., 2001) but that will need to be evaluated on a taxon-by-taxon basis.]] p4 present (0); absent (1).
+  
+
+174. Lower p4 number of roots [[Modified from Simmons and Conway (2001: character 42); Gunnell et al. (2008: pg. 8); Storch et al. (2002: pg. 196).  Ordered.  Three roots seen only in Eppsinycteris among archaic bats (Storch et al. 2002: pg. 196). Ordered.]] three roots (0); two roots (1); one root (2).
+  
+
+175. Lower p4 orientation of roots when two are present [[Based on Hand (1002: pg. 142). Ordered.]] two roots oriented longitudinally with resepct to the long axis of the tooth row (0); two roots oriented slightly obliquely (1); two roots oriented stongly obliquely to the long axis of the toothrow (2).
+  
+
+176. Lower p4 alignment within toothrow [[From Wetterer et al. (2000: character 59).  Ordered.]] p4 aligned in row with surrounding teeth when seen in occlusal view (0); p4 lingually displaced from toothrow, not in line with other teeth (1); p4 labially displaced from toothrow, not in line with other teeth (2).
+  
+
+177. Lower p4 anterior diastema [[From Giannini and Simmons (2005: character 48).  Distribution of this character will need to be checked to make sure that it does not code for loss of p1 twice in cases where that tooth is absent.]] no diastema between p4 and next adjacent anterior tooth (p1 or C) (0); conspicuous diastema present (1).
+  
+
+178. Lower p4 overall morphology [[Based on Smith et al. (2007: pg. 1007).  This character may overlap with a subsequent character comparing crown morphology of p4 and p5.  Ordered.]] p4 tribosphenic with a distinct trigonid and talonid (0); p4 premolariform, with cusps but not arranged in tribosphenic pattern (1); p4 peglike or nearly featureless (2).
+  
+
+179. Lower p4 anterolingual cuspule [[]] absent (0); cuspule present (1).
+  
+
+180. Lower p4 lingual cuspule [[]] absent (0); cuspule present (1).
+  
+
+181. Lower p4 distal cuspule [[]] absent (0); cuspule present (1).
+  
+
+182. Lower p4 posterior crests [[From Morgan and Czaplewski (2003: character 10).  Does this refer to an incipient talonid on p4?  If so, it may overlap with the preceding character (if we define "molariform" as a tooth with a talonid).  Can be scored only in taxa that have at least one crest.]] two posterior crests separated by a concavity (0); only one posterior crest present  (1).
+  
+
+183. Lower p4 occlusal outline [[Modified from Morgan and Czaplewski (2003: character 11).]] long and strongly laterally compressed (length/width > or = 1.7) (0); short and broad (length/width < 1.7) (1).
+  
+
+184. Lower p4 labial cingulid development [[Based on Storch et al. (2002: pg. 196).  Ordered.]] labial cingulid well developed (0); weakly developed (1); absent (2).
+  
+
+185. Lower p4 and p5 relative crown height [[Modified from Simmons (1996: character 18), Wetterer et al. 2000: character 58); Smith et al. (2007: pg. 1007).  Refers to crown height as seen in labial view, as measured from the base of the tooth to the tip of the highest point on the crown.  Ordered.]] p4 much taller than p5 (0); p4 slightly taller than p5 (1); p4 and p5 subequal in height (2); p4 slightly shorter than p5 (3); p4 very small, much shorter than p5 (4).
+  
+
+186. Lower p4 and p5 relative crown length [[Modified from Simmons and Conway (2001: character 43); Storch et al. (2002: pg. 194); Smith et al. (2007: pg. 1007).  Refers to maximun crown length as measured mesiodistally along the tooth as seen in labial or lingual view.  Ordered.]] crown length of p4 greater than length of p5 (0); p4 and p5 subequal in length (1); p4 length less than p5 length but more than one-half the length of p5 (2); p4 less than or equal to one-half the  length of p5 (3).
+  
+
+187. Lower p4 and p5 crown morphology [[Based on Gunnell et al. (2008: pg. 9). ]] crown morphology of p4 and p5 similar (0); p4 and p5 with different crown morphologies (1).
+  
+
+188. Lower p5 number of roots [[Based on Hand et al. (1994: pg. 376).  Ordered.]] three roots (0); two roots (1); one root (2).
+  
+
+189. Lower p5 orientation of roots when two are present [[Based on Hand (1002: pg. 142).  Ordered.]] two roots oriented longitudinally with resepct to the long axis of the tooth row (0); two roots oriented slightly obliquely  (1); two roots oriented stongly obliquely to the long axis of the toothrow (2).
+  
+
+190. Lower p5 paraconid [[Based on Smith et al. (2007: pg. 1005, 1007).  Ordered.]] paraconid large and high (0); small and low (1); very low (2); cusp absent (3).
+  
+
+191. Lower p5 paracristid presence [[Based on Smith et al. (2007: pg. 1007).  A paracristid can be present in the absence of a paraconid (e.g., Desmodus).]] paracristid present (0); absent (1).
+  
+
+192. Lower p5 lingual cingulid [[Based on Smith et al. (2007: pg. 1004, 1007).  Ordered.]] absent (0); partial lingual cingulum present (1); complete lingual cingulum present (2).
+  
+
+193. Lower p5 labial cingulid development [[Based on Storch et al. (2002: pg. 196). Ordered.]] labial cingulid strongly developed (0); weakly developed (1); absent (2).
+  
+
+194. Lower p5 labial cingulid form [[Based on Storch et al. (2002: pg. 195); Smith et al. (2007: pg. 1007).  Apprarently refers to the cingulid as seen in labial view.]] straight (0); undulate (1).
+  
+195. Lower p5 labial cingulum thickness [[Can only be scored in taxa which have a labial cingulum on p5.  For this character we define thickness as the dorsalventral height of the cingulum when seen in labial view.]] cingulum of constant thickness throughout length (0); thicker toward distal end (1).
+  
+
+196. Lower p5 presence of lingual lobe [[Similar to lobe on upper P5, but on lower p5.]] absent (0); present (1).
+  
+
+197. Lower p5 extension of lingual lobe [[Can only be scored in taxa with a lingual lobe.  Derived state (1) seen in Noctilio.  Posterior expansion is when the to the lingual lobe extends past the distolabial corner of the tooth.]] lingual (0); posterior (1).
+  
+
+198. Lower p5 lingual lobe cusp [[New character.  Cusp on lingual edge of lingual lobe.  Requires a lingual lobe to be scored.]] absent (0); present (1).
+  
+
+199. Lower p5 lingual cuspule [[Score only in taxa where lingual cingulum is absent]] absent (0); Cuspule present (1).
+  
+
+200. Lower p5 metaconid [[New character.  Ordered.]] absent (0); one metaconid (1); two metaconids (2).
+  
+
+201. Lower p5 metaconid development [[Modified from Simmons and Geisler (1998: Table 3); Smith et al. (2007: pg. 1004, 1007); Gunnell et al. (2008: pg. 3).  This is a cusp on the posterolingual shelf of the tooth, sometimes called simply a "posterolingual cusp."  Ordered.]] metaconid large (0); metaconid present but small (1).
+  
+
+202. Lower p5 protocristid [[New character.  Ordered.]] absent (0); one protocristid (1); two protocristids (2).
+  
+
+203. Lower p5 postmetacristid [[Based on Smith et al. (2007: pg. 1007) who described this as the "crest at back of metaconid."  Needs to be quantified.  Ordered.]] absent (0); short (1); long (2).
+  
+
+204. Lower p5 talonid length [[From Simmons and Geisler (1998: table 3); Smith et al. (2007: pg. 1007).  Ordered.]] talonid long (0); talonid short (1); absent (2).
+  
+
+205. Lower p5 protoconid development [[Based on Storch et al. (2002: pg. 195).  Unordered.]] less robust, taller, sharper (0); more robust, shorter, more blunt (1); extremely short (2).
+  
+
+206. Lower p5 mesial cuspule [[Based on Gunnell et al. (2008: pg. 8).  Sometimes called an "anterior cuspule" e.g., Gunnell et al. (2008).  This is a small cuspule that is developed (or not) on the mesial cingulid.  It is distinct from the paraconid.]] absent (0); cuspule present (1).
+  
+
+207. Lower p5 overall morphology [[Based on Hand et. al. (1994: pg.s 378-379) and Smith et al. (2007: pg. 1007).  Ordered.]] p5 triosphenic with distinct trigonid and talonid (0); p5 premolariform, with cusps but not arranged in tribosphenic pattern (1); p5 without distinct cusps, may be nearly featureless or peglike (2).
+  
+
+208. Lower p5 and m1 relative length [[Based on Hand et al. (2001: pg. 142).  Refers to mesiodistal length. Ordered.]] p5 and m1 subequal in length (0); p5 length less than m1 length but more than three-quarters the length of m1 (1); p5 length more than one half but less than three quarters the length of m1 (2); p5 length less than or equal to one-half the length of m1 (3).
+  
+
+209. Lower molar cusp morphology [[Based on Hand et al. (1994: pg. 376); Hand et al. (2001: pg. 143).]] cusps well individualized, concial or comprised of crests that meet to form a sharp point (0); cusps not well individualized, not very conical or pointed (1).
+  
+
+210. Lower molars lingual cingulid presence [[Based on Gunnell et al. (2008: pg 8).]] absent (0); lingual cingulid present (1).
+  
+
+211. Lower molars trigonid fovea [[Based on Gunnell et al. (2008: pg. 8).  This character scores for whether or not the trigonid basin is closed or open lingually.  When the trigonid fovea is "closed" the paraconid and metaconid are either close together or connected by a crest lingually.  When the trigonid fovea is "open" there is a distinct valley developed between paraconid and metaconid so the trigonid fovea drains lingually.]] trigonid fovea closed (0); trigonid fovea open lingually (1).
+  
+
+212. Lower molars position of hypoconulid [[Modified from Simmons and Geisler (1998: character 21); Hand et al. (1994: pg. 376); Smith et al. (2007: pg. 1005, 1007).  Twinning of the hypoconuiid and entoconid (state 3) is present in both the nyctalodont and myotodont conditions.  It is not clear if state 0 actually occurs in any bat, but it is included here for completeness.  Ordered.]] hypoconuiid located on distal border of talonid midway between hyponid and entoconid  (0); hypoconulid located on distolabial border of talonid, well-separated from entoconid, closer to midway point than to entoconid  (1); hypoconulid located on distolabial border of talonid, well-separated from entoconid but closer to entoconid than to midway point (2); hypoconulid located on labial border of talonid immediately posterior to and directly adacent to the entoconid, hypoconulid and entoconid may be partially fused at their bases ("twinning" of hypoconuilid and entoconid). (3).
+  
+
+213. Lower molars nyctalodont or myotodont [[Modified from Simmons and Geisler (1998: character 21); Simmons and Conway (2001: charater 46); Smith et al. (2007: pg. 1007).  In the nyctalodont condition, a well-developed cristid (usually called the postcristid) connects the hypoconid with the hypoconuild; this cristid forms the distal border of the talonid.  In contrast, in the myotodont condition the cristid connects the hypoconid with the entoconid, thus excluding the hypoconuild from the talonid basin.  This character can be scored only in taxa in which the hypoconuild and entoconid are twinned (see preceding character) and a postcristid is present. ]] nyctalodont (0); myotodont (1).
+  
+
+214. Lower molars with cristid between entoconid and midline hypoconulid [[Based on Menu and Sige (1971) and Smith (2007: pg. 1004).  Refers only to tribosphenic molars that are NOT nyctalodont or myotodont.  In these forms the hypoconulid is large and is located somewhere on the middle of the distal border of the tooth (it may be somewhat llingually displaced but does not lie on the lingual border of the tooth).  A cristid always connects the hypoconulid and the hypoconid, but the cristid between the hypoconulid and entoconid is only sometimes present.]] cristid present (0); absent (1).
+  
+215. Lower molars talonid basin depth [[Based on Smith et al. (2007: pg. 1007); Gunnell et al. (2008: pg 8).  Need better state descriptions.  Gunnell et al. (2008) referred to an "excavated" talonid basin, which is equated here with the "deep" condition. Basin absent is seen in Desmodus.  Ordered.]] basin absent (0); shallow (1); deep (2).
+  
+
+216. Lower molars talonid anteroposterior compression [[Based on Hand (1996: Figure 3).  Needs better state descriptions, probably should be quantified as a ratio of some sort.  Not clear how this may relate to the talonid width characters for m1, m2, and m3, and the m1 length/width character; there is probably some overlap.  ]] not (0); talonid anteroposteriorly compressed (1).
+  
+
+217. Lower molars lingual cusp relative height [[Based on Hand et al. (1994: pg. 378).   ]] relatively low  (0); relatively high (lingual cusps at least 75% height of labial cusps) (1).
+  
+
+218. Lower molars notches in cristid obliqua and postcristid [[From Morgan and Czaplewski (2003: character 13).  May overlap with other characters and may need to be split into separate characters for cristid obliqua and postcristid, may also need separate characters for different teeth.  Not sure how to distinguish states 1 and 2.  Ordered.]] notches absent (0); notches weakly developed (1); notches strongly developed, carnassia-like (2).
+  
+
+219. Lower molars notches in paracristid and protocristid [[New character. Ordered.]] Notches absent (0); Notches weakly developed (1); Notches strongly developed (2).
+  
+
+220. Lower molars cristid obliqua curature or flexion [[Based on Gunnell et al. (2008: pg. 3).  A flexed cristid obliqua is one that that extends anterolingually from the hypoconid and then abruptly angles back anterolabially.  Unordered.]] straight (0); gently curved (1); flexed (2).
+  
+
+221. Lower molars orientation of cristid obliqua  [[Modified from Simmons and Conway (2001: character 47); Hand et al. (1994: pg. 379); Smith et al. (2007: pg. 1008).  This character is part of a multistate description that is equivalent to the description of the hypoflexid Gunnell et al. (2008: pgs. 3, 6).  The cristid obliqua originates from the hypoconid; this character describes the orientation of the cristid obliqua at its mesial end where it approaches the trigonid (as seen in occlusal view).  The cristid need not actually contact the trigonid to be scored for this character.  Ordered.  State 0 in Wyonycteris.]] towards protoconid (0); directed toward a point in between protoconid and metaconid (1); towards metaconid (2).
+  
+
+222. Lower molars cristid obliqua termination on metaconid [[Based on Gunnell et al. (2008: pg. 7).  This character is part of a multistate description that is equivalent to the description of the hypoflexid Gunnell et al. (2008: pgs. 3, 6).  Score only in taxa that have a crisitid obliqua that terminates on the metacone (see preceeding character).]] cristid obliqua terminates at base of metaconid (0); cristid obliqua extends up flank of metaconid (1).
+  
+
+223. Lower molars groove paralleling cristid obliqua [[Based on Hand et al. (1994: pg. 379).  A "distinctive groove" paralleling the cristid obliqua is seen in Wyonycteris but apparently not in archaic bats (Hand et al., 1994).  Need a better description of the groove.]] absent (0); groove present (1).
+  
+
+224. Lower molars entocristid flexion [[Based on Gunnell et al. (2008: pg. 6).  The entocristid (= prentocristid) exends mesially from the entoconid.  Some taxa may also have a postentocristid (extending posteriorly from the entoconid) but that is not what is being scored here.  Height of the entocristid varies independently of flexion of this crest, and is scored in  separate characters for the lower molars. ]] not (0); labially flexed (1).
+  
+
+225. Lower molars entocristid distrupted [[Based on Hand (1998: fig 3).  The entocristid (= prentocristid) extends mesially from the entoconid.  This character describes whether or not the entocristid contacts the postvalid (= posterior wall of the trigonid); this varies independently from the height of the entocristid (e.g., Myzopoda has a high entocristid but one that is distrupted).  Height of the entocristid is treated as a separate character for m1 and m2.  Hand (1998) explicitly mentioned the present character as applying to m1-m3.  Ordered.]] entocristid contacts postvalid thus closing off lingual side of talonid basin (0); entocristid short (disrupted) so that talonid basin drains lingually (1); entocristid absent (2).
+  
+
+226. Lower molars height of protoconid and hypoconid [[From Simmons and Geisler (1998: Table 3).  Needs to be quantified somehow, it is not clear what the comparison should be with.]] not (0); unusually tall and robust (1).
+  
+
+227. Lower molars protoconid and hypoconid anteroposteriorly compressed [[Based on Storch et al. (2002: pg. 196).  Needs to be quantified.]] not compressed (0); protoconid and hypoconid anteroposteriorly compressed (1).
+  
+
+228. Lower molars protoconid and hypoconid ventral extension of base [[Based on Storch et al. (2002: pg. 196).  Dervied state seen in Eppsinycteris.]] not (0); protoconid and hypoconid with ventral extension of labial cusp base (1).
+  
+
+229. Lower molars protoconid and hypoconid buccal bulging [[Based on Hand et al. (2001: pg. 142).  Is this the same thing as the preceeding character?]] absent (0); prononounced buccal bulging present (1).
+  
+
+230. Lower m1 and m2 extent of cristid obliqua [[Modified from Simmons and Conway (2001: character 47); Hand et al. (1994: pg. 379); Smith et al. (2007: pg. 1008).  This character is part of a multistate description that is equivalent to the description of the hypoflexid Gunnell et al. (2008: pgs. 3, 6).  The cristid obliqua originates from the hypoconid; this character describes where it terminates relative to the trigonid, i.e., the extent of the cristid obliqua at its mesial end.  In many taxa it reaches the posterior wall of the tridonid, but in some forms it terminates before reaching that wall.]] does not reach trigonid (0); reaches trigonid (1).
+  
+
+231. Lower m1 and m2 hypoconulid size [[Based on Hand et al. (1994: pg. 379), Gunnell et al. (2008: pgs. 6, 7); Smith et al. (2007: pg. 1007).  Needs to be quantified somehow.  The lower m3 apparently varies independently of m1 and m2 for this character (Storch et al., 2002: pg. 195).  Ordered.]] large (0); small and low (1); absent (2).
+  
+
+232. Lower m1 and m2 entocristid height [[Based on Gunnell et al. (2008: pgs. 6, 7).  The entocristid (= prentocristid) exends mesially from the entoconid.  Some taxa may also have a postentocristid (extending posteriorly from the entoconid) but that is not what is being scored here.  Height of the entocristid varies independently of flexion of this crest, which is scored in a separate character for the lower molars as a group.  Can only be score in taxa with an undisrupted entocristid.]] low crest (0); high crest (1).
+  
+
+233. Lower m1 and m2 relative length [[Based on Gunnell et al. (2008: pg. 7); Hand (1998: fig 3).  Ordered. Refers to maximum mesiodistal length.]] m1 longer than m2 (0); m1 and m2 subequal (1); m1 shorter than m2 (2).
+  
+
+234. Lower m1 relative height of protoconid and hypoconid [[Based on Hand et al. (1994: pg. 376); Hand et al. (2001: pg. 143).  This character began life as a comparison between the height of the talonid and trigonid.  We have chosen to compare the height of the protoconid and hypoconid instead since these cusps are always present, easy to see in both labial and lingual views, and tend to be representative of the other cusps in terms of trigonid vs talonid cusp height.  Split into three characters (one for each molar locus) since the condition varies across loci in some taxa (e.g., Macrotus).  Ordered.]] protoconid markedly higher than hypoconid (0); protoconid slightly higher than hypoconid (1); protoconid and hypoconid subequal in height (2); protoconid slightly smaller than hypoconid (3).
+  
+
+235. Lower m1 protoconid height compared to subsequent molars [[Refers to the teeth as seen in labial view. Ordered.]] m1 protoconid higher than m2 or m3 protoconid (0); m1 protoconid subequal in height to protoconids on m2 and m3 (1); m1 protoconid noticably shorter than protoconids on m2 and m3 (2).
+  
+
+236. Lower m1 paraconid presence [[Ferom Wetterer et al. (2000: character 68).]] paraconid present on m1 (0); absent (1).
+  
+
+237. Lower m1 metaconid presence [[From Wetterer et al. (2000: character 69).]] metaconid present on m1 (0); absent (1).
+  
+
+238. Lower m1 relative height of paraconid and metaconid [[Based on Hand et al. (2001: pg. 143).  Can be scored only in taxa where both cusps are present. M1 differs from M2/M3 in some taxa (e.g., Macrotus).  Ordered.]] paraconid markedly taller than metaconid (0); cusps subequal in height (1); paraconid markedly shorter than metaconid (2).
+  
+
+239. Lower m1 presence of metacristid [[New character.  The metacristid is a crest that extends mesially from the metaconid (usually toward the paraconid).]] present (0); absent (1).
+  
+
+240. Lower m1 paracristid and metacristid relative length [[Based on Hand (1998: fig 3).  The paracristid extends between the protoconid and the paraconid; the metacristid extends mesially from the metaconid (usually toward the paraconid).  This character cannot be scored unless both cristids are present.  Ordered.]] paracristid markedly shorter that metacristid (0); paracristid and metacristid subequal in length (1); paracristid markedly longer than metacristid (2).
+  
+
+241. Lower m1 entoconid development [[Modified from Wetterer et al. (2000: character 70); Smith et al. (2007: pg. 1005, 1007).  Ordered.]] strongly developed, tall (0); weakly developed, low (1); entoconid absent (2).
+  
+
+242. Lower m1 entocristid accessory cusp [[New character.  This is a cusp located anterior to the entoconid and present on the entocristid.]] absent (0); present (1).
+  
+
+243. Lower m1 labial cingulid development [[Modified from Hand et al. (1994: pg. 379); Gunnell et al. (2008: pg. 8); Hand et al. (2001: pg. 142); Storch et al. (2002: pg. 196).  Ordered.  According to Hand et al. (1994), presence of a well developed buccal cingulum may be a synapomorphy of bats.  Described by Hand et al. (2001: 142) as "sinuous" in some taxa (e.g. molossids), need to determine if shape varies as well as degree of development.  ]] strongly developed (0); weakly developed (1); absent (2).
+  
+
+244. Lower m1 labial cingulid completeness [[Based on Smith et al. (2007: pg. 1005, 1007).  Not clear how this relates to the preceeding character.  Score only in taxa with a labial cingulid (ectocingulid) present. Unordered.]] labial cingulid complete (0); incomplete posteriorly (1); incomplete anteriorly (2).
+  
+
+245. Lower m1 precingulum [[Cingulum located anterior to paraconid.]] absent (0); present (1).
+  
+
+246. Lower m1 precingulid and labial cingulid connection [[Can only be scored in taxa that have a precingulum and a labial cingulid.]] not connected (0); cingulids confluent around mesiolabial corner of tooth (1).
+  
+
+247. Lower m1 alignment of lingual cusps [[From Morgan and Czaplewski (2003: character 12).  Can be scored only in taxa that have all three lingual cusps present.]] paraconid, metaconid, and entoconid aligned in a straight line  (0); paraconid situated labial to a line drawn through the metaconid and entoconid (1).
+  
+
+248. Lower m1 angle between protoconid and metaconid [[Based on Hand et al. (1994: pg. 376), who noted that the degree of obliqueness of the protoconid and the relative distance between the tips of the protoconid and metaconid are phylogenetically important in distinguishing some Eocene bats.  This information may be captured in the angle between the protoconid and metaconid as seen in mesial view (measured along the plane of the protocristid with the vertex of the angle being the center of the notch between these the two cusps). Ordered.]] large angle (0); intermediate angle (1); small angle (2).
+  
+
+249. Lower m1 talonid width [[Based on Gunnell et al. (2008: pgs 3, 5, 6, 7); Hand et al. (2001: pg. 12); Storch et al. (2002: pg. 195); Smith et al. (2007: pg. 1007).  Refers to maximum width of talonid compared to maximum width of trigonid as measured from the lingual to the labial side of the tooth in occlusal view.  When the talonid is narrower than the trigonid, it may be referred to as "blade-like."  Ordered.]] talonid wider than trigonid (0); talonid and trigonid subequal (1); talonid narrower than trigonid (2).
+  
+
+250. Lower m1 hypoflexid depth [[Based on Gunnell et al. (2008: pgs. 3, 6).  Refers to an indentation in the labial base of the tooth as seen in occlusal view.  Ordered.]] deep (0); shallow (1); absent (2).
+  
+
+251. lower m1 length/width ratio [[Based on Smith et al. (2007: pg. 1007).  Measured as maximum length of m1 vs maximum width across trigonid of that tooth. Not limited in this fashion by Smith et al. (2007), who refered only to overall proportions of lower molars in general, but limited here to make sure that the measurements use uniform landmarks and loci.  It will be necessary to collect data on a breadth of taxa to delimit character states and see if this character works at all. Ordered.]] 1.10-1.44 (0); 1.45-1.74 (1); 1.75-2.04 (2); 2.05-2.19 (3); 2.20-2.70 (4); 3.00-4.60 (5).
+  
+
+252. Lower m2 and m3 relative height of paraconid and metaconid [[Based on Hand et al. (2001: pg. 143).  Can be scored only in taxa where both cusps are present. M1 differs from M2/M3 in some taxa (e.g., Macrotus).  Ordered.]] subequal in height (0); paraconid slightly shorter than metaconid (1); paraconid markedly shorter than metaconid (2).
+  
+
+253. Lower m2 and m3 precingulum [[Cingulum located anterior to paraconid.]] absent (0); present (1).
+  
+
+254. Lower m2 and m3 precingulid and labial cingulid connected. [[Can only be scored in taxa that have a precingulid and labial cingulid present.]] not connected (0); cingulids confluent around mesiolabial corner of tooth (1).
+  
+
+255. Lower m2 presence [[From Wetterer et al. (2000:  character 65); Giannini and Simmons (2005: character 54).]] m2 present (0); absent (1).
+  
+
+256. Lower m2 crown morphology [[From Giannini and Simmons (2005: character 54).  Ordered.  States 1 and 2 in some pteropodids.  "Simplifed crown structure" refers to reduced cusps and crests across the whole tooth crown, not loss of one or two cusps on an otherwise similar tooth.  Ordered.]] m2 with crown structure resembling m1 (0); simplified cuspidate structure compared to m1 (1); m2 peg-like with flattened crown (2).
+  
+
+257. Lower m2 height of trigonid relative to talonid cusps [[Based on Hand et al. (1994: pg. 376); Hand et al. (2001: pg. 143).  We have chosen to compare the height of the protoconid and hypoconid since these cusps are always present, easy to see in both labial and lingual views, and tend to be representative of the other cusps in terms of trigonid vs talonid cusp height.  Split into three characters (one for each molar locus) since the condition varies across loci in some taxa. Ordered.]] protoconid markedly higher than hypoconid (0); protoconid slightly higher than hypoconid (1); protoconid and hypoconid subequal in height (2).
+  
+
+258. Lower m2 labial cingulid development [[Modified from Hand et al. (1994: pg. 379); Gunnell et al. (2008: pg. 8); Hand et al. (2001: pg. 142); Storch et al. (2002: pg. 196).  Ordered.  According to Hand et al. (1994), presence of a well developed buccal cingulum may be a synapomorphy of bats.  Described by Hand et al. (2001: 142) as "sinuous" in some taxa (e.g. molossids), need to deterimine if shape varies as well as degree of development.  ]] strongly developed (0); weakly developed (1); absent (2).
+  
+
+259. Lower m2 labial cingulid completeness [[Based on Smith et al. (2007: pg. 1005, 1007).  Score only in taxa with a labial cingulid (ectocingulid) present. Unordered.]] labial cingulid complete (0); incomplete posteriorly (1); incomplete anteriorly (2).
+  
+
+260. Lower m2 entoconid development [[Modified from Wetterer et al. (2000: character 70); Smith et al. (2007: pg. 1005, 1007).  Ordered.  Needs to be quantified somehow.]] strongly developed, tall (0); weakly developed, low (1); very weak, small (2); absent (3).
+  
+
+261. Lower m2 talonid width [[Based on Gunnell et al. (2008: pgs 3, 5, 6, 7); Hand et al. (2001: pg. 142); Storch et al. (2002: pg. 195); Smith et al. (2007: pg. 1007).  Refers to maximum width of talonid compared to maximum width of trigonid as measured from the lingual to the labial side of the tooth in occlusal view.  When the talonid is narrower than the trigonid, it may be referred to as "blade-like."  Ordered.]] talonid wider than trigonid (0); talonid and trigonid subequal (1); talonid narrower than trigonid (2).
+  
+
+262. Lower m2 hypoflexid depth [[Based on Gunnell et al. (2008: pgs. 3, 6).  Refers to an indentation in the labial base of the tooth as seen in occlusal view.  Ordered.]] deep (0); shallow (1); absent (2).
+  
+
+263. Lower m3 presence [[From Wetterer et al. (2000: character 66); Simmons and Conway (2001: character 45).]] m3 present (0); absent (1).
+  
+
+264. Lower m3 crown morphology [[Modified from Giannini and Simmons (2005: character 54).  In state 1, the morphology of the crown of m3 is distinctly different from m2, frequently involving reduction of cusps and crests across the whole tooth crown, not loss of one or two cusps on an otherwise similar tooth.]] m3 crown morphology similar to that of m2 (0); m3 markedly different from m2 (1).
+  
+
+265. Lower m3 length [[Based on Gunnell et al. (2008: pg. 2, 9); Hand et al. (2001: pg. 142).  Ordered.]] m3 length subequal to that of m2 (0); m3 slightly shorter (>75%) than m2 (1); m3 length much less than m2 (2).
+  
+
+266. Lower m3 number of roots [[New character.]] 2 roots (0); 1 root (1).
+  
+
+267. Lower m3 labial cingulid development [[Modified from Hand et al. (1994: pg. 379); Gunnell et al. (2008: pg. 8); Hand et al. (2001: pg. 142); Storch et al. (2002: pg. 196).  Ordered.  According to Hand et al. (1994), presence of a well developed buccal cingulum may be a synapomorphy of bats.  Described by Hand et al. (2001: 142) as "sinuous" in some taxa (e.g. molossids), need to deterimine if shape varies as well as degree of development.  ]] strongly developed (0); weakly developed (1); absent (2).
+  
+
+268. Lower m3 labial cingulid completeness [[Based on Smith et al. (2007: pg. 1005, 1007).  Score only in taxa with a labial cingulid (ectocingulid) present. Unordered.]] labial cingulid complete (0); incomplete posteriorly (1); incomplete anteriorly (2).
+  
+
+269. Lower m3 extent of cristid obliqua [[Modified from Simmons and Conway (2001: character 47); Hand et al. (1994: pg. 379); Smith et al. (2007: pg. 1008).  This character is part of a multistate description that is equivalent to the description of the hypoflexid Gunnell et al. (2008: pgs. 3, 6).  The cristid obliqua originates from the hypoconid; this character describes where it terminates relative to the trigonid, i.e., the extent of the cristid obliqua at its mesial end.  In many taxa it reaches the posterior wall of the tridonid, but in some forms it terminates before reaching that wall.  In a few taxa the cristid obliqua is entirely absent.  Ordered.]] reaches trigon (0); present but does not reach trigon (1); cristid obliqua absent (2).
+  
+
+270. Lower m3 hypoconid presence [[New character.]] present (0); absent (1).
+  
+
+271. Lower m3 height of protoconid relative to hypoconid [[Based on Hand et al. (1994: pg. 376); Hand et al. (2001: pg. 143).  We have chosen to compare the height of the protoconid and hypoconid since these cusps are always present, easy to see in both labial and lingual views, and tend to be representative of the other cusps in terms of trigonid vs talonid cusp height.  Split into three characters (one for each molar locus) since the condition varies across loci in some taxa.  Can be scored only in taxa having both a protoconid and a hypoconid.  Ordered.]] protoconid notably higher than hypoconid (0); protoconid slightly higher than hypoconid (1); protoconid and hypoconid subequal in height (2); protoconid smaller than hypoconid (3).
+  
+
+272. Lower m3 hypoflexid depth [[Based on Gunnell et al. (2008: pgs. 3, 6).  Refers to an indentation in the labial base of the tooth as seen in occlusal view.  Needs better state descriptors.  May be correlated with the position of termination of the cristid obliqua.  Ordered.]] absent (0); shallow (1); deep (2).
+  
+
+273. Lower m3 entocristid orientation [[Based on Smith et al. (2007: pg. 1008).  Can only be scored on taxa that do not have a flexed entocristid.  Ordered.]] transverse to long axis of tooth (0); oblique to long axis of tooth (1); parallel to long axis of tooth (2).
+  
+
+274. Lower m3 presence of postcristid [[Absent in Megaderma.]] present (0); absent (1).
+  
+
+275. Lower m3 postcristid orientation [[Based on Smith et al. (2007: pg. 1008).  Refers to the crest that runs labially from the hypoconid to either the hypoconulid or entoconid.]] directed posterolabially at an oblique angle to the long axis of the tooth (0); perpendicular to the long axis of the tooth (1).
+  
+
+276. Lower m3 hypoconulid presence [[]] present (0); absent (1).
+  
+
+277. Lower m3 hypoconulid size [[Based on Hand et al. (1994: pg. 379), Gunnell et al. (2008: pgs. 6, 7); Storch et al. (2002: pg. 195).  Ordered.]] large (0); small and low (1).
+  278. Lower m3 talonid width [[Based on Gunnell et al. (2008: pgs 3, 5, 7); Hand et al. (2001: pg. 12, 13); Smith et al. (2007: pg. 1007). Refers to maximum width of talonid compared to maximum width of trigonid as measured from the lingual to the labial side of the tooth in occlusal view.  When the talonid is narrower than the trigonid, it may be referred to as "blade-like." By convention, for this character we measure the maximum width of the tooth across the talonid region (usually that occurs roughly across where the hyponid is to the middle of the opposite side of the tooth, sometimes the entoconid is there but sometimes not) and compare it to the maximum width across the trigonid (usually from protonid region straight across).  The measurements go roughly perpendicular to the long axis of the tooth. Ordered.]] talonid wider than trigonid (0); talonid and trigonid subequal (1); talonid narrower than trigonid (2).

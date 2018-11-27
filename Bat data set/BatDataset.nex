@@ -1,0 +1,1831 @@
+﻿#NEXUS
+
+[ File output by Morphobank v3.0 (http://www.morphobank.org); 2018-11-22 12.09.12 ]
+
+BEGIN TAXA;
+	DIMENSIONS NTAX=113;
+	TAXLABELS
+		'Mormoops blainvillei'
+		'Pteronotus davyi'
+		'Pteronotus parnellii'
+		'Macrotus californicus'
+		'Macrotus waterhousii'
+		'Lampronycteris brachyotis'
+		'Micronycteris brosseti'
+		'Micronycteris hirsuta'
+		'Micronycteris homezi'
+		'Micronycteris matses'
+		'Micronycteris megalotis'
+		'Micronycteris microtis mexicana'
+		'Micronycteris microtis microtis'
+		'Micronycteris minuta'
+		'Micronycteris schmidtorum'
+		'Neonycteris pusilla'
+		'Desmodus rotundus'
+		'Diaemus youngi'
+		'Diphylla ecaudata'
+		'Lonchorhina aurita'
+		'Lonchorhina inusitata'
+		'Lonchorhina orinocensis'
+		'Chrotopterus auritus'
+		'Lophostoma brasiliense brasiliense'
+		'Lophostoma brasiliense minuta'
+		'Lophostoma carrikeri'
+		'Lophostoma evotis'
+		'Lophostoma kalkoae'
+		'Lophostoma occidentalis'
+		'Lophostoma silvicolum centralis'
+		'Lophostoma silvicolum laephotis'
+		'Lophostoma silvicolum silvicolum'
+		'Lophostoma schulzi'
+		'Macrophyllum macrophyllum'
+		'Mimon bennettii'
+		'Mimon cozumelae'
+		'Mimon crenulatum crenulatum'
+		'Mimon crenulatum keenani'
+		'Mimon crenulatum longifolium'
+		'Phyllostomus discolor discolor'
+		'Phyllostomus discolor verrucosus'
+		'Phyllostomus elongatus'
+		'Phyllostomus hastatus hastatus'
+		'Phyllostomus hastatus panamensis'
+		'Phylloderma stenops septentrionalis'
+		'Phylloderma stenops stenops'
+		'Notonycteris magdalenensis'
+		'Notonycteris sucharadeus'
+		'Tonatia saurophila bakeri'
+		'Tonatia saurophila maresi'
+		'Tonatia saurophila saurophila'
+		'Trachops cirrhosus cirrhosus'
+		'Trachops cirrhosus coffini'
+		'Vampyrum spectrum'
+		'Anoura caudifer'
+		'Anoura cultrata'
+		'Anoura geoffroyi geoffroyi'
+		'Anoura geoffroyi peruana'
+		'Anoura latidens'
+		'Brachyphylla cavernarum'
+		'Brachyphylla nana'
+		'Choeroniscus godmani'
+		'Choeroniscus minor'
+		'Choeroniscus periosus'
+		'Choeronycteris mexicana'
+		'Erophylla bombifrons'
+		'Erophylla sezekorni'
+		'Glossophaga commissarisi'
+		'Glossophaga leachii'
+		'Glossophaga longirostris'
+		'Glossophaga morenoi'
+		'Glossophaga soricina'
+		'Lionycteris spurrelli'
+		'Lonchophylla handleyi'
+		'Lonchophylla mordax'
+		'Lonchophylla robusta'
+		'Lonchophylla thomasi'
+		'Monophyllus plethodon'
+		'Monophyllus redmani'
+		'Musonycteris harrisoni'
+		'Palynephyllum antimaster 2'
+		'Phyllonycteris aphylla'
+		'Phyllonycteris major'
+		'Phyllonycteris poeyi'
+		'Hylonycteris underwoodi'
+		'Leptonycteris curasoae'
+		'Leptonycteris nivalis'
+		'Leptonycteris yerbabuenae'
+		'Lichonycteris obscura'
+		'Platalina genovensium'
+		'Xeronycteris vieirai'
+		'Carollia brevicauda'
+		'Carollia perspicillata'
+		'Rhinophylla alethina'
+		'Rhinophylla fischerae'
+		'Rhinophylla pumilio'
+		'Glyphonycteris daviesi'
+		'Glyphonycteris sylvestris'
+		'Trinycteris nicefori'
+		'Artibeus jamaicensis'
+		'Artibeus lituratus'
+		'Artibeus obscurus'
+		'Artibeus gnomus'
+		'Enchisthenes hartii'
+		'Platyrrhinus helleri'
+		'Uroderma bilobatum'
+		'Vampyrodes caraccioli'
+		'Vampyrodes major'
+		'Pygoderma bilabiatum'
+		'Sturnira lilium'
+		'Noctilio albiventris'
+		'Noctilio leporinus'
+		'Thyroptera tricolor'
+	;
+ENDBLOCK;
+
+
+
+BEGIN CHARACTERS;
+	DIMENSIONS NCHAR=278;
+	FORMAT DATATYPE=STANDARD MISSING=? GAP=- SYMBOLS="0123456";
+
+	CHARLABELS
+		 [1] 'Upper incisors direction of projection of tooth shaft'
+		 [2] 'Upper incisors orientation of tip of crown'
+		 [3] 'Upper I1 presence'
+		 [4] 'Upper I1 crown differentiation'
+		 [5] 'Upper I1 shape of occlusal margin'
+		 [6] 'Upper I1 form of lobes'
+		 [7] 'Upper I1 direction of lobe projection'
+		 [8] 'Upper I1 position of pointed main cusp'
+		 [9] 'Upper I1 distal accessory cusp'
+		 [10] 'Upper I1 relative size of pointed mesial cusp'
+		 [11] 'Upper I1 lingual cingulum presence'
+		 [12] 'Upper I1 occlusion'
+		 [13] 'Upper incisors relative crown height'
+		 [14] 'Upper I2 occlusal exposure'
+		 [15] 'Upper I2 presence'
+		 [16] 'Upper I1 and I2 relative position'
+		 [17] 'Upper I2 crown morphology'
+		 [18] 'Upper I2 lingual cingulum presence'
+		 [19] 'Upper I2 and C diastema presence'
+		 [20] 'Upper C crown height'
+		 [21] 'Upper C crown proportions'
+		 [22] 'Upper C labially swollen'
+		 [23] 'Upper C anteromedial accessory cusp'
+		 [24] 'Upper C anteromedial groove'
+		 [25] 'Upper C lingual cingulum '
+		 [26] 'Upper C lingual cingulum indentation'
+		 [27] 'Upper C lingual cingulum cusp'
+		 [28] 'Upper C lingual cingulum slope'
+		 [29] 'Upper C labial cingulum development'
+		 [30] 'Upper C labial cingulum incompleteness'
+		 [31] 'Upper C distal cingulum'
+		 [32] 'Upper C posteromedial ridge'
+		 [33] 'Upper C posterolingual surface'
+		 [34] 'Upper C posterolateral accessory cusp'
+		 [35] 'Upper C posterolateral accessory cusp form'
+		 [36] 'Upper C posterolateral accessory cusp position'
+		 [37] 'Upper C posterolabial surface'
+		 [38] 'Upper C curvature'
+		 [39] 'Upper C angle of projection'
+		 [40] 'Upper P1 development'
+		 [41] 'Upper P1 number of roots'
+		 [42] 'Upper P1 labial cingulum presence'
+		 [43] 'Upper P1 position'
+		 [44] 'Upper P1 and P4 relative crown length'
+		 [45] 'Upper P4 presence'
+		 [46] 'Upper P4 number of roots'
+		 [47] 'Upper P4 position'
+		 [48] 'Upper P4 labial cingulum development'
+		 [49] 'Upper P4 lingual cingulum'
+		 [50] 'Upper P4 lingual cusp'
+		 [51] 'Upper P4 postparacrista'
+		 [52] 'Upper P4 postparacrista extent'
+		 [53] 'Upper P4 distal accessory cusps'
+		 [54] 'Upper P4 and P5 diastema presence'
+		 [55] 'Upper P4 and P5 relative crown length'
+		 [56] 'Upper P4 and P5 relative crown height'
+		 [57] 'Upper P5 lingual cingulum development'
+		 [58] 'Upper P5 anterior margin '
+		 [59] 'Upper P5 lingual cingular cusp'
+		 [60] 'Upper P5 labial cingulum development'
+		 [61] 'Upper P5 labial cingular cusp'
+		 [62] 'Upper P5 anterolabial cusp'
+		 [63] 'Upper P5 postparacrista'
+		 [64] 'Upper P5 postparacrista extent'
+		 [65] 'Upper P5 distal accessory cusps'
+		 [66] 'Upper P5 proportions in occlusal view'
+		 [67] 'Upper P5 and M1 diastema presence'
+		 [68] 'Upper P5 and M1/M2 alignment'
+		 [69] 'Upper P5 and M1 relative length'
+		 [70] 'Upper molars ectocingulum development'
+		 [71] 'Upper molars pericone presence'
+		 [72] 'Upper M1 and M2 diastema presence'
+		 [73] 'Upper M1 and M2 lingual cingulum'
+		 [74] 'Upper M1 and M2 stylar shelf presence'
+		 [75] 'Upper M1 and M2 protocone presence'
+		 [76] 'Upper M1 and M2 protocone and paracone relative height'
+		 [77] 'Upper M1 and M2 metacone and paracone relative height'
+		 [78] 'Upper M1 and M2 protocone sharpness and inclination'
+		 [79] 'Upper M1 and M2 metacone and paracone inclination'
+		 [80] 'Upper M1 and M2 angle between postparacrista and premetacrista'
+		 [81] 'Upper M1 and M2 postparacrista and premetacrisita contact'
+		 [82] 'Upper M1 and M2 trigon width and depth'
+		 [83] 'Upper M1 and M2 mesostyle presence and location'
+		 [84] 'Upper M1 and M2 mesostyle size and labial extent'
+		 [85] 'Upper M1 and M2 lingual displacement of contact between postparacrista and premetacrista '
+		 [86] 'Upper M1 and M2 mesostylar crest presence'
+		 [87] 'Upper M1 and M2 mesostylar crest direction'
+		 [88] 'Upper M1 and M2 cuspule on premetacrista presence'
+		 [89] 'Upper M1 and M2 paraconule presence'
+		 [90] 'Upper M1 and M2 metaloph presence'
+		 [91] 'Upper M1 and M2 secondary cusp on postprotocrista'
+		 [92] 'Upper M1 parastyle presence'
+		 [93] 'Upper M1 parastyle form'
+		 [94] 'Upper M1 parastyle separation from preparacrista'
+		 [95] 'Upper M1 parastyle length'
+		 [96] 'Upper M1 parastyle curvature'
+		 [97] 'Upper M1 ectoflexus'
+		 [98] 'Upper M1 single ectoflexus development'
+		 [99] 'Upper M1 double ectoflexus development'
+		 [100] 'Upper M1 preparacrista presence'
+		 [101] 'Upper M1 relative length of preparacrista and postparacrista'
+		 [102] 'Upper M1 relative length of postmetacrista and premetacrista'
+		 [103] 'Upper M1 trigon basin surface texture'
+		 [104] 'Upper M1 postprotocrista orientation'
+		 [105] 'Upper M1 postprotocrista extent '
+		 [106] 'Upper M1 metaconule presence'
+		 [107] 'Upper M1 endoloph presence'
+		 [108] 'Upper M1 endoloph contact with postprotocrista'
+		 [109] 'Upper M1 hypocone shelf development'
+		 [110] 'Upper M1 hypocone shelf width'
+		 [111] 'Upper M1 hypocone development'
+		 [112] 'Upper M2 presence'
+		 [113] 'Upper M2 parastyle presence'
+		 [114] 'Upper M2 parastyle form'
+		 [115] 'Upper M2 parastyle length'
+		 [116] 'Upper M2 parastlye curvature'
+		 [117] 'Upper M2 ectoflexus'
+		 [118] 'Upper M2 single ectoflexus development'
+		 [119] 'Upper M2 double ectoflexus development'
+		 [120] 'Upper M2 position of metacone'
+		 [121] 'Upper M2 relative length of postmetacrista and premetacrista'
+		 [122] 'Upper M2 orientation of postprotocrista'
+		 [123] 'Upper M2 endoloph presence'
+		 [124] 'Upper M2 endoloph contact with postprotocrista'
+		 [125] 'Upper M2 metaconule presence'
+		 [126] 'Upper M2 hypocone shelf development'
+		 [127] 'Upper M2 hypocone shelf width'
+		 [128] 'Upper M2 hypocone development'
+		 [129] 'Upper M3 presence'
+		 [130] 'Upper M3 reduction'
+		 [131] 'Upper M3 anterior segment size'
+		 [132] 'Upper M3 parastyle presence'
+		 [133] 'Upper M3 parastyle form'
+		 [134] 'Upper M3 parastyle length'
+		 [135] 'Upper M3 parastyle curvature'
+		 [136] 'Upper M3 paraconule presence'
+		 [137] 'Upper M3 postmetacrista'
+		 [138] 'Upper M3 premetacrista development'
+		 [139] 'Upper M3 metacone'
+		 [140] 'Upper M3 metastylar fovea presence'
+		 [141] 'Upper M3 protocone presence'
+		 [142] 'Upper M3 hypocone shelf presence'
+		 [143] 'Lower i1 presence'
+		 [144] 'Lower i1 morphology of cutting edge'
+		 [145] 'Lower i1 number of lobes'
+		 [146] 'Lower i1 trilobed morphology'
+		 [147] 'Lower i1 crown proporitions'
+		 [148] 'Lower i1 diastema between right and left teeth'
+		 [149] 'Lower i2 presence'
+		 [150] 'Lower i2 morphology of cutting edge'
+		 [151] 'Lower i2 number of lobes'
+		 [152] 'Lower i1 and i2 relative size'
+		 [153] 'Lower i1 and i2 position'
+		 [154] 'Lower i3 presence'
+		 [155] 'Lower i3 crown height'
+		 [156] 'Lower incisor alveoli spacing'
+		 [157] 'Lower incisors procumbent'
+		 [158] 'Lower c anterior diastema'
+		 [159] 'Lower c tip divergence'
+		 [160] 'Lower c space between base of left and right canines'
+		 [161] 'Lower c shape'
+		 [162] 'Lower c anterior cuspule presence'
+		 [163] 'Lower c posterior cingulid'
+		 [164] 'Lower c posterobasal cusp'
+		 [165] 'Lower c labially swollen'
+		 [166] 'Lower c labial cingulum'
+		 [167] 'Lower c labial cingular structures'
+		 [168] 'Lower p1 presence '
+		 [169] 'Lower p1 number of roots'
+		 [170] 'Lower p1 shape'
+		 [171] 'Lower p1 distal cuspule'
+		 [172] 'Lower p1 and p4 relative crown length'
+		 [173] 'Lower p4 presence'
+		 [174] 'Lower p4 number of roots'
+		 [175] 'Lower p4 orientation of roots when two are present'
+		 [176] 'Lower p4 alignment within toothrow'
+		 [177] 'Lower p4 anterior diastema'
+		 [178] 'Lower p4 overall morphology'
+		 [179] 'Lower p4 anterolingual cuspule'
+		 [180] 'Lower p4 lingual cuspule'
+		 [181] 'Lower p4 distal cuspule'
+		 [182] 'Lower p4 posterior crests'
+		 [183] 'Lower p4 occlusal outline'
+		 [184] 'Lower p4 labial cingulid development'
+		 [185] 'Lower p4 and p5 relative crown height'
+		 [186] 'Lower p4 and p5 relative crown length'
+		 [187] 'Lower p4 and p5 crown morphology'
+		 [188] 'Lower p5 number of roots'
+		 [189] 'Lower p5 orientation of roots when two are present'
+		 [190] 'Lower p5 paraconid'
+		 [191] 'Lower p5 paracristid presence'
+		 [192] 'Lower p5 lingual cingulid'
+		 [193] 'Lower p5 labial cingulid development'
+		 [194] 'Lower p5 labial cingulid form'
+		 [195] 'Lower p5 labial cingulum thickness'
+		 [196] 'Lower p5 presence of lingual lobe'
+		 [197] 'Lower p5 extension of lingual lobe'
+		 [198] 'Lower p5 lingual lobe cusp'
+		 [199] 'Lower p5 lingual cuspule'
+		 [200] 'Lower p5 metaconid'
+		 [201] 'Lower p5 metaconid development'
+		 [202] 'Lower p5 protocristid'
+		 [203] 'Lower p5 postmetacristid'
+		 [204] 'Lower p5 talonid length'
+		 [205] 'Lower p5 protoconid development'
+		 [206] 'Lower p5 mesial cuspule'
+		 [207] 'Lower p5 overall morphology'
+		 [208] 'Lower p5 and m1 relative length'
+		 [209] 'Lower molar cusp morphology'
+		 [210] 'Lower molars lingual cingulid presence'
+		 [211] 'Lower molars trigonid fovea'
+		 [212] 'Lower molars position of hypoconulid'
+		 [213] 'Lower molars nyctalodont or myotodont'
+		 [214] 'Lower molars with cristid between entoconid and midline hypoconulid'
+		 [215] 'Lower molars talonid basin depth'
+		 [216] 'Lower molars talonid anteroposterior compression'
+		 [217] 'Lower molars lingual cusp relative height'
+		 [218] 'Lower molars notches in cristid obliqua and postcristid'
+		 [219] 'Lower molars notches in paracristid and protocristid'
+		 [220] 'Lower molars cristid obliqua curature or flexion'
+		 [221] 'Lower molars orientation of cristid obliqua '
+		 [222] 'Lower molars cristid obliqua termination on metaconid'
+		 [223] 'Lower molars groove paralleling cristid obliqua'
+		 [224] 'Lower molars entocristid flexion'
+		 [225] 'Lower molars entocristid distrupted'
+		 [226] 'Lower molars height of protoconid and hypoconid'
+		 [227] 'Lower molars protoconid and hypoconid anteroposteriorly compressed'
+		 [228] 'Lower molars protoconid and hypoconid ventral extension of base'
+		 [229] 'Lower molars protoconid and hypoconid buccal bulging'
+		 [230] 'Lower m1 and m2 extent of cristid obliqua'
+		 [231] 'Lower m1 and m2 hypoconulid size'
+		 [232] 'Lower m1 and m2 entocristid height'
+		 [233] 'Lower m1 and m2 relative length'
+		 [234] 'Lower m1 relative height of protoconid and hypoconid'
+		 [235] 'Lower m1 protoconid height compared to subsequent molars'
+		 [236] 'Lower m1 paraconid presence'
+		 [237] 'Lower m1 metaconid presence'
+		 [238] 'Lower m1 relative height of paraconid and metaconid'
+		 [239] 'Lower m1 presence of metacristid'
+		 [240] 'Lower m1 paracristid and metacristid relative length'
+		 [241] 'Lower m1 entoconid development'
+		 [242] 'Lower m1 entocristid accessory cusp'
+		 [243] 'Lower m1 labial cingulid development'
+		 [244] 'Lower m1 labial cingulid completeness'
+		 [245] 'Lower m1 precingulum'
+		 [246] 'Lower m1 precingulid and labial cingulid connection'
+		 [247] 'Lower m1 alignment of lingual cusps'
+		 [248] 'Lower m1 angle between protoconid and metaconid'
+		 [249] 'Lower m1 talonid width'
+		 [250] 'Lower m1 hypoflexid depth'
+		 [251] 'lower m1 length/width ratio'
+		 [252] 'Lower m2 and m3 relative height of paraconid and metaconid'
+		 [253] 'Lower m2 and m3 precingulum'
+		 [254] 'Lower m2 and m3 precingulid and labial cingulid connected.'
+		 [255] 'Lower m2 presence'
+		 [256] 'Lower m2 crown morphology'
+		 [257] 'Lower m2 height of trigonid relative to talonid cusps'
+		 [258] 'Lower m2 labial cingulid development'
+		 [259] 'Lower m2 labial cingulid completeness'
+		 [260] 'Lower m2 entoconid development'
+		 [261] 'Lower m2 talonid width'
+		 [262] 'Lower m2 hypoflexid depth'
+		 [263] 'Lower m3 presence'
+		 [264] 'Lower m3 crown morphology'
+		 [265] 'Lower m3 length'
+		 [266] 'Lower m3 number of roots'
+		 [267] 'Lower m3 labial cingulid development'
+		 [268] 'Lower m3 labial cingulid completeness'
+		 [269] 'Lower m3 extent of cristid obliqua'
+		 [270] 'Lower m3 hypoconid presence'
+		 [271] 'Lower m3 height of protoconid relative to hypoconid'
+		 [272] 'Lower m3 hypoflexid depth'
+		 [273] 'Lower m3 entocristid orientation'
+		 [274] 'Lower m3 presence of postcristid'
+		 [275] 'Lower m3 postcristid orientation'
+		 [276] 'Lower m3 hypoconulid presence'
+		 [277] 'Lower m3 hypoconulid size'
+		 [278] 'Lower m3 talonid width'
+	;
+
+	STATELABELS
+		1
+		'orthodont'
+		'proodont'
+		,
+		2
+		'orthoclivous'
+		'retroclivous'
+		,
+		3
+		'I1 present'
+		'absent'
+		,
+		4
+		'crown clearly differentiated from root shaft '
+		'not differentiated from root shaft'
+		,
+		5
+		'large main cusp that tapers to a blunt point (additional lateral cusp may be present)'
+		'straight or slighlty convex and rounded'
+		'bilobed'
+		'blade-like with concave C-shaped cutting edge'
+		,
+		6
+		'mesial lobe smaller than distal lobe'
+		'lobes of equal size'
+		'mesial lobe larger than distal lobe'
+		,
+		7
+		'ventrally'
+		'mesially'
+		,
+		8
+		'main cusp offset mesially from axis of tooth'
+		'main cusp in center of tooth (so tooth crown is roughly bilaterally symmetrical)'
+		'main cusp offset distally from axis of tooth'
+		,
+		9
+		'absent'
+		'present'
+		,
+		10
+		'mesial cusp 2x the height of distal cusp'
+		'pointed mesial cusp only slightly higher than distal cusp'
+		,
+		11
+		'absent'
+		'present'
+		,
+		12
+		'I1 in contact with i1 or separated by a small gap when cheek teeth are in occlusion'
+		'I1 separated from i1 by a large gap when cheek teeth are in occlusion'
+		'I1 occludes with mesial side of i2'
+		'I1 occludes with anterior cingulum of lower canine.'
+		'I1 occludes with cingular shelf on lower canine, well posterior to i1'
+		'I1 occludes posterior to i1 in mandibular fossa'
+		,
+		13
+		'height of I1 less than height of I2'
+		'I1 and I2 subequal in height'
+		'height of I1 greater than height of I2 but less than twice the height of I2'
+		'height of I1 at least twice that of I2'
+		,
+		14
+		'I2 in normal position between I1 and C, not excluded from occlusion toothrow'
+		'I2 moved dorsally and excluded from occlusal toothrow by close apposition of I1 and C'
+		'I2 moved ventrally and excluded from occlusal toothrow by close apposition of I1 and C'
+		,
+		15
+		'I2 present'
+		'absent'
+		,
+		16
+		'I2 located more posterior than I1'
+		'I2 lateral to I1, not displaced posteriorly or anteriorly, incisors form transverse line'
+		'I2 displaced anteriorly'
+		,
+		17
+		'well developed crown morphology'
+		'simplified'
+		,
+		18
+		'absent'
+		'cingulum present'
+		,
+		19
+		'diastema present'
+		'diastema absent between I2 and C, teeth in contact'
+		,
+		20
+		'upper C greater than or equal to twice the height of I1'
+		'upper C much less than twice the height of I1'
+		,
+		21
+		'not'
+		'anteroposteriorly elongated'
+		,
+		22
+		'not'
+		'upper C labially swollen'
+		,
+		23
+		'no raised cingulum or cusp'
+		'raised cingulum present but cusp absent'
+		'cusp present but low'
+		'cusp tall, greater than half height of main cusp'
+		,
+		24
+		'groove absent'
+		'anteromedial groove present'
+		,
+		25
+		'lingual cingulum absent'
+		'faint lingual cingulum present'
+		'narrow well-developed cingulum present'
+		'wide well-developed cingulum present'
+		,
+		26
+		'absent'
+		'weakly developed'
+		'strongly developed'
+		,
+		27
+		'absent'
+		'present'
+		,
+		28
+		'not steep'
+		'steep'
+		,
+		29
+		'cingulum well developed and complete'
+		'cingulum weakly developed but complete'
+		'cingulum weakly developed and incomplete'
+		'cingulum absent'
+		,
+		30
+		'incomplete anteriorly'
+		'incomplete in the middle'
+		'incomplete posteriorly'
+		,
+		31
+		'absent'
+		'cingulum small'
+		'large'
+		,
+		32
+		'ridge absent'
+		'posteromedial ridge present'
+		'two posteromedial ridges present forming a groove'
+		,
+		33
+		'rounded'
+		'posterolingual surface flattened'
+		,
+		34
+		'cusp absent'
+		'trace of cusp present'
+		'cusp tall and conspicuous but less than half the height of the main cusp'
+		'cusp very tall, equal to or greater than half the height of the main cusp'
+		,
+		35
+		'conical and well separated from main cusp'
+		'bladelike'
+		,
+		36
+		'cusp located on posterior cingulum, well seperated from main canine cusp'
+		'cusp originates on posterior face of main canine cusp, not well seperated from that cusp'
+		,
+		37
+		'rounded'
+		'posterolabial surface flattened'
+		,
+		38
+		'less recurved'
+		'more recurved'
+		,
+		39
+		'does not project anteriorly; long axis of tooth shaft is perpendicular to plane of occlusal surface of molar toothrow'
+		'projects anteriorly; long axis of tooth shaft forms an oblique angle with the plane of the occlusal surface of the molar toothrow'
+		,
+		40
+		'P1 with well-developed crown that is greater in diameter than the root, crown conical, triangular, or lenticular in labial view'
+		'P1 peglike, crown simplified and flattened, crown diamenter subequal to or only slightly larger than root diameter'
+		'P1 present as a tiny spicule with crown diameter less then or equal to root diameter'
+		'P1 absent'
+		,
+		41
+		'1 root'
+		'2 roots'
+		,
+		42
+		'absent'
+		'labial cingulum present'
+		,
+		43
+		'P1 labially extruded from toothrow, P5 directly contacts tooth anterior to it (usually C) while P1 is located labial to this contact'
+		'P1 partially extruded from toothrow on labial side but still partially separates teeth anterior and posterior to it.'
+		'P1 lies in line with C, P5, and M1-2'
+		'P1 partially extruded from toothrow on lingueal side but still partially separates teeth anterior and posterior to it'
+		'P1 lingually extruded from toothrow, P5 directly contacts tooth anterior to it (usually C) while P1 is located lingual to this contact'
+		,
+		44
+		'P1 shorter than P4'
+		'P1 and P4 subequal'
+		'P1 longer than P4'
+		,
+		45
+		'P4 present'
+		'absent'
+		,
+		46
+		'three roots'
+		'two roots'
+		'one root'
+		,
+		47
+		'P4 lies in line with C, P5, and M1-2'
+		'P4 partially extruded from toothrow but still partially separates teeth anterior and posterior to it'
+		'P4 entirely extruded from toothrow, P5 directly contacts tooth anterior to P4 (usually C)'
+		,
+		48
+		'labial cingulum well developed'
+		'weakly developed'
+		'absent'
+		,
+		49
+		'cingulum absent'
+		'weakly developed'
+		'well developed'
+		,
+		50
+		'absent - no cusp or cingulum'
+		'raised cingulum present but no cusp'
+		'cusp present'
+		,
+		51
+		'absent'
+		'single crest'
+		'pair of roughly parallel crests with a groove in between'
+		,
+		52
+		'postparacrista decreases sharply in height near paracone and does not extend to distal edge of tooth'
+		'postparacrista extends as a continuous crest to the distal aspect of the tooth'
+		,
+		53
+		'distal accessory cusps absent'
+		'one distal accessory cusp present'
+		'two distal accessory cusps'
+		,
+		54
+		'no diastema present between P4 and P5, teeth in contact or nearly so'
+		'diastema present'
+		,
+		55
+		'P4 shorter than P5'
+		'P4 and P5 subequal'
+		'P4 longer than P5'
+		,
+		56
+		'P4 shorter than P5'
+		'P4 and P5 subequal in height'
+		'P4 taller than P5'
+		,
+		57
+		'cingulum absent'
+		'lingual cingulum narrow, no lobe present'
+		'lingual cingulum large, forms distinct lobe, does not extend as far lingually as  protocone of M1.'
+		'lingual cingulum very large, forms distinct lobe, extends as far lingually or farther than protocone of M1.'
+		,
+		58
+		'narrow'
+		'wide'
+		,
+		59
+		'cingulum with raised edge but no cingular cusp'
+		'lingual cusp weakly developed'
+		'lingual cusp well developed'
+		'two well developed lingual cusps'
+		,
+		60
+		'labial cingulum well developed'
+		'weakly developed'
+		'absent'
+		,
+		61
+		'cusp absent'
+		'weakly developed'
+		'strongly developed'
+		,
+		62
+		'absent'
+		'weakly developed'
+		'strongly developed'
+		,
+		63
+		'absent'
+		'single crest'
+		'pair of roughly parallel crests with a groove in between'
+		,
+		64
+		'postparacrista decreases sharply in height near paracone and does not extend to distal edge of tooth'
+		'postparacrista extends as a continuous crest to the distal aspect of the tooth'
+		,
+		65
+		'distal accessory cusps absent'
+		'one distal accessory cusp present'
+		'two distal accessory cusps'
+		,
+		66
+		'P5 length less than width'
+		'length and width subequal'
+		'P5 length greater than width'
+		,
+		67
+		'no diastema between P5 and M1, teeth in contact'
+		'diastema present'
+		,
+		68
+		'not aligned (longitudinal axis through M1 and M2 paracone runs markedly labial to P5 paracone)'
+		'aligned (longitudinal axis through M1 and M2 paracones intersects P5 paracone)'
+		'not aligned (longitudinal axis through M1 and M2 paracone runs markedly lingual to P5 paracone)'
+		,
+		69
+		'P5 length conspicuously greather than M1 length'
+		'P5 and M1 subequal in length'
+		'P5 length conspicuously less than M1 length'
+		,
+		70
+		'strongly developed'
+		'present but weak'
+		'absent'
+		,
+		71
+		'absent'
+		'pericone present'
+		,
+		72
+		'no diastema present between M1 and M2, teeth in contact'
+		'diastema present'
+		,
+		73
+		'absent'
+		'present'
+		,
+		74
+		'stylar shelf present on M1 and M2'
+		'absent'
+		,
+		75
+		'present'
+		'absent'
+		,
+		76
+		'protocone shorter than paracone'
+		'protocone and paracone subequal in height'
+		,
+		77
+		'metacone taller than paracone'
+		'metacone and paracone subequal in height'
+		'metacone shorter than paracone'
+		,
+		78
+		'less sharp and less inclined anteriorly'
+		'more sharp and more inclined anteriorly'
+		,
+		79
+		'not'
+		'paracone and metacone lingually inclined'
+		,
+		80
+		'very acute, cristae nearly or completely parallel (angle is 20 degrees or less)'
+		'acute, cristae lie at acute angle to one another (angle 21-90 degrees)'
+		'oblique, cristae meet at an angle somewhat more than a right angle (angle 91-120 degrees)'
+		'very oblique, cristae nearly or completely form straight line (angle well over 120 degrees)'
+		,
+		81
+		'postparactista contacts premetacrista on labial aspect of tooth, trigon closed labially'
+		'postparacrista does not contact premetacrista, trigon open labially'
+		,
+		82
+		'wide and shallow'
+		'narrow and deep'
+		,
+		83
+		'mesostyle absent'
+		'mesostyle formed at labial terminus of postparacrista'
+		'mesostyle formed at point of contact of postparacrista and premetacrista'
+		'mesostyle formed at labial terminus of premetacrista'
+		,
+		84
+		'large and extended labially'
+		'small and less labially extended'
+		,
+		85
+		'not lingually displaced, lies in line with parastyle and metastyle'
+		'somewhat lingually displaced'
+		'strongly lingually displaced'
+		,
+		86
+		'absent'
+		'present'
+		,
+		87
+		'projects mesiolabially'
+		'projects distolabially'
+		,
+		88
+		'cuspule absent'
+		'cuspule present on premetacrista'
+		,
+		89
+		'paraconule present'
+		'absent'
+		,
+		90
+		'Metaloph present'
+		'absent'
+		,
+		91
+		'absent'
+		'present'
+		,
+		92
+		'present'
+		'absent'
+		,
+		93
+		'conical'
+		'crest'
+		,
+		94
+		'not separated'
+		'separated'
+		,
+		95
+		'short'
+		'long'
+		,
+		96
+		'straight'
+		'curved'
+		,
+		97
+		'ectoflexus absent'
+		'single ectoflexus present labial to mesostyle'
+		'single ectoflexus present between mesostyle and parastyle (= pre-ectoflexus)'
+		'single ectoflexus present between mesostyle and metastyle (= postectoflexus)'
+		'pair of ectoflexi present one between mesostyle and parastyle, one between mesostyle and metastyle'
+		,
+		98
+		'shallow ectoflexus present'
+		'deep ectoflexus present'
+		,
+		99
+		'both shallow'
+		'anterior deep, posterior shallow'
+		'anterior shallow, posterior deep'
+		'both deep'
+		,
+		100
+		'present'
+		'absent'
+		,
+		101
+		'preparacrista longer than postparacrista'
+		'preparacrista subequal in length to postparacrista'
+		'preparacrista shorter than postparacrista'
+		,
+		102
+		'postmetacrista length subequal to premetacrista length'
+		'postmetacrista longer than premetacrista but not twice as long'
+		'postmetacrista 2x as long as premetacrista, or longer'
+		,
+		103
+		'enamel smooth'
+		'surface with striations or small enamel folds'
+		,
+		104
+		'oriented distolabially toward metacone, metaconule, or metastylar region'
+		'oriented toward midpoint between metastyle/metacone and hypocone region'
+		'oriented anteroposteriorly toward hypocone or hypocone region'
+		,
+		105
+		'postprotocrista extends only to metaconule region (irregardless of presence/absence of metaconule), does not reach metacone or metacingulum'
+		'joins lingual base of metacone'
+		'postprotocrista extends to hypoconal region'
+		'extends to become confluent with metacingulum or edge of hypocone shelf'
+		,
+		106
+		'metaconule present'
+		'absent'
+		,
+		107
+		'absent'
+		'present, approaches postprotocrista at an angle'
+		'present but continuous with postprotocrista as a single straight crest along lingual side of tooth'
+		'present, does not approach postprotocrista, runs lingually'
+		,
+		108
+		'endloloph contacts postprotocrista '
+		'no contact'
+		,
+		109
+		'hypocone shelf very large, maximum mesiodistal lenght equal to or greater than distance between paracone and metacone'
+		'hypocone shelf large, maximum mesiodistal length greater than half the distance between paracone and metacone but not 100% of that distance'
+		'hypocone shelf small, well developed and clearly distinct from trigon, maximum mesiodistal length less than half the distance between the paracone and metacone'
+		'hypocone shelf very small, present as a cingulum but may not be clearly distinguished from the trigon'
+		'hypocone shelf absent'
+		,
+		110
+		'narrower'
+		'wider'
+		,
+		111
+		'hypocone absent'
+		'hypocone incipient or poorly developed but not entirely absent'
+		'hypocone well developed'
+		,
+		112
+		'M2 present'
+		'absent'
+		,
+		113
+		'present'
+		'absent'
+		,
+		114
+		'conical'
+		'crest'
+		,
+		115
+		'short'
+		'long'
+		,
+		116
+		'straight'
+		'curved'
+		,
+		117
+		'ectoflexus absent'
+		'single ectoflexus present labial to mesostyle'
+		'single ectoflexus present between mesostyle and parastyle (= pre-ectoflexus)'
+		'single ectoflexus present between mesostyle and metastyle (= postectoflexus)'
+		'pair of ectoflexi present one between mesostyle and parastyle, one between mesostyle and metastyle'
+		,
+		118
+		'shallow ectoflexus'
+		'deep ectoflexus'
+		,
+		119
+		'both shallow'
+		'anterior ectoflexus deep, posterior extoflexus shallow.'
+		'both deep'
+		,
+		120
+		'metacone in normal position'
+		'metacone shifted lingually'
+		,
+		121
+		'postmetacrista absent'
+		'postmetacrista shorter that premetacrista'
+		'postmetacrista length subequal to premetacrista length'
+		'postmetacrista much longer than premetacrista but not twice as long'
+		'postmetacrista 2x longer than premetacrista, or longer'
+		,
+		122
+		'oriented distolabially toward metacone, metaconule, or metastylar region'
+		'oriented toward midpoint between metastyle/metacone and hypocone region'
+		'oriented anteroposteriorly toward hypocone or hypocone region'
+		,
+		123
+		'absent'
+		'present, approaches postprotocrista at an angle'
+		'present but continuous with postprotocrista as a single straight crest along lingual side of tooth'
+		'present, does not approach postprotocrista, runs lingualy'
+		,
+		124
+		'postprotocrista and endoloph at an angle'
+		'postprotocrista and endoloph at an angle, but not in contact'
+		,
+		125
+		'metaconule present'
+		'absent'
+		,
+		126
+		'hypocone shelf very large, maximum mesiodistal lenght equal to or greater than distance between paracone and metacone'
+		'hypocone shelf large, maximum mesiodistal length greater than half the distance between paracone and metacone but not 100% of that distance'
+		'hypocone shelf small, well developed and clearly distinct from tricon, maximum mesiodistal length less than half the distance between the paracone and metacone'
+		'hypocone shelf very small, present as a cingulum but may not be clearly distinguished from the trigon'
+		'hypocone shelf absent'
+		,
+		127
+		'narrower'
+		'wider'
+		,
+		128
+		'hypocone absent'
+		'hypocone incipient or poorly developed but not entirely absent'
+		'hypocone well developed'
+		,
+		129
+		'M3 present'
+		'absent'
+		,
+		130
+		'little reduced (M3 occlusal area >75% of M2 area)'
+		'moderately reduced in length and/or width (M3 area 50%-75% of M2 area)'
+		'very reduced in length and/or width (M3 area is >25% but <50% of M2 area)'
+		'extremely reduced (10%<M3 area<25% M2 area)'
+		'peglike (<10% area)'
+		,
+		131
+		'M3 anterior segment nearly as large as that of M2'
+		'much smaller than that of M2'
+		,
+		132
+		'present'
+		'absent'
+		,
+		133
+		'conical'
+		'crest'
+		,
+		134
+		'short'
+		'long'
+		,
+		135
+		'straight'
+		'curved'
+		,
+		136
+		'paraconule present'
+		'absent'
+		,
+		137
+		'postmetacrista present (W-shaped ectoloph complete)'
+		'postmetacrista absent (ectoloph N-shaped or V-shaped)'
+		,
+		138
+		'premetacrista longer than postparacrista'
+		'premetacrista and postparacrista length subequal'
+		'premetacrista one-half to three quarters the length of the postparacrista'
+		'premetacrista one-third to slightly less than one-half the length of the postparacrista'
+		'premetacrista present but less than one-third the length of the postparacrista'
+		'premetacrista absent '
+		,
+		139
+		'metacone present as a disinct cusp'
+		'metacone indistinct, incorperated into premetacrista'
+		'metacone entirely absent'
+		,
+		140
+		'fovea present'
+		'absent'
+		,
+		141
+		'present'
+		'absent'
+		,
+		142
+		'absent'
+		'present'
+		,
+		143
+		'i1 present'
+		'absent'
+		,
+		144
+		'lobed (bilobed or trilobed or with four lobes)'
+		'undulate lobe structure'
+		'cutting edge roughly straight, without notches or grooves'
+		'pointed'
+		'peglike, no real cutting edge'
+		,
+		145
+		'bilobed'
+		'trilobed'
+		'four lobes'
+		,
+		146
+		'three lobes of equal size'
+		'mesial lobe very small, middle lobe large, distal lobe intermediate in size'
+		'mesial lobe large, middle and distal small'
+		'two mesial lobes small and twinned, well separated from a larger distal lobe'
+		,
+		147
+		'width greater than length'
+		'length and width subequal'
+		'length greater than width'
+		,
+		148
+		'absent'
+		'diastema present'
+		,
+		149
+		'i2 present'
+		'absent'
+		,
+		150
+		'lobed (bilobed or trilobed or with more lobes)'
+		'cutting edge roughly straight, without notches or lobes'
+		'pointed'
+		'peglike, no real cutting edge'
+		,
+		151
+		'bilobed'
+		'trilobed'
+		'four lobes'
+		'more than four'
+		,
+		152
+		'i2 conspicuously smaller than i1'
+		'i1 and i2 subequal in size'
+		'i2 conspicuously larger than i1'
+		,
+		153
+		'i2 lateral to i1'
+		'i2 posterior to i1'
+		,
+		154
+		'i3 present'
+		'absent'
+		,
+		155
+		'i3 height noticably less than i2 height'
+		'i3 height subequal to i2 height'
+		'i3 height noticably greater than i2 height'
+		,
+		156
+		'alveoli of i1 and i2 nearly coalesced, small gap between i2 and i3'
+		'alveoli of i1, i2, and i3 evenly spaced'
+		,
+		157
+		'not procumbent'
+		'somewhat procumbent'
+		'more procumbent'
+		,
+		158
+		'absent'
+		'diastema present between canine and last lower incisor (i1, i2, or i3)'
+		,
+		159
+		'lower canines not laterally divergent'
+		'canines laterally divergent, shafts slanted outward so that the tip of each tooth lies dorsal or dorsal and lateral to the lateral edge of the root where the tooth enters the alveolus'
+		,
+		160
+		'lower canines well separated from one another at the base'
+		'bases of right and left canines adjacent or nearly so, but not in contact'
+		'bases of right and left canines adjacent and in contact'
+		,
+		161
+		'extremely short, premolariform '
+		'short and stocky'
+		'tall and lancoelate'
+		'exceptionally slender with a subterete shaft'
+		'bladelike'
+		,
+		162
+		'absent'
+		'anterior cuspule present'
+		,
+		163
+		'cingulid absent'
+		'cingulid present but small'
+		'cingulid broad'
+		,
+		164
+		'absent'
+		'weakly developed'
+		'strongly developed'
+		,
+		165
+		'not'
+		'lower c labially swollen'
+		,
+		166
+		'labial cingulum absent'
+		'weakly developed'
+		'well developed'
+		,
+		167
+		'present'
+		'absent'
+		,
+		168
+		'p1 present'
+		'absent'
+		,
+		169
+		'one root'
+		'two roots'
+		,
+		170
+		'large and cuspidate'
+		'peg-like with flattened crown'
+		'tiny spicule with undifferentiated crown'
+		,
+		171
+		'absent'
+		'cuspule present'
+		,
+		172
+		'p1 longer than p4'
+		'subequal'
+		'p1 shorter than p4'
+		,
+		173
+		'p4 present'
+		'absent'
+		,
+		174
+		'three roots'
+		'two roots'
+		'one root'
+		,
+		175
+		'two roots oriented longitudinally with resepct to the long axis of the tooth row'
+		'two roots oriented slightly obliquely'
+		'two roots oriented stongly obliquely to the long axis of the toothrow'
+		,
+		176
+		'p4 aligned in row with surrounding teeth when seen in occlusal view'
+		'p4 lingually displaced from toothrow, not in line with other teeth'
+		'p4 labially displaced from toothrow, not in line with other teeth'
+		,
+		177
+		'no diastema between p4 and next adjacent anterior tooth (p1 or C)'
+		'conspicuous diastema present'
+		,
+		178
+		'p4 tribosphenic with a distinct trigonid and talonid'
+		'p4 premolariform, with cusps but not arranged in tribosphenic pattern'
+		'p4 peglike or nearly featureless'
+		,
+		179
+		'absent'
+		'cuspule present'
+		,
+		180
+		'absent'
+		'cuspule present'
+		,
+		181
+		'absent'
+		'cuspule present'
+		,
+		182
+		'two posterior crests separated by a concavity'
+		'only one posterior crest present '
+		,
+		183
+		'long and strongly laterally compressed (length/width > or = 1.7)'
+		'short and broad (length/width < 1.7)'
+		,
+		184
+		'labial cingulid well developed'
+		'weakly developed'
+		'absent'
+		,
+		185
+		'p4 much taller than p5'
+		'p4 slightly taller than p5'
+		'p4 and p5 subequal in height'
+		'p4 slightly shorter than p5'
+		'p4 very small, much shorter than p5'
+		,
+		186
+		'crown length of p4 greater than length of p5'
+		'p4 and p5 subequal in length'
+		'p4 length less than p5 length but more than one-half the length of p5'
+		'p4 less than or equal to one-half the  length of p5'
+		,
+		187
+		'crown morphology of p4 and p5 similar'
+		'p4 and p5 with different crown morphologies'
+		,
+		188
+		'three roots'
+		'two roots'
+		'one root'
+		,
+		189
+		'two roots oriented longitudinally with resepct to the long axis of the tooth row'
+		'two roots oriented slightly obliquely '
+		'two roots oriented stongly obliquely to the long axis of the toothrow'
+		,
+		190
+		'paraconid large and high'
+		'small and low'
+		'very low'
+		'cusp absent'
+		,
+		191
+		'paracristid present'
+		'absent'
+		,
+		192
+		'absent'
+		'partial lingual cingulum present'
+		'complete lingual cingulum present'
+		,
+		193
+		'labial cingulid strongly developed'
+		'weakly developed'
+		'absent'
+		,
+		194
+		'straight'
+		'undulate'
+		,
+		195
+		'cingulum of constant thickness throughout length'
+		'thicker toward distal end'
+		,
+		196
+		'absent'
+		'present'
+		,
+		197
+		'lingual'
+		'posterior'
+		,
+		198
+		'absent'
+		'present'
+		,
+		199
+		'absent'
+		'Cuspule present'
+		,
+		200
+		'absent'
+		'one metaconid'
+		'two metaconids'
+		,
+		201
+		'metaconid large'
+		'metaconid present but small'
+		,
+		202
+		'absent'
+		'one protocristid'
+		'two protocristids'
+		,
+		203
+		'absent'
+		'short'
+		'long'
+		,
+		204
+		'talonid long'
+		'talonid short'
+		'absent'
+		,
+		205
+		'less robust, taller, sharper'
+		'more robust, shorter, more blunt'
+		'extremely short'
+		,
+		206
+		'absent'
+		'cuspule present'
+		,
+		207
+		'p5 triosphenic with distinct trigonid and talonid'
+		'p5 premolariform, with cusps but not arranged in tribosphenic pattern'
+		'p5 without distinct cusps, may be nearly featureless or peglike'
+		,
+		208
+		'p5 and m1 subequal in length'
+		'p5 length less than m1 length but more than three-quarters the length of m1'
+		'p5 length more than one half but less than three quarters the length of m1'
+		'p5 length less than or equal to one-half the length of m1'
+		,
+		209
+		'cusps well individualized, concial or comprised of crests that meet to form a sharp point'
+		'cusps not well individualized, not very conical or pointed'
+		,
+		210
+		'absent'
+		'lingual cingulid present'
+		,
+		211
+		'trigonid fovea closed'
+		'trigonid fovea open lingually'
+		,
+		212
+		'hypoconuiid located on distal border of talonid midway between hyponid and entoconid '
+		'hypoconulid located on distolabial border of talonid, well-separated from entoconid, closer to midway point than to entoconid '
+		'hypoconulid located on distolabial border of talonid, well-separated from entoconid but closer to entoconid than to midway point'
+		'hypoconulid located on labial border of talonid immediately posterior to and directly adacent to the entoconid, hypoconulid and entoconid may be partially fused at their bases ("twinning" of hypoconuilid and entoconid).'
+		,
+		213
+		'nyctalodont'
+		'myotodont'
+		,
+		214
+		'cristid present'
+		'absent'
+		,
+		215
+		'basin absent'
+		'shallow'
+		'deep'
+		,
+		216
+		'not'
+		'talonid anteroposteriorly compressed'
+		,
+		217
+		'relatively low '
+		'relatively high (lingual cusps at least 75% height of labial cusps)'
+		,
+		218
+		'notches absent'
+		'notches weakly developed'
+		'notches strongly developed, carnassia-like'
+		,
+		219
+		'Notches absent'
+		'Notches weakly developed'
+		'Notches strongly developed'
+		,
+		220
+		'straight'
+		'gently curved'
+		'flexed'
+		,
+		221
+		'towards protoconid'
+		'directed toward a point in between protoconid and metaconid'
+		'towards metaconid'
+		,
+		222
+		'cristid obliqua terminates at base of metaconid'
+		'cristid obliqua extends up flank of metaconid'
+		,
+		223
+		'absent'
+		'groove present'
+		,
+		224
+		'not'
+		'labially flexed'
+		,
+		225
+		'entocristid contacts postvalid thus closing off lingual side of talonid basin'
+		'entocristid short (disrupted) so that talonid basin drains lingually'
+		'entocristid absent'
+		,
+		226
+		'not'
+		'unusually tall and robust'
+		,
+		227
+		'not compressed'
+		'protoconid and hypoconid anteroposteriorly compressed'
+		,
+		228
+		'not'
+		'protoconid and hypoconid with ventral extension of labial cusp base'
+		,
+		229
+		'absent'
+		'prononounced buccal bulging present'
+		,
+		230
+		'does not reach trigonid'
+		'reaches trigonid'
+		,
+		231
+		'large'
+		'small and low'
+		'absent'
+		,
+		232
+		'low crest'
+		'high crest'
+		,
+		233
+		'm1 longer than m2'
+		'm1 and m2 subequal'
+		'm1 shorter than m2'
+		,
+		234
+		'protoconid markedly higher than hypoconid'
+		'protoconid slightly higher than hypoconid'
+		'protoconid and hypoconid subequal in height'
+		'protoconid slightly smaller than hypoconid'
+		,
+		235
+		'm1 protoconid higher than m2 or m3 protoconid'
+		'm1 protoconid subequal in height to protoconids on m2 and m3'
+		'm1 protoconid noticably shorter than protoconids on m2 and m3'
+		,
+		236
+		'paraconid present on m1'
+		'absent'
+		,
+		237
+		'metaconid present on m1'
+		'absent'
+		,
+		238
+		'paraconid markedly taller than metaconid'
+		'cusps subequal in height'
+		'paraconid markedly shorter than metaconid'
+		,
+		239
+		'present'
+		'absent'
+		,
+		240
+		'paracristid markedly shorter that metacristid'
+		'paracristid and metacristid subequal in length'
+		'paracristid markedly longer than metacristid'
+		,
+		241
+		'strongly developed, tall'
+		'weakly developed, low'
+		'entoconid absent'
+		,
+		242
+		'absent'
+		'present'
+		,
+		243
+		'strongly developed'
+		'weakly developed'
+		'absent'
+		,
+		244
+		'labial cingulid complete'
+		'incomplete posteriorly'
+		'incomplete anteriorly'
+		,
+		245
+		'absent'
+		'present'
+		,
+		246
+		'not connected'
+		'cingulids confluent around mesiolabial corner of tooth'
+		,
+		247
+		'paraconid, metaconid, and entoconid aligned in a straight line '
+		'paraconid situated labial to a line drawn through the metaconid and entoconid'
+		,
+		248
+		'large angle'
+		'intermediate angle'
+		'small angle'
+		,
+		249
+		'talonid wider than trigonid'
+		'talonid and trigonid subequal'
+		'talonid narrower than trigonid'
+		,
+		250
+		'deep'
+		'shallow'
+		'absent'
+		,
+		251
+		'1.10-1.44'
+		'1.45-1.74'
+		'1.75-2.04'
+		'2.05-2.19'
+		'2.20-2.70'
+		'3.00-4.60'
+		,
+		252
+		'subequal in height'
+		'paraconid slightly shorter than metaconid'
+		'paraconid markedly shorter than metaconid'
+		,
+		253
+		'absent'
+		'present'
+		,
+		254
+		'not connected'
+		'cingulids confluent around mesiolabial corner of tooth'
+		,
+		255
+		'm2 present'
+		'absent'
+		,
+		256
+		'm2 with crown structure resembling m1'
+		'simplified cuspidate structure compared to m1'
+		'm2 peg-like with flattened crown'
+		,
+		257
+		'protoconid markedly higher than hypoconid'
+		'protoconid slightly higher than hypoconid'
+		'protoconid and hypoconid subequal in height'
+		,
+		258
+		'strongly developed'
+		'weakly developed'
+		'absent'
+		,
+		259
+		'labial cingulid complete'
+		'incomplete posteriorly'
+		'incomplete anteriorly'
+		,
+		260
+		'strongly developed, tall'
+		'weakly developed, low'
+		'very weak, small'
+		'absent'
+		,
+		261
+		'talonid wider than trigonid'
+		'talonid and trigonid subequal'
+		'talonid narrower than trigonid'
+		,
+		262
+		'deep'
+		'shallow'
+		'absent'
+		,
+		263
+		'm3 present'
+		'absent'
+		,
+		264
+		'm3 crown morphology similar to that of m2'
+		'm3 markedly different from m2'
+		,
+		265
+		'm3 length subequal to that of m2'
+		'm3 slightly shorter (>75%) than m2'
+		'm3 length much less than m2'
+		,
+		266
+		'2 roots'
+		'1 root'
+		,
+		267
+		'strongly developed'
+		'weakly developed'
+		'absent'
+		,
+		268
+		'labial cingulid complete'
+		'incomplete posteriorly'
+		'incomplete anteriorly'
+		,
+		269
+		'reaches trigon'
+		'present but does not reach trigon'
+		'cristid obliqua absent'
+		,
+		270
+		'present'
+		'absent'
+		,
+		271
+		'protoconid notably higher than hypoconid'
+		'protoconid slightly higher than hypoconid'
+		'protoconid and hypoconid subequal in height'
+		'protoconid smaller than hypoconid'
+		,
+		272
+		'absent'
+		'shallow'
+		'deep'
+		,
+		273
+		'transverse to long axis of tooth'
+		'oblique to long axis of tooth'
+		'parallel to long axis of tooth'
+		,
+		274
+		'present'
+		'absent'
+		,
+		275
+		'directed posterolabially at an oblique angle to the long axis of the tooth'
+		'perpendicular to the long axis of the tooth'
+		,
+		276
+		'present'
+		'absent'
+		,
+		277
+		'large'
+		'small and low'
+		,
+		278
+		'talonid wider than trigonid'
+		'talonid and trigonid subequal'
+		'talonid narrower than trigonid'
+		
+	;
+
+	MATRIX
+	'Mormoops blainvillei'		                         0000220---003001000010212000211111--1003----000020100100310100110200120010001001000-00-0110010014-302101110-100001114-202110101001001111110-00001020001101--1010202202100001010001001100310113121100---11102011100130-2001101-00000000101010021-00100-00002211000100000000101002201001
+	'Pteronotus davyi'		                             0000220---103001010000112100211110--1003----010020110000200101110000220010001001000-00-0110010114-001001310-0120011120-0210-101201001111100-00001000001001--001020220210000002-002000-10431113110100---11102001100130-1000001-01000001101210021-001011000011110001000000000110022011-2
+	'Pteronotus parnellii'		                         0000220---103000011000012100211110--1003----010020100000200101110101220010011001000-00-01100101020-01001310-1120011120-0310-111201101111110-00001000000001--001120200210000002-102000-10431101101100--011101011200131-1001001-01000001101110021-00001100001211001000000010000001201012
+	'Macrotus californicus'		                        10001-----103000001100002000211110--0003----010120111010200001110200220000001001002100-01101----20-02102310-1100010120-0310-111102101011152-00000-10000101--0001202102101000010001000100120102120100---11102111200131-1002202001000001102220021-000011000002110001001000100000021011-2
+	'Macrotus waterhousii'		                         10001-----103000001000002100211111--0103----010120111010100101110201220000000001002101101101----20-02102310-1110010120-0320-111103101011152-00000-20000101--0001202102100000010001001101100103121100---11101111200131-1002102000000001102120021-010011120010110001001000100100021011-2
+	'Lampronycteris brachyotis'		                    0000220---1030010010001031001-0101--1103----010110111010100001110201210010001001010-01101101----4-1020013110112001004-103010111202001011152-01001010001101--0001202102100010011001001110430103120100---11102001100131-1001202000000001102110021-000011010010110000000000200000022011-2
+	'Micronycteris brosseti'		                       11001-----1030000110001030001-2111--1103----010120111100211001210201210000000001010-01101111----4-0021013110112001114-103110111102001111152-01000-10000201--0001102202100010010001000110320103120000---11102101200130-1001201-00000000101010021-100011110012110000000000100000021011-2
+	'Micronycteris hirsuta'		                        10001-----103000001000113100212111--1103----010121111101212002210200210000000001010-01101101----30-022013110112001014-103110111102001111152-01000-20000001--0001101201100010010001000110320103120100---11102101100130-2001201-00000001101010021-000011010022110000000000100000021011-2
+	'Micronycteris homezi'		                         10001-----1030010101001120001-2111--1103----010121111000212101210200210010001001010-0110110011004-002101312-112001014-103110111102001111152-01000-00000101--0001102202100010010001001110320103120100---11102101200130-2002201-00000001101010021-000011010022110000000000100000021011-2
+	'Micronycteris matses'		                         10001-----1030010111001031000-1110--1003----010021111000201002210201210010001001010-01101101----30-021013110112001004-203110111202001111152-01000-10000101--0001102202100000010001000110320101020100---11102101200130-1001201-10000000111010021-000011010012110000000000100010021011-2
+	'Micronycteris megalotis'		                      10001-----1030010010001020001-2111--1103----010122111100202001210201210000000001010-00-0111010004-0021010111112001004-203110111202001111152-01000-0001-101--0001202202100000010001000010320101120100---11102101200130-2001201-10000001101010021-100011010022110000010000100000021011-2
+	'Micronycteris microtis mexicana'		              10001-----1030010110001021001-2111--1003----010121111000202001210201210000001001010-00-0110010004-0021013110112001004-103110111202001011152-0100101001-101--000110220210000001?001000110320103020100---11102101200130-2001101-00000001101020021-000011110022110000010000100000021011-2
+	'Micronycteris microtis microtis'		              10001-----1030010010002030001-2111--1003----010021201001202001210201210000001001010-01101101----4-0021013110112001004-103110111202001111152-0100101001-101--0001102202100001011001000110320103020000---11102101200131-1001201-00000001101020021-100011110012110000010000100000022011-2
+	'Micronycteris minuta'		                         10001-----1030010010001021000-0100--1003----010021111000302001110201210000001001110-00-0110010004-0021013110112001004-103110111202001011152-01000-20000101--0001112202100000010001000110320102020100---11102001200130-2002201-00000001101010021-100011010022110000000000101000021011-2
+	'Micronycteris schmidtorum'		                    10001-----1030010010001021001-2111--1003----010121110001300101210201210000000001010-01101101----30-021013110111001004-103110110102001111152-01000-00000101--0001102202100010010001000110320103020100---11102101200130-2001101-10000001101010021-100011110022110000000000101000021011-2
+	'Neonycteris pusilla'		                          10001-----1030010011001030000-2211--0103----010021110102213001110200200000000001010-10-01101----4-002202312-111001004-00322-111102001011152-01001020001101--0000102200-00011010011000110120103120010---11102101200130-1002201-00000001002020011-00001111002211000000000010000002101012
+	'Desmodus rotundus'		                            10003--01005--1----1100010-03-0110--1113----1-----------3002-10-000-120-0100-0----0--0--1101----0--1--00010-4--1----------------1-------------000-21000011--2110400000-1----02-0110001023002-3102--0--00-0-2101200----00-1000-0-2000012--1-01---2-2-0---125---1-------1---------------
+	'Diaemus youngi'		                               10003--01005--1----110000---3-0110--1113----1-----------1002-00-020202000100-0----0--0--1101----0--1--00210-4--01---0--------4--1-------------03--2101-001--0110400000-1----02-011000102(2,1)002-3102--0--00-0-2101300----00-0010-0-2000012--1-01---2-2-0---225---1-------1---------------
+	'Diphylla ecaudata'		                            10003--0100532001-0110000---3-0110--1113----1-----------1002-00-02021200011-------0--0--11-1----0--1-----10-4--01---0--------4--1-------------002-20003201--0110400000-1----02-0110001021002-3102--0--011102101200----00-0000-0-2000012-01001---2-2-0---225-0-0012-3221---------------
+	'Lonchorhina aurita'		                           0000220---002001000000113000211111--1103----0201101011002102-2100101220010001001113100-01111----4-0011013110110001014-103110111002001011152-01001020001101--001011210110001002-002000-(0,1)2431102020100---11102001200131-2000101-00000001101210021-00101101001011002100000010100002201012
+	'Lonchorhina inusitata'		                        00001-----0020000000001131001-1110--0003----020111100000210100110101220000001001010-00-01111----4-1021013110011001014-103010101202001011152-01000-20001101--000011210110000002-102000-12431101121100---11102001200130-2001101-00000001101110021-001011010012110001000000101000021011-2
+	'Lonchorhina orinocensis'		                      00001-----1020000100001121001-1110--0103----020110100100313101110100220000001001010-00-0111010004-302101312-010001014-203110101102001001152-01001220001101--000020210110001002-001000110431101020100---11102001200130-2001101-00000001101010021-00001101001211000000000010000002201012
+	'Chrotopterus auritus'		                         00000--00-1031010010000121001-1111--0103----0211000-1000210100112201220000000001010-20-01100100130-01200110-010001014-00400-101003100--1152-000010101----1--0001212100-0001002-102000-12431101121100---11102001100130-1000202000000001102020021-0000110100121100000010001000000111-1-2
+	'Lophostoma brasiliense brasiliense'		           10001-----003101001000013000210111--0003----0202101100002102-0110201210000000001013100-0110010004-202102312-111001014-10322-111102000--1152-01000-101----1--0001202100-0000002-001000111431113120010---1110200120010-02002201-00000001001010021-000011020012110001000000101000021011-2
+	'Lophostoma brasiliense minuta'		                10000--00-0031010010000031003-0101--1103----0201101100002122-0110200210000000001013100-01101----4-002102312-102001014-10322-111202000--1152-01000-101----1--0001202100-0000002-201000111431103120100---1110200120010-02002201-00000001001210021-000011010012110010000000101000021011-2
+	'Lophostoma carrikeri'		                         10000--00-003001001000012100210100--1003----020110110000202100110200210000000001013100-01101----4-002102311011001---4-10322-111002000--1152-01000-101----1--0001202100-0000002-001000111431103120100---1110200120010-02002201-00000001001010021-000011010012110000000000100000021011-2
+	'Lophostoma evotis'		                            10000--00-1031010010000130001-0110--1003----020110110000202100110201220000000001113100-0110010014-102102302-100001014-10322-111102000--1152-01000-201----1--000120210110000002-201000111431103111100---1110200120010-02002201-00000001002010021-0000110100121100(1,2)0000000100000021011-2
+	'Lophostoma kalkoae'		                           1100??????10?0010110000?32?03-0111--1003----02011010100021200011020122001000000101210??0110010004-002102312-011001014-00322-111102001011152-01000-101-?--1--0002202100-0000002-001000110420101020100---1110200120010-12002201-00000001011010021-00001101001211000000000010000002101012
+	'Lophostoma occidentalis'		                      10001-----0021010010000131003-0110--1003----0201101010002022-0110201200000000001110-0110110010014-1021023110112001004-103210111202000--1152-01000-001----1--0001202100-0000002-001000111431103120010---1110200120010-02002201-00000001001010021-000011020012110000000000100000021011-2
+	'Lophostoma silvicolum centralis'		              10001-----0021010010000121003-0111--1003----020210100000201100110201200000000001110-0110110010004-1021023110112001004-103210111202000--1152-01000-001----1--0001202100-0000002-001000111431113120000---1110200120010-02002201-00000001001010021-000011020012110000000000100000021011-2
+	'Lophostoma silvicolum laephotis'		              10001-----1030010010000132101-1100--1003----02011010000020200011020021000000000101310110110010014-2021023110111001014-203210111202000--1152-01000-101----1--000120210110000002-201000110431103121100---1110200120010-02002201-00000001001210021-000011010012110000000000100000021011-2
+	'Lophostoma silvicolum silvicolum'		             10000--00-0020010010000131001-0110--1003----02011010000020210011020120000000000111310110110010004-3021023110111001004-103210111202000--1152-01000-001----1--000120210110000002-001000111431113120000---1110200120010-02002201-00000001001010021-000011020002110000000000100000021011-2
+	'Lophostoma schulzi'		                           10001-----1021010010000131000-0110--1103----020110100000202100110101210000000001013100-0110010014-0021023110012001014-103210101202000--1152-01000-101----1--000110210110000002-001000111431103111000---1110200120010-02002201-00000001001010021-000011020002110000000000100000021011-2
+	'Macrophyllum macrophyllum'		                    11001-----1030010110000031001-1110--1113----020010110000212001111100220000001001013100-0101010004-0021013110111001004-103110110102001011152-01001020001101--000010110110001002-102000-12431103120000---11102001200130-2001201-00000001001110021-00001101001011001000000010000002101012
+	'Mimon bennettii'		                              00001-----103001011000103000211110--1003----000021100000210100110200210000000001012100-0110010004-0021000110101001004-203110110102001011152-010010001----1--0000202200-0000-1--------------103120000---10102001100130-2001102001000000111010021-00001101001211000000100010101002101012
+	'Mimon cozumelae'		                              00001-----102001011000103100210110--1003----0001211000002102-0111100220000001001013100-0110010104-2021010110100001004-103110110002001011152-010010001----1--0001202200-0001-1--------------103120000---10102001200130-2000102001000000011010021-00001101000211000000100010101002101012
+	'Mimon crenulatum crenulatum'		                  00001-----103001011000003100210100--1003----0201201000002102-0110000220010001001010-0110110010004-2021013110100001004-203110111002001011152-01000-201----1--000020220210001-1--------------103121000---10102001200130-2000101-01000001101010021-000011010002110000000000101010021011-2
+	'Mimon crenulatum keenani'		                     00001-----003001011000003200211111--1003----021121110000310100110000220000001001010-0110110010014-3021013110101001004-203110101002001011152-010010101----1--000020220110000-1--------------103120000---11102001200130-2001101-01000011101010021-000011010002110000000000101000021011-2
+	'Mimon crenulatum longifolium'		                 10001-----0030010110000132002(1,2)1110--1003----021021110000210100110000220010001001012100-0110010004-202101010-101001104-203110110002001011152-010010201----1--000020220210000-1--------------103120000---11102001200130-2001101-01000001111010021-000011010002110000000000100000021011-2
+	'Phyllostomus discolor discolor'		               11001-----1030010010000122003-0100--1003----0000111100003112-0110201220000001001010-00-0110010014-002100110-200001004-00300-110102001001152-0102--0001-101--101020220110000-1--------------103111100---11102001000130-2001201-00000001101010021-002-1-110022110001000000101110021011-2
+	'Phyllostomus discolor verrucosus'		             10001-----0030000010000121003-0100--0103----0001100-00002112-0110200220000001001010-00-0110010014-202101010-200001004-10300-110002000--1152-0102--0001-101--1010202200-0000-1--------------103101100--011102001100130-2001101-00000001101010021-000011010012110001000000100000021011-2
+	'Phyllostomus elongatus'		                       11001-----1030010110000130002(0,1)0100--0003----000110100000212100110001220000001001010-00-0110010014-2021013110111001004-20310-111102001011152-0100100001-101--001020220110000-1--------------113120000---11102001100130-2001101-00000001101010021-000011010002110000000000100000021011-2
+	'Phyllostomus hastatus hastatus'		               11001-----1030010010000120001-0101--1003----000110100000212000111101210000001001010-00-0110010004-202101010-112001014-00310-111202001011152-01001010000101--001020210210000-1--------------113100100--011102001100130-2001101-00000001101010021-000011010002110000000000100000021001-2
+	'Phyllostomus hastatus panamensis'		             11001-----103001001000012000210101--0003----000110100000211100110100210000001001010-00-0110010004-2021010111112001004-203111111202001011152-01001000000101--001020210110000-1--------------103110100---11112001200130-2001101-00000001101010021-000011010002110000000000100000021011-2
+	'Phylloderma stenops septentrionalis'		          0000210---103000011100002100210100--0103----000110101001200100110201220000001001010-0110110010014-202102310-111001014-10320-111002001011152-0102--0001-001--000010200110000002-002000-11431103120100---11102101100130-2002201-01000001101010021-000011020022110000000000100000022011-2
+	'Phylloderma stenops stenops'		                  0100220---1030010111000020003-0110--1003----0?0111110000100100110201220000001001010-00-0110010014-002102310-110001014-20320-111002000--1152-0102--1001-011--000010200110000002-002000-10431103120100---11102001200130-2002201-01000001111010021-00001111001211000000000010000002101012
+	'Notonycteris magdalenensis'		                   ??????????????????????????????????????????????????????????????????????0?00000001010--0-0110????????????????????000--11-0400-1012???????????????????????????????????????00???02-0???????????10???????????????????00130-2002201-0000000101?0?0021-1000111?001211000000100??0????????????
+	'Notonycteris sucharadeus'		                     ????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????00130-2002201-0000000101?0?0021-0000111?00121100000000????????????????
+	'Tonatia saurophila bakeri'		                    00001-----1020010010000132001-0111--1003----02011011000021110011020120000000100101210110110010004-0021013111110001014-103111111002001011152-0102--101----1--000120210110000002-001000111431113120100---0-1-2001200130-2001101-00000001101010021-00001101001211000000000010010002201012
+	'Tonatia saurophila maresi'		                    10011-----1521010010000132001-0110--1003----02011011000021110011020120000000100100310110110010004-0020010111110001014-202110111002001011152-0102--101----1--000120210110000002-001000111431113121100---0-1-2001200130-2002201-00000001101110021-00001101002211000000000000000002201012
+	'Tonatia saurophila saurophila'		                ???????????????????????????????????????3----020???????0?2001001102?????????????????????????????????????????????0????????????????0????????????????????????1--???????????00??002-0?????????3?113121100---0-1-2001200130-2002201-00000001101010021-00001101001211000000000??0????????????
+	'Trachops cirrhosus cirrhosus'		                 1000220---1031020010000122001-0111--1003----02011010100010000011120121000000000101201110110010004-3022013110102001014-204110111202001011151-00001010001101--000020220110000002-102001-12431101020100---10102001100130-2000202000000001102220021-00001101001211000000000000101002100012
+	'Trachops cirrhosus coffini'		                   1000200---1031020010000122001-0111--1003----02001010100021000011120121000000000101201110110010004-2022001111102001004-204111111202001011152-00001010001101--001020220110000002-102000-12431111020100---11102001100130-2002201-00000001101220021-00001101000211000000100010101002101012
+	'Vampyrum spectrum'		                            00001-----142102011000012100211111--1003----010210101000300100112201220000000001012120-01100100111-01200110-010000--11-0400-101003101011152-0002--1001-101--0001302100-0000102-001000112431103122--0---11102001100130-2000201-00000001112020021-00101112013211000000210010100001100012
+	'Anoura caudifer'		                              00010--1--0-0001000010010---3-0110--000010200102001111001002-1101200220000001001103000-0110011114-202002110-300000--4-00200-14--00000--10100001-----1----1----10201000-01011010011101102320100002--0--020100001100130-2001201-00000001100010021-002-0-1101220-0012-00100002-0001201010
+	'Anoura cultrata'		                              00001-----0-1000000010210---3-111200000000200102001111002002-2101201120000001001100-0110110010004-202102110-30001---4-00200-14--00000--10100001-----1----1----10200100-01000010011101102320100002--0--020100001100130-2001100-00000001100010021-002-0-1101220-0012-00100002-0001201010
+	'Anoura geoffroyi geoffroyi'		                   00001-----0-0001000010110---3-111201000000200102001011002022-2101201120000001001100-0110110010104-002102312-200001004-00222-120000000--10100001-----1----1----10201000-01012010011101102210101002--0--020100001100130-2001101-00000001100110021-002-0-1101320-0012-00100002-0001201010
+	'Anoura geoffroyi peruana'		                     00001-----0-1001000010010---3-1111-1000010200102001011102012-210120112000000100110300110110010004-002102310-20001---4-10200-120000000--10200001-----1----1----10201000-01012011011101102210100002--0--020100001000130-2001101-00000001100110021-012-0-1101320-0012-00100002-0001201011
+	'Anoura latidens'		                              00001-----0-0001000010110---3-1111-0000000200102001011002012-2101201120000001001100-0110110010004-002002312-20001---4-10202-120000000--10200001-----1----1----10201000-01010010011101102220100002--0--010100001100130-2001100-00000001100110021-012-0-1101320-0012-00100002-0001201011
+	'Brachyphylla cavernarum'		                      00000--20-133000011010003110210212110003----0212000-0000212101101100220001002003000-00-10101----0--02112300-01001---0--0320-00100101---001010102--1001-101--0000102000-0000-1--------------11311100100-1110200110011-11000000-001000011011010-1-012-0--002020-0012-01200102-00002011-2
+	'Brachyphylla nana'		                            00000--20-133000100010103110210212110003----0202110-00002122-0110100220001002003000-00-10101----0--02112300-01001---0--0320-00100101---000010102--0001-101--1000102000-0000-1--------------11311100100-1110200120011-11000000-001000011010010-1-012-0--002020-0012-11200102-00102011-2
+	'Choeroniscus godmani'		                         00001-----0-0001000010000---3-1112000103----01020010111000-2-2101211120101002001000-00-01101----0--02002310-30101---0--0200-13--0001---10200001-----1----1----10201000-01011010011101102210100002--0--0101120011001---1010100-00100001201110021-012-0-1101420-0002-00100002-00112001-0
+	'Choeroniscus minor'		                           00(0,1)11-----0-0000100010000---3-1111-00003----01020010111100-2-2101211120101002002002100-01101----4-000100110-4--01---4-00300-14--0001---10100001-----1----1----10201000-01011010011101102210100002--0--01011200110012-01010100-00100000001110021-002-0-1201420-0002-01200002-10111011-0
+	'Choeroniscus periosus'		                        00001-----0-2000100000000---3-1111-00003----01020010111100-2-1101211120101002003000-00-01101----0--02000110-4--01---0--0300-14--0001---10100001-----1----1----10200000-01012010011101102210100002--0--01011200110012-01010100-00100000001210021-002-0-1102410-0022-01200002-00112011-0
+	'Choeronycteris mexicana'		                      00001-----0-0000000000100---3-2112000003----0102111011111002-2101211220101002003000-00-01101----0--1-102310-3--01---0--0300-13--0001---10101011-----1----1----10201100-01011010011101102210100002--0--01010200110012-11010200-00000001001110021-112-0-0102520-0002-10200102-00002001-0
+	'Erophylla bombifrons'		                         0100220---0120010000001122003-0110--1003----0202001100002002-0110201220001000003000-00-01101----0--02002310-4--01---0--0100-14--0111---11-1-0004--1103-201--1010202100-0000-1--------------103002--0--0111021011101---1000000-0-2000012-01111---2-2-0---124-0-0012-32100102-0010-1-1-2
+	'Erophylla sezekorni'		                          01001-----0120010000001121003-0110--1003----0202001100002002-0110200220001000003000-00-01101----0--02102310-4--01---0--0300-14--0111---11-1-0004--1103-201--1010202100-0000-1--------------103002--0--0111021012101---1000000-0-2000012-01111---2-2-0---124-0-0012-32100102-0010-1-1-2
+	'Glossophaga commissarisi'		                     00001-----001000000010100---3-0110--1003----0102001101011002-0110201220000001001000-11001101----4-002202310-3--001004-00320-13--01000--1120-0004--0103-111--1110201000-00001010001001102310101101100--011102101100130-1011220-001000011-1010021-0012100202220-0002-01100102-00012011-2
+	'Glossophaga leachii'		                          00001-----001000000010100---3-0110--1003----0102001100111002-1110201210000001001002110-01101----0--02202310-3--000--20-0320-13--01000--1120-0004--0103-111--1110201000-00001010001001102310101102--0--011202101100130-1011110-001000011-1110021-002-0-1101220-0002-01100102-00012011-2
+	'Glossophaga longirostris'		                     10001-----001000000010000---3-0110--1003----0102001100111002-1110201220000001001002110-01101----4-002202310-3--01---4-00420-13--00000--1120-0004--0103-111--1110201000-00001010001101102310101102--0--011202101100130-1011210-001000011-1110021-002-0-1201220-0002-00100102-0001101011
+	'Glossophaga morenoi'		                          10001-----001000000010100---3-0110--1003----0102001101111002-0110200220000001001000-01101101----4-002200110-4--000--4-10320-13--00000--1110-0004--1103-101--1010201000-00001010001101102210102102--0--011101101100130-1011110-001000011-0110021-002-0-1101220-0002-00100102-0001201011
+	'Glossophaga soricina'		                         10001-----001000000010000---3-0110--1003----0102001101111002-1110211220000001001002110-01111----4-002200110-4--000--4-00300-14--00000--1111-0004--1003-101--1110201000-00001010001101102310102102--0--011101101100130-1010100-001000011-0120021-002-0-1102220-0002-01100102-00012001-1
+	'Lionycteris spurrelli'		                        10001-----0020001-0000000---3-2102000103----0102021111112022-1101211200100001001000-00-01101----0--02002310-3--01---0--0223-13--0101---1110-00001020000101--0010201100-00011010011111002210100102--0--111101001200130-2011111-001000011-0310021-012-0-1101320-0022-00100102-0001101010
+	'Lonchophylla handleyi'		                        10001-----0020001-0010000---3-2112001003----0102001111002022-1101201200100002001000-00-0110010110--02202310-200001100--0220-13--01000--1110-00000-??000??1--?110202100-00011011011101002310110102--0--011201001200130-2011101-001000011-0010021-002-0-1101420-0012-01100102-00012011-2
+	'Lonchophylla mordax'		                          10001-----0020001-0010000---3-2112001003----0102001011001012-1101201110000001001002100-0110010014-002000110-3--000--4-00300-14--01001011110-00001020001001--0100202100-00010011011101002210101002--0--011201101200130-2011101-001000011-0010021-002-0-1111420-0002-01100102-10012011-1
+	'Lonchophylla robusta'		                         10001-----0020001-0010000---3-2112000003----0102001011112022-1101201200000001001002100-01000101010-02102312-2010010020-0222-13--01000--1110-00000-10000101--0100202100-00011010011101002210110102--0--021201101200130-2011101-00000001100010021-002-0-1111420-0002-00100102-00012011-2
+	'Lonchophylla thomasi'		                         10001-----0020011-0010000---3-2112010003----0102001101002022-1101201211000001001002100-0110010004-002102110-4--001004-00200-14--01000--1110-00001020001101--0110202100-00011010011101002320100102--0--011101001200130-2011101-00000001101010021-002-0-1201420-0002-0(0,1)100102-00012011-1
+	'Monophyllus plethodon'		                        00001-----011001000010210---3-1111--1003----0102001011102002-2111201120000001001010-00-0110010014-002100110-4--0010120-0200-14--0000101101000104--110????1--0110202100-00011010001101102310111002--0--011101001100131-2010101-00000001101010021-002-0-1201220-0002-00100102-0001201011
+	'Monophyllus redmani'		                          00001-----011001000010210---3-1111--1003----010200101111(2,3)002-2110201120000001001(0,1)10-00-0110010014-002000110-4--001004-00200-14--0000100101000004--1103-111--0110202010-00012010001101102210100102--0--011101001000131-2010101-00000000101010021-002-0-1201320-0002-00100102-0001201010
+	'Musonycteris harrisoni'		                       00001-----0-10011-0010000---3-1112000003----01020010111100-2-1110210120101001003100-00-01101----0--02100110-4--01---0--0200-14--0001---00101001-----1----1----10200000-01011011011101102310111102--0--01010210100010-01010001-001000000-1010021-102-0-0201520-0002-20100102-1001200001
+	'Palynephyllum antimaster 2'		                   ?????????????????????????????????????????????????????????????????????2??000010010?0-0???1?0????????????????????0010130-032??14--??????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????
+	'Phyllonycteris aphylla'		                       0000220---012001000010112100210110--1003----02020011010000-2-01102112200011-1-03002100-01101----10-0110--10-11001---4-002-0-10100101---1101-1-04--1103-211--1110202000-0000-1--------------103102--0--00-2-11012101---1010000-000000012101010-1-2-2-0--1022-0-0022-21200102-01-02001-1
+	'Phyllonycteris major'		                         ??0???????????00??0?101?2?00??0110--1003----02020011010000-2-01102012201011-1-03002100-01101----10-0110--10-01001---4-002-0-10100101---1101-1-0????10???11--??10202100-00??-1--------------1?3102--0--00-2-0101?101---1010000-0000000121???????????????????-0-0?12-21200102-01-02001-1
+	'Phyllonycteris poeyi'		                         0100220---0030010000101111-0210200--1003----0202001101001102-01102112200011-1-03002100-01101----20-0100--10-01001---4-002-0-10100101---1101-1-04--1103-211--1110202100-0000-1--------------103101100--00-2-01012101---1010000-00000001210000021-2-2-0--0022-0-0022-20200102-01-01001-1
+	'Hylonycteris underwoodi'		                      10001-----0-0000000010000---3-1111--0003----01020010110000-2-1110212120100001002002100-011000---4-002100310-3--000--4-00220-13--00000--10100001-----1----1----10201100-01011010011101102320101002--0--010201001100130-1010011-001000011-0110001-102-0-0101520-0002-00100102-00011011-1
+	'Leptonycteris curasoae'		                       10001-----001000000010210---3-2102000003----0102001011002022-1101201220000000001002100-0110010104-002000110-4--0011120-1300-14--1-------------04--1103-101--2110202110-01011010011101102320110002--0--010102001100130-2010100-00000000100110001-002-0-1101410-0002-0111---------------
+	'Leptonycteris nivalis'		                        10001-----011000000010210---3-2112000003----0102001011011002-2101201220000001002002100-0110010114-002100100-4--0010020-0100-14--1-------------04--2103-201--1110201000-01011010011101102220110102--0--010102001100130-2010101-00000000100010021-002-0-1100420-0002-0101---------------
+	'Leptonycteris yerbabuenae'		                    10001-----0110010010102122003-2112000003----0102001011001012-2101201220000001001000-00-01100100130-02102310-4--000--20-1000-14--1-------------04--1103-111--1110211010-01011010011101102310100102--0--010002001200130-2010111-00000001100110021-102-0-0201420-0012-0111---------------
+	'Lichonycteris obscura'		                        00001-----0-00000000101011-03-2112000003----01021010110100-2-0101211220100001003000-00-011000---0--02000110-4--000--10-0300-14--1-------------1-----1----1----10201000-01012011011001102120112002--0--0111011011001---1010011-001000012-0210021-102-0-1001420-0012-1111---------------
+	'Platalina genovensium'		                        10001-----0010011-0010000---3-1111--0013----01021111010000-2-1101211120101001003000-00-01101----0--02200110-4--01---0--0200-14--0201---101010002--2001-101--1110201100-01011010011000102310113102--0--0111021010001---1010011-0--000002-1010021-2-2-0--222520-0012-32200102-1001-1-1-2
+	'Xeronycteris vieirai'		                         10001-----0020001-0010010---3-121200001(0,3)102001020010111100-2-2101211020100001002000-10-0110010010--01100110-4--000--10-0400-14--01000--1020100001020001101--0110201000-01012010011101102210101002--0--0101221010001---1010001-0--000002-1110021-2-2-0--?21520-0012-32100102-1001-1-1-2
+	'Carollia brevicauda'		                          11000--00-0000011000000110-03-0100--1103----01021111001201-2-0110200220000001003000-20-01101----10-02100110-4--0010111-0400-14--02100--1152-1-02--1001-001--000010210211----011001000112110103102--0--00-1-210110012-01010001-001000011-0010021-102-0-0011220-0002-22100202-0001-1-1-2
+	'Carollia perspicillata'		                       11000--00-003001100000012000210110--1103----0102211011122102-0101200210000001003000-20-01101----10-01000110-4--0010111-0300-14--02100--1152-1-000-20000001--100010210111----011001000102210103102--0--00-1-210110012-01010101-001000011-1010011-102-0-0011210-0002-21100102-1001-1-1-2
+	'Rhinophylla alethina'		                         11001-----103001000000110---3-0211--1103----02020011010000-1011112112201001-0-03000-20-011-000--10-0020--10-4--000--10-14-0-14--0311---1152-1-001020000001--001010110111----02-011000112310103102--0--00-1-21012001---0000120-0-2000012-10001---2-2-0---122-0-0002-31200102-0000-1-1-2
+	'Rhinophylla fischerae'		                        1100221---103001000000110---3-0211--1103----02020011010000-1011112112201001-0-03000-20-011-1----10-0020--10-4--000--10-14-0-14--0311---1152-1-001020000001--001010110111----02-011000112310103102--0--0111021012001---0000120-0-2000012-10101---2-2-0---122-0-0002-31200102-0000-1-1-2
+	'Rhinophylla pumilio'		                          11000--0101030010000001020003-1211--1103----02010011000000-1011112102201001-0-03000-20-011-1----10-0020--10-4--01---10-04-0-14--0311---1152-1-001020000011--001010110211----02-0010001123102-3102--0--0111021012001---0000120-0-2000012-10101---2-2-0---112-0-0002-31200102-0000-1-1-2
+	'Glyphonycteris daviesi'		                       11000--20-10--1----1000020110-1102110113----020022110001312000210100210010001001002110-01001----20-021013110012001004-103110101202001001152-01001000001101--000020000210000102-0010000102202-3120000---1120200130112-02002201-00000101001010001-010011010132110001000000101000021011-2
+	'Glyphonycteris sylvestris'		                    11000--00-10--1----1101030000-0202110113----010022201011212000201200200010001001002100-01100101130-02102312-011001004-00322-111102001011152-00001010001101--0000111102100000010001001110320113120000---11202001300130-2002201-00000001101020011-000011010132110001011000101000021011-2
+	'Trinycteris nicefori'		                         10001-----1030010011101020003-0111--1103----010111110110202102210201200010001001010-011011000---30-021000111111001004-003111111202001011152-01001010001101--0000102200-00010010001101100420100020000---21202001100130-2001201-01000001101120021-000011010111110000000000101000021011-2
+	'Artibeus jamaicensis'		                         0000220---012000000000102000211210--1003----0201211010003122-0202100210001002003000-10-01101----0--1--11000-01201---0--1000-030104-1---1152-0002--1001-101--0000302000-0000-1--------------101001000--0111020012001---1010000-001000012-00010-1-012-0--00202110012-02201212-21-0-001-2
+	'Artibeus lituratus'		                           0000200---012000000000103000210210--1003----020121110000312100202101110001002003001110-01101----0--01-11000-01201---10-1010-02011-------------000-10000101--0000302000-0000-1--------------100002--0--0101020012001---1010000-001000012-00010-1-012-0--00202100000102201210021-0-001-2
+	'Artibeus obscurus'		                            0000220---0120000000001030001-0210--1003----020111101000212100101100210001002003001100-01101----0--01010000-01201---10-1010-02001-------------000-10001101--0000302000-0001-1--------------110002--0--0101020012001---1010000-011000012-00010-1-012-0--00212110000001201210021-0-001-2
+	'Artibeus gnomus'		                              0000200---0120000010001030001-0210--1003----0201211010002102-0110000220001002003000-00-01101----0--01011003-11201---10-1013-02021-------------000-10001101--0000302000-0000-1--------------103002--0--010122001300130-1010010-001000010-00010-1-012-0--002020-0002-01201210021-0-1-1-2
+	'Enchisthenes hartii'		                          00001-----012001000000103000211210--1003----0201211100002102-0101000220001002003000-00-01101----0--1--11213-20201---10-1223-12010311---1152-1-000-10000101--0000202000-0000-1--------------10311000100-101020012001---1010000-001000012-10110-1-002-0--002110-0002-01200210001-02001-2
+	'Platyrrhinus helleri'		                         00001-----0130000000101020001-1211--1003----020021110100310000202100210011002003000-00-0110010010--01002310-4--01---0--1220-14--04-1---1152-1-000-11000101--0000202000-0001-1--------------11212000100-2010200120011-01010000-0-2000011-10001---0-020---02020-0000001200210000302011-1
+	'Uroderma bilobatum'		                           0100210---112000010010112000211210--1003----020021200100310000202100110001002103000-00-01101----0--00011203-11201---0--1023-02010311---0152-0002--1101-101--0000212001-0001-1--------------110010000---10102001100130-1010000-001000011-10001---00100---02120-0000101100200001-22011-2
+	'Vampyrodes caraccioli'		                        00001-----013001001010112000212210--1003----020021201000210000202001120001002003002100-00101----0--01011010-200001000--1020-12001-------------000-10000001--0000202000-0000-1--------------110100000--0202020011001---1010000-011000012-20001---00000---02020-0000101201210021-01001-2
+	'Vampyrodes major'		                             01001-----013001000010112000211210--1003----020021101000210000202101210001002003001100-00101----0--00211010-200000--0--1020-12001-------------02--11000001--0100202000-0000-1--------------100100000--0202020011001---1010000-001000012-20001---00010---02010-0000102201210021-01001-2
+	'Pygoderma bilabiatum'		                         00000--010113001001000103010210111--1103----0202211100003122-0210100120001002003000-00-01101----0--02011111110201---0--1003-12001-------------000-00000201--000010200110000-1--------------2-100000100-11212111100130-1010000-0-2000011-010002000-2-1-10020-0-002000221---------------
+	'Sturnira lilium'		                              00001-----003001001000013100211110--0003----0202211010003102-0101000220001000003000-00-01101----10-1--02310-4--01---1--0020-14--0211---1120-0002--0001-101--0000102000-0001-1--------------2-1020000---102021012001---1010010-001000012-0000011-002-0-00021-0-0012-01201212-01-01001-2
+	'Noctilio albiventris'		                         10000--0101030000100002120000-1110--1003----1-----------311110110001220000000001012000-0010010014-0020001010112001014-003010011201001011120-0001--101----1--001120200210001-1--------------0-102101111-0-1-2101200131-1010012100000011111210020100100-000002110021100000101000021001-2
+	'Noctilio leporinus'		                           10000--010103000010000(2,1)120000-1110--1003----1-----------311100110001220000000001012000-0110010014-0020001111002001014-002011110201001011120-0001--101----1--001120200210001-1--------------0-102100111-0-1-2101200131-10000121000000111110100201001011000002110011100000101000021001-2
+	'Thyroptera tricolor'		                          10000--1--1020000100101030001-1100--10000120010021100000312101110100220010001001012100-0100010114-302002012-201001004-20312-120201001011100-00001020001110211010112002100012010001000100220103120100---11102101100131-2000201-010000000-121001020000111101100-001001000000001002-011-1
+	;
+ENDBLOCK;
+
+BEGIN ASSUMPTIONS;
+TYPESET * UNTITLED = unord: 1 - 278;
+ENDBLOCK;
