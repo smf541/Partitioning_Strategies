@@ -1,0 +1,7 @@
+{
+    "installOptions" : {
+        "installDependencies" : true,
+        "installFromRepository" : true,
+        "libraryPath" : "\\\\Hudson/dxsb43/My_Documents/R/win-library/3.4"
+    }
+}

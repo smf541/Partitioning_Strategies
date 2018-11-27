@@ -1,0 +1,23 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1542804889204.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "446182855",
+    "id" : "5B480387",
+    "lastKnownWriteTime" : 1542812400,
+    "last_content_update" : 1542812400431,
+    "path" : "C:/Users/dxsb43/GitHub/Partitioning Strategies/CharacterNumberVectors.R",
+    "project_path" : "CharacterNumberVectors.R",
+    "properties" : {
+        "cursorPosition" : "29,0",
+        "scrollLine" : "0",
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 3,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}
