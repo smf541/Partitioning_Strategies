@@ -84,7 +84,7 @@ BEGIN MRBAYES;
   
   outgroup Loxosomella;
   
-  mcmcp ngen=5000000 samplefreq=100 nruns=4 nchains=8 burninfrac=0.25 append=no temp=downT;
+  mcmcp ngen=5000000 samplefreq=100 nruns=4 nchains=8 burninfrac=0.25 append=no temp=0.05;
 
   ss burninss=-1 nsteps=40;
   sumss steptoplot=30 askmore=no smoothing=5;
