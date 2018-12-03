@@ -5,18 +5,18 @@
 
 
 #read in data
-input.dataset <- "./HyolithCharacters.csv" #change file to needed data set in .csv format
+input.dataset <- "./HyolithCharacters.csv" #***change file to needed data set in .csv format***
 
 data.set <- read.csv(input.dataset)
 
 
 #get partition names
-partition.levels <- levels(data.set$body.region)  #change $column name
+partition.levels <- levels(data.set$body.region)  #***change $column name***
 
 #get vector of character no. for each partition name
 
 get.char.vector <- function(level) {
-  data.set$char.no[data.set$body.region==level] #change $column name
+  data.set$char.no[data.set$body.region==level] #***change $column name***
 }
 
 
