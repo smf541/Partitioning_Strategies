@@ -27,3 +27,13 @@ char.vector.array <- as.array(sapply(partition.levels,
 
 #print results
 print(char.vector.array[8])
+
+
+
+#histogram of partition sizes
+#vector of partition names and no. of characters in each
+part.lengths <- vapply(char.vector.array, length, FUN.VALUE=numeric(1))
+#plot dotplot
+plot(part.lengths)
+
+str(part.lengths)
