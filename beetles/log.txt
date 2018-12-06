@@ -1,0 +1,33 @@
+INFO     | 2018-12-04 14:13:15,726 | config     | Loading configuration at '.\partition_finder.cfg'
+ERROR    | 2018-12-04 14:13:15,734 | parser     | There was a problem loading your .cfg file, please check and try again
+ERROR    | 2018-12-04 14:13:15,736 | parser     | Expected "alignment" (at char 0), (line:1, col:1)
+INFO     | 2018-12-04 14:13:15,736 | parser     | It looks like the 'alignment' option might be missing or in the wrong place. Or perhaps something is wrong in the lines just before the 'alignment' option is missing. Please double check the configuration file and try again
+ERROR    | 2018-12-04 14:13:15,736 | main       | Failed to run. See previous errors.
+INFO     | 2018-12-04 14:15:37,140 | config     | Loading configuration at '.\partition_finder.cfg'
+INFO     | 2018-12-04 14:15:37,151 | config     | Setting 'alignment' to 'cognato.phy'
+INFO     | 2018-12-04 14:15:37,151 | config     | Setting 'branchlengths' to 'linked'
+INFO     | 2018-12-04 14:15:37,151 | parser     | You set 'models' to: GTR, GTR+G, GTR+I+G
+INFO     | 2018-12-04 14:15:37,243 | model_load | This analysis will use the following 3 models of molecular evolution
+INFO     | 2018-12-04 14:15:37,244 | model_load | GTR, GTR+G, GTR+I+G
+INFO     | 2018-12-04 14:15:37,244 | config     | Setting 'model_selection' to 'aicc'
+INFO     | 2018-12-04 14:15:37,247 | config     | Setting 'search' to 'greedy'
+INFO     | 2018-12-04 14:15:37,249 | config     | ------------------------ BEGINNING NEW RUN -------------------------------
+INFO     | 2018-12-04 14:15:37,249 | config     | Looking for alignment file '.\cognato.phy'...
+INFO     | 2018-12-04 14:15:37,250 | threadpool | Using 8 cpus
+INFO     | 2018-12-04 14:15:37,250 | analysis   | Beginning Analysis
+INFO     | 2018-12-04 14:15:37,267 | alignment  | Reading alignment file '.\cognato.phy'
+ERROR    | 2018-12-04 14:15:37,269 | alignment  | Line 1: Failed to find the Phyml header that specifies the species count, and sequence length
+ERROR    | 2018-12-04 14:15:37,270 | main       | Failed to run. See previous errors.
+INFO     | 2018-12-04 14:24:19,841 | config     | Loading configuration at '.\partition_finder.cfg'
+INFO     | 2018-12-04 14:24:19,848 | config     | Setting 'alignment' to 'cognato.phy'
+INFO     | 2018-12-04 14:24:19,848 | config     | Setting 'branchlengths' to 'linked'
+INFO     | 2018-12-04 14:24:19,849 | parser     | You set 'models' to: GTR, GTR+G, GTR+I+G
+INFO     | 2018-12-04 14:24:19,927 | model_load | This analysis will use the following 3 models of molecular evolution
+INFO     | 2018-12-04 14:24:19,927 | model_load | GTR, GTR+G, GTR+I+G
+INFO     | 2018-12-04 14:24:19,927 | config     | Setting 'model_selection' to 'aicc'
+INFO     | 2018-12-04 14:24:19,930 | config     | Setting 'search' to 'greedy'
+INFO     | 2018-12-04 14:24:19,930 | config     | ------------------------ BEGINNING NEW RUN -------------------------------
+INFO     | 2018-12-04 14:24:19,930 | config     | Looking for alignment file '.\cognato.phy'...
+INFO     | 2018-12-04 14:24:19,933 | threadpool | Using 8 cpus
+INFO     | 2018-12-04 14:24:19,933 | analysis   | Beginning Analysis
+INFO     | 2018-12-04 14:24:19,956 | alignment  | Reading alignment file '.\cognato.phy'
