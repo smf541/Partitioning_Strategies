@@ -12,7 +12,9 @@
     "path" : "C:/Users/dxsb43/GitHub/Partitioning_Strategies/Partitioning Strategies R files/ss_output_analysis.Rmd",
     "project_path" : "ss_output_analysis.Rmd",
     "properties" : {
-        "chunk_output_type" : "inline"
+        "chunk_output_type" : "inline",
+        "cursorPosition" : "60,51",
+        "scrollLine" : "53"
     },
     "relative_order" : 2,
     "source_on_save" : false,

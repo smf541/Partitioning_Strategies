@@ -1,1 +1,0 @@
-read.table(file="../tests/hyo/dev16/hyo_dev16_ss.nex.ss", skip=6)

@@ -1,0 +1,35 @@
+--------------------------------------------------------------------------
+A requested component was not found, or was unable to be opened.  This
+means that this component is either not installed or is unable to be
+used on your system (e.g., sometimes this means that shared libraries
+that the component requires are unable to be found/loaded).  Note that
+Open MPI stopped checking at the first component that it did not find.
+
+Host:      cn6050.hpc.dur.ac.uk
+Framework: mtl
+Component: psm2
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+At least one pair of MPI processes are unable to reach each other for
+MPI communications.  This means that no Open MPI device has indicated
+that it can be used to communicate between these processes.  This is
+an error; Open MPI requires that all MPI processes be able to reach
+each other.  This error can sometimes be the result of forgetting to
+specify the "self" BTL.
+
+  Process 1 ([[35835,1],0]) is on host: cn6020
+  Process 2 ([[35835,1],2]) is on host: cn6050
+  BTLs attempted: sm self
+
+Your MPI job is now going to abort; sorry.
+--------------------------------------------------------------------------
+[cn6020:5075] *** An error occurred in MPI_Bcast
+[cn6020:5075] *** reported by process [2348482561,0]
+[cn6020:5075] *** on communicator MPI_COMM_WORLD
+[cn6020:5075] *** MPI_ERR_INTERN: internal error
+[cn6020:5075] *** MPI_ERRORS_ARE_FATAL (processes in this communicator will now abort,
+[cn6020:5075] ***    and potentially your MPI job)
+[cn6020.hpc.dur.ac.uk:05059] 7 more processes have sent help message help-mca-base.txt / find-available:not-valid
+[cn6020.hpc.dur.ac.uk:05059] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages
+[cn6020.hpc.dur.ac.uk:05059] 1 more process has sent help message help-mca-bml-r2.txt / unreachable proc
+[cn6020.hpc.dur.ac.uk:05059] 1 more process has sent help message help-mpi-errors.txt / mpi_errors_are_fatal
