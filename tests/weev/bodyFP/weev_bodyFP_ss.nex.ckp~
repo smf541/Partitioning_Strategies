@@ -1,0 +1,172 @@
+#NEXUS
+[ID: 3499696980]
+[generation: 4904000]
+[SsAcumulators: 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000]
+
+begin trees;
+	translate
+       1 Dendrobius,
+       2 Palophagoides,
+       3 Prionus,
+       4 Doydirhynchus,
+       5 Mecomacer,
+       6 Rhynchitomacerinus,
+       7 Ptychoderes,
+       8 Toxonotus,
+       9 Oxycraspedus,
+      10 Rhopalotria,
+      11 Rhinotia,
+      12 Apoderus,
+      13 Attelabus,
+      14 Auletobius,
+      15 Merhynchites,
+      16 Caenominurus,
+      17 Antliarhinus,
+      18 Apion,
+      19 Aporhina,
+      20 Cylas,
+      21 Ithycerus,
+      22 Ocladius,
+      23 Stromboscerini,
+      24 Trigonotarsus,
+      25 Rhinostomus,
+      26 Rhynchophorus,
+      27 Sitophilus,
+      28 Sphenophorus,
+      29 Stenopelmus,
+      30 Lissorhoptrus,
+      31 Tanysphyrus,
+      32 Penestes,
+      33 Stenancylus,
+      34 Cossonus,
+      35 Araucarius,
+      36 Phylloplatypus,
+      37 Dendroctonus,
+      38 Liparthrum,
+      39 Phloeotribus,
+      40 Hylurgonotus,
+      41 Hylastes,
+      42 Hylurgops,
+      43 Ips,
+      44 Pityophthorus,
+      45 Pityogenes,
+      46 Trypodendron,
+      47 Dryocoetes,
+      48 Scolytus,
+      49 Platypus,
+      50 Austroplatypus,
+      51 Notoplatypus,
+      52 Chaetastus,
+      53 Ampeloglypter,
+      54 Sibariops,
+      55 Odontocorynus,
+      56 Callirhopalus,
+      57 Diaprepes,
+      58 Cylydrorhinus,
+      59 Leptopius,
+      60 Eudiagogus,
+      61 Exophthalmus,
+      62 Naupactus,
+      63 Otiorhynchus,
+      64 Asynonychus,
+      65 Lachnopus,
+      66 Polydrusus,
+      67 Sitona,
+      68 Tanymecus,
+      69 Chrysolopus,
+      70 Talaurinus,
+      71 Gonipterus,
+      72 Bronchus,
+      73 Listronotus,
+      74 Oxyops,
+      75 Listroderes,
+      76 Hypera,
+      77 Anthonomus,
+      78 Curculio,
+      79 Camarotus,
+      80 Tachygonus,
+      81 Auletes,
+      82 Rhinoncus,
+      83 Phytobius,
+      84 Araucarietius,
+      85 Eisingius,
+      86 Perelleschus,
+      87 Gymnetron,
+      88 Myrmex,
+      89 Rhyephenes,
+      90 Pseudomopsis,
+      91 Bagous_myriophyllae,
+      92 Bagous_americanus,
+      93 Bagoini,
+      94 Lixus,
+      95 Cholus,
+      96 Conotrachelus,
+      97 Epistrophus,
+      98 Marshallius,
+      99 Calvertius,
+      100 Tranes,
+      101 Pachylobius,
+      102 Piazurus,
+      103 Macrocopturus;
+end;
+
+begin mrbayes;
+	startvals
+		Tau{all}(1,3)=mcmc.tree_1
+		Tau{all}(1,4)=mcmc.tree_2
+		Tau{all}(1,6)=mcmc.tree_3
+		Tau{all}(1,7)=mcmc.tree_4
+		Tau{all}(1,1)=mcmc.tree_5
+		Tau{all}(1,2)=mcmc.tree_6
+		Tau{all}(1,8)=mcmc.tree_7
+		Tau{all}(1,5)=mcmc.tree_8
+		Tau{all}(2,1)=mcmc.tree_9
+		Tau{all}(2,5)=mcmc.tree_10
+		Tau{all}(2,3)=mcmc.tree_11
+		Tau{all}(2,8)=mcmc.tree_12
+		Tau{all}(2,7)=mcmc.tree_13
+		Tau{all}(2,2)=mcmc.tree_14
+		Tau{all}(2,6)=mcmc.tree_15
+		Tau{all}(2,4)=mcmc.tree_16
+		Tau{all}(3,6)=mcmc.tree_17
+		Tau{all}(3,3)=mcmc.tree_18
+		Tau{all}(3,2)=mcmc.tree_19
+		Tau{all}(3,7)=mcmc.tree_20
+		Tau{all}(3,1)=mcmc.tree_21
+		Tau{all}(3,4)=mcmc.tree_22
+		Tau{all}(3,8)=mcmc.tree_23
+		Tau{all}(3,5)=mcmc.tree_24
+		Tau{all}(4,6)=mcmc.tree_25
+		Tau{all}(4,3)=mcmc.tree_26
+		Tau{all}(4,2)=mcmc.tree_27
+		Tau{all}(4,4)=mcmc.tree_28
+		Tau{all}(4,1)=mcmc.tree_29
+		Tau{all}(4,7)=mcmc.tree_30
+		Tau{all}(4,8)=mcmc.tree_31
+		Tau{all}(4,5)=mcmc.tree_32
+		Tau{all}(5,5)=mcmc.tree_33
+		Tau{all}(5,2)=mcmc.tree_34
+		Tau{all}(5,4)=mcmc.tree_35
+		Tau{all}(5,6)=mcmc.tree_36
+		Tau{all}(5,8)=mcmc.tree_37
+		Tau{all}(5,7)=mcmc.tree_38
+		Tau{all}(5,1)=mcmc.tree_39
+		Tau{all}(5,3)=mcmc.tree_40
+		Tau{all}(6,8)=mcmc.tree_41
+		Tau{all}(6,3)=mcmc.tree_42
+		Tau{all}(6,7)=mcmc.tree_43
+		Tau{all}(6,4)=mcmc.tree_44
+		Tau{all}(6,5)=mcmc.tree_45
+		Tau{all}(6,2)=mcmc.tree_46
+		Tau{all}(6,6)=mcmc.tree_47
+		Tau{all}(6,1)=mcmc.tree_48
+		Tau{all}(7,3)=mcmc.tree_49
+		Tau{all}(7,1)=mcmc.tree_50
+		Tau{all}(7,5)=mcmc.tree_51
+		Tau{all}(7,8)=mcmc.tree_52
+		Tau{all}(7,4)=mcmc.tree_53
+		Tau{all}(7,2)=mcmc.tree_54
+		Tau{all}(7,6)=mcmc.tree_55
+	;
+	propset
+	;
