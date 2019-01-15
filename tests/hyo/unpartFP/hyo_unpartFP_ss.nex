@@ -66,12 +66,12 @@ BEGIN MRBAYES;
   lset coding=variable rates=gamma;
   prset brlenspr = unconstrained: gammadir(1, 0.34, 1, 1);
 
+  prset applyto=(all) symdirihyperpr=fixed(infinity);
+  prset applyto=(all) ratepr=variable;
   
   outgroup Loxosomella;
   
-  mcmcp ngen=5000000 samplefreq=500 nruns=4 nchains=8 burninfrac=0.1 append=no;
-  [mcmcp ngen=5000000 append=yes;]
-  [mcmcp ngen=500000 append=no;]
+  mcmcp ngen=5000000 samplefreq=100 nruns=8 nchains=8 burninfrac=0.25 append=no;
   
-  ss burninss=100 nsteps=40; 
+  ss burninss=-1 nsteps=40 fromprior=yes; 
 END;
