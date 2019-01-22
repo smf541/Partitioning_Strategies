@@ -1,0 +1,82 @@
+macro=; 
+if ( !argnumber )
+     errmsg .
+       This file contains instructions to do Sankoff optimization
+       using the scripting language of TNT.  It is veeery sloow.
+
+       Must give tree to optimize as argument ;
+     end
+report- ;
+ccode (. ;
+safe loop 5 ; 
+set 0 0 ; 
+loop 0 nchar 
+   if ( maxstate [ #1 ] > '0' ) set 0 maxstate [ #1 ] ; end 
+   stop
+set 0 ++ ; 
+var =
+        10 coma  [ (2*(ntax+1)) '0' ]   /* cost-matrix of node x state */
+        +  lino  [ (2*(ntax+1)) ]       /* list of nodes */      
+        +  lide  [ (2*(ntax+1)) ]       /* list of descendants */      
+        +  curno                        /* node being looked at */
+        +  beco                         /* temporary cost */
+        +  loco                         /* local cost */
+        +  myco                         /* final cost */
+        +  tolen                        /* total tree length */
+        ;
+silent = all ;
+set tolen 0 ;
+resettime ; 
+/*   The Meat   */
+loop 0 nchar                               /*   L00P ON CHARS.  */
+  progress #1 nchar Optimizing ch. #1 ;
+  loop 0 ntax
+       loop 0 maxstate [#1]
+            if ( ( { #3 } & states[#1 #2] ) == 0 )
+                 set coma [ #2 #3 ] 100000 ;
+            else set coma [ #2 #3 ] 0 ; end
+       stop
+  stop
+  set lino uplist [ %1 root ] ;
+  loop (listsize-1) 0                      /*   L00P ON NODES   */
+     set lide deslist [ %1 ('lino[#2]') ] ;
+     loop 0 maxstate[#1]                   /*   L00P ON STATES FOR NODE */
+       set myco 0 ;                      
+       loop 0 (listsize-1)                 /*   L00P ON DESCENDANTS FOR NODE */
+          set curno 'lide[#4]' ;
+          set beco 100000 ;
+          loop 0 maxstate[#1]              /*   L00P ON STATES FOR DESCENDANT */
+             set loco cost [ #1 #3 #5 ] + 'coma [ 'curno' #5 ]' ;
+             if ( 'loco' < 'beco' )
+                 set beco 'loco' ;
+                 end
+             stop
+          set myco += 'beco' ;
+          stop
+       set coma [ 'lino[#2]' #3 ] 'myco' ;
+       stop
+  stop
+  set beco 100000 ;
+  loop 0 maxstate[#1]
+     if ( 'beco' > 'coma[ root #2]' )
+          set beco 'coma[ root #2]' ;
+          end
+     stop
+  set tolen += ( 'beco' * weight [ #1 ] ) ;
+stop
+macfloat 2 ; 
+silent - all ;
+progress/ ;
+set 0 time ; 
+quote
+Total length: calculated as 'tolen' steps (in '0' secs.) ; 
+
+silent= all ; 
+macfloat 6 ; 
+silent- all ; 
+proc/ ;
+
+
+
+
+

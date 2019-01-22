@@ -1,0 +1,141 @@
+macro=;
+/***********************************************\
+|                                               |
+|   This macro calculates bremer supports, for  |
+|  the groups in a given tree.  The support is  |
+|  estimated by comparing the average length    |
+|  of 5 replications with TBR (saving a single  |
+|  tree) forced to not have the group, minus    |
+|  the average length of 5 replications forced  |
+|  to have the group.  The supports can thus    |
+|  be fractional, even for unweighted analy-    |
+|  ses.  When implied weighting is ON, the      |
+|  macro properly takes it into account. Note   |
+|  the estimation is only approximmate (to make |
+|  it more accurate, it is necessary to change  |
+|  the search routine used to a more exhaustive |
+|  one). One could search for the unconstrained |
+|  trees only once, and save time there, but    |
+|  that would require significant changes to    |
+|  the instructions below.                      |
+|                                               |
+\***********************************************/
+var =
+  10 treenum
+  + nunos
+  + beswith 
+  + beswithout 
+  + nugs
+  + done
+  + floli [ (ntax+1) ] 
+;
+loop 0 ntax set floli[#1] 0 ; stop 
+if ( ntrees < 0 )
+   errmsg Must have at least one tree in memory to run this routine ;
+   end 
+if ( !windows ) 
+  if ( !argnumber )
+   errmsg
+   Must indicate number of tree to use as reference
+   for bremer support calculations ;
+  else
+   set treenum %1 ; 
+  end
+else
+opendlg 30 30 280 160 Search and calculate bremer supports...
+  spin 0 ntrees treenum 25 25 200 18 Reference tree ;
+  showtxt 35 60 100 18 Set floating taxa ; 
+  taxsel floli 135 60 70 18 ; 
+closedlg ;
+if ( exstatus == 0 ) proc/; end 
+end
+
+
+silent = all ;
+report- ; 
+ag =0 (floaters) ;
+set 0 0 ; 
+loop 0 ntax
+   if ( 'floli[#1]' )
+       ag >0 #1 ;
+       set 0 ++ ; 
+       end
+   stop
+if ( '0' )
+   lquote [ ; 
+   sil - all ;
+   quote The taxa in group &39floaters&39  are ignored:;
+   ag ;
+   sil = all ;
+   lquote ] ;
+   end 
+hold 10000 ;
+tsave bremer.tmp ;
+tchoose 'treenum' ;
+
+/*
+     This sets the chosen tree as target. Changing this,
+     you can make it not to throw away previous tags, so
+     that you can overimpose supports (for partitioned
+     bremer supports, for example)
+*/
+ttag - ;
+ttag * 0 ; 
+save 0 ;
+tsave/;
+
+/*
+    Use 2 decimals for unweighted analyses,
+    3 decimals for implied weighting
+*/
+
+if ( score[0] == length[0] ) macfloat 2 ;
+else macfloat 3 ; end 
+
+set nugs nnodes[0] - (ntax+2) ;
+set done 0 ;
+
+/*
+    This is the search routine to use.
+    Make it more exhaustive for better precision
+*/
+mu: hold 1 rep 5 tbr keep ; 
+
+loop (ntax+2) nnodes[0]
+     progress 'done' 'nugs' Estimating bremer supports... ;
+     set done ++ ;
+     keep 0 ;
+     sho bremer.tmp ;
+     if ( anc[0 #1] == ( ntax+1) ) continue ; end 
+     force + [ @0 #1 ( { floaters} ) ] ;
+     const= ; 
+     k0 ;
+     mu ;
+     set 0 0 ; 
+     loop 0 ntrees
+        set 0 += score[#2] ;
+        stop
+     set beswith '0'/(ntrees+1) ;
+     keep 0 ;
+     sho bremer.tmp ; 
+     force - [ @0 #1 ( { floaters} ) ] ;
+     const= ; 
+     k0 ;
+     mu ;
+     set 0 0 ; 
+     loop 0 ntrees
+        set 0 += score[#2] ;
+        stop
+     set beswithout '0'/(ntrees+1) ;
+     k0;
+     sho bremer.tmp ;
+     set 0 'beswithout' - 'beswith' ;
+     if ( ('0') < 0 ) 
+           ttag +#1 ['0'];
+     else  ttag +#1 '0'; end
+stop
+progress/; 
+sil - all ;
+report= ;
+ttag ;
+proc/;

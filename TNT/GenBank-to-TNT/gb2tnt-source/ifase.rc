@@ -1,0 +1,405 @@
+/*
+Copyright (C) 2008, 2011 Pablo A. Goloboff, Santiago Catalano
+
+This program is free software; you can redistribute it and/or modify it
+under the terms of the GNU General Public License as published by the Free
+Software Foundation; either version 3 of the License, or (at your option)
+any later version.
+
+This program is distributed in the hope that it will be useful, but
+WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY
+or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License
+(at http://www.opensource.org/licenses/gpl-3.0.html) for more details.
+
+Email: pablogolo@csnat.edu.ar
+Mail:
+  Pablo A. Goloboff, INSUE, Instituto Miguel Lillo,
+  Miguel Lillo 205, 4000 S.M. de Tucuman, Argentina.
+
+*/
+
+#include "windows.h" 
+#include "ifase.h"
+#define ESTADO 1
+#define ILD_YES 1
+#ifdef NEWEST_WATCOM
+#include <\watcom\h\nt\winuser.h>
+#endif
+
+MyMenu MENUEX DISCARDABLE
+   BEGIN
+        POPUP "&File", IDM_FILEMENU , MFT_STRING, MFS_GRAYED
+          BEGIN  
+            MENUITEM "&Open project", IDM_OPEN, MFT_STRING
+            MENUITEM "&New project" , IDM_NEWPROJECT , MFT_STRING
+            MENUITEM "&Edit project" , IDM_MODIFYPROJECT, MFT_STRING 
+            MENUITEM "&Save" , IDM_SAVEPROJECT, MFT_STRING 
+            MENUITEM "Save &as" , IDM_SAVEPROJECTASS , MFT_STRING 
+            MENUITEM " " , 0 , MFT_SEPARATOR
+            MENUITEM "&Log report to..." , IDM_SAVEREPORTS , MFT_STRING
+            MENUITEM "&Close file" , IDM_CLOSEREPORTS , MFT_STRING 
+            MENUITEM " " , 0 , MFT_SEPARATOR
+            MENUITEM "&Quit", IDM_EXIT, MFT_STRING
+          END 
+
+        POPUP "&Project" , IDM_CREATEMENU , MFT_STRING  
+           BEGIN 
+             MENUITEM "&Build matrix", IDM_CREATE, MFT_STRING
+             MENUITEM "&Show dependencies", IDM_SHOWDEPENDS, MFT_STRING
+             MENUITEM "&Erase all temporary files", IDM_ERASEALLTEMPS, MFT_STRING
+             MENUITEM "&Check with BioEdit", IDM_BIOEDITCHECK, MFT_STRING
+           END
+
+         POPUP "&Taxonomy", IDM_GRALTAXONOMYOPTIONS , MFT_STRING
+           BEGIN
+             MENUITEM "&Query identity for similar taxa", IDM_QUERYIDENTITY , MFT_STRING
+             MENUITEM "&Include taxonomy in TNT file", IDM_SAVETAXONOMY , MFT_STRING
+             POPUP "&Change taxonomy", IDM_TAXONOMYOPTIONS , MFT_STRING
+                BEGIN
+                   MENUITEM "species/genus level", IDM_TAXONOMYCHANGESPECIES , MFT_STRING
+                   MENUITEM "higher levels", IDM_TAXONOMYCHANGEHIGHER , MFT_STRING
+                   END 
+             MENUITEM " " , 0 , MFT_SEPARATOR
+             MENUITEM "Include &accession IDs in TNT file", IDM_SAVEACCESSIONS, MFT_STRING
+             MENUITEM " " , 0 , MFT_SEPARATOR
+             MENUITEM "Exclusion-inclusion criteria", IDM_GETCRITERIA , MFT_STRING
+             MENUITEM "One sequence per species", IDM_ONESEQPERSP , MFT_STRING
+           END 
+
+        POPUP "&Options" , IDM_OPTIONS , MFT_STRING , 
+         BEGIN 
+         MENUITEM "Display full paths", IDM_FULLPATHS , MFT_STRING
+         MENUITEM "Show rejected accessions", IDM_SHOWREJECTS , MFT_STRING
+         POPUP "&Choose default aligner ..." , IDM_ALIGNER , MFT_STRING
+          BEGIN
+             MENUITEM "&MAFFT" , IDM_MAFFT  , MFT_STRING 
+             MENUITEM "M&USCLE" , IDM_MUSCLE , MFT_STRING 
+             MENUITEM "other &program" , IDM_CHOOSEALIGNER , MFT_STRING 
+           END
+         POPUP "&Location of ...", IDM_LOCATE , MFT_STRING
+          BEGIN
+             MENUITEM "&MAFFT" , IDM_LOCATEMAFFT  , MFT_STRING 
+             MENUITEM "M&USCLE" , IDM_LOCATEMUSCLE , MFT_STRING 
+             MENUITEM "Other &Program" , IDM_LOCATEALIGNER , MFT_STRING 
+             MENUITEM " " , 0 , MFT_SEPARATOR
+             MENUITEM "&BioEdit" , IDM_LOCATEBIOEDIT , MFT_STRING 
+             MENUITEM "&TNT" , IDM_LOCATETNT , MFT_STRING 
+           END
+         END
+
+   END
+
+"GB2TNT" ICON "gb2tnt.ico"
+
+CharDataEditDB DIALOG  40,0, 84, 15
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CLIPSIBLINGS | WS_THICKFRAME     | WS_MAXIMIZEBOX | WS_CAPTION
+CAPTION "Edit project..."
+FONT 9,"Helv"
+BEGIN
+    CONTROL "OK",IDOK,"button",BS_DEFPUSHBUTTON | WS_TABSTOP | WS_CHILD,     234, 192,38,15
+    CONTROL "Cancel",IDCANCEL,"button",WS_TABSTOP | WS_CHILD | BS_PUSHBUTTON, 192, 192,38,15
+    CONTROL "<",100,"BUTTON",WS_TABSTOP | WS_CHILD | BS_PUSHBUTTON,18,192,36,14
+    CONTROL "<<",102,"BUTTON",WS_TABSTOP | WS_CHILD | BS_PUSHBUTTON,18,192,36,14
+    CONTROL "|<",104,"BUTTON",WS_TABSTOP | WS_CHILD | BS_PUSHBUTTON,18,192,36,14
+    CONTROL ">",101,"BUTTON",WS_TABSTOP | WS_CHILD | BS_PUSHBUTTON,58,192,36,14
+    CONTROL ">>",103,"BUTTON",WS_TABSTOP | WS_CHILD | BS_PUSHBUTTON,58,192,36,14
+    CONTROL ">|",105,"BUTTON",WS_TABSTOP | WS_CHILD | BS_PUSHBUTTON,58,192,36,14
+
+    CONTROL " " , 115 , "BUTTON", BS_BITMAP , 10, 60  , 12, 46
+    CONTROL " " , 116 , "BUTTON", BS_BITMAP , 10, 135 , 12, 46
+
+    CONTROL "Block_1",      300,"EDIT", ES_AUTOHSCROLL | WS_TABSTOP | WS_CHILD | WS_BORDER | ES_CENTER, 111,76,67,13
+    CONTROL "find file(s)", 700,"BUTTON",WS_TABSTOP | WS_CHILD | BS_PUSHBUTTON,230,130,50,12
+    CONTROL "",             200,"EDIT", ES_AUTOHSCROLL | ES_AUTOVSCROLL | ES_OEMCONVERT | ES_WANTRETURN | ES_MULTILINE | WS_TABSTOP | WS_CHILD | WS_BORDER | ES_LEFT, 15,88,66,72
+    CONTROL "",             600,"EDIT", ES_AUTOHSCROLL | ES_AUTOVSCROLL | ES_OEMCONVERT | ES_WANTRETURN | ES_MULTILINE | WS_TABSTOP | WS_CHILD | WS_BORDER | ES_LEFT, 15 ,88,66,72
+    CONTROL "Options",      400,"BUTTON",WS_TABSTOP | WS_CHILD | BS_PUSHBUTTON,230,100,28,12
+    CONTROL "Block_2",      301,"EDIT", ES_AUTOHSCROLL | WS_TABSTOP | WS_CHILD | WS_BORDER | ES_CENTER, 111,76,67,13
+    CONTROL "find file(s)", 701,"BUTTON",WS_TABSTOP | WS_CHILD | BS_PUSHBUTTON,230,130,50,12
+    CONTROL "",             201,"EDIT", ES_AUTOHSCROLL | ES_AUTOVSCROLL | ES_OEMCONVERT | ES_WANTRETURN | ES_MULTILINE | WS_TABSTOP | WS_CHILD | WS_BORDER | ES_LEFT, 15,88,66,72
+    CONTROL "",             601,"EDIT", ES_AUTOHSCROLL | ES_AUTOVSCROLL | ES_OEMCONVERT | ES_WANTRETURN | ES_MULTILINE | WS_TABSTOP | WS_CHILD | WS_BORDER | ES_LEFT, 15 ,88,66,72
+    CONTROL "Options",      401,"BUTTON",WS_TABSTOP | WS_CHILD | BS_PUSHBUTTON,230,100,28,12
+    CONTROL "Block_3",      302,"EDIT", ES_AUTOHSCROLL | WS_TABSTOP | WS_CHILD | WS_BORDER | ES_CENTER, 111,76,67,13
+    CONTROL "find file(s)", 702,"BUTTON",WS_TABSTOP | WS_CHILD | BS_PUSHBUTTON,230,130,50,12
+    CONTROL "",             202,"EDIT", ES_AUTOHSCROLL | ES_AUTOVSCROLL | ES_OEMCONVERT | ES_WANTRETURN | ES_MULTILINE | WS_TABSTOP | WS_CHILD | WS_BORDER | ES_LEFT, 15,88,66,72
+    CONTROL "",             602,"EDIT", ES_AUTOHSCROLL | ES_AUTOVSCROLL | ES_OEMCONVERT | ES_WANTRETURN | ES_MULTILINE | WS_TABSTOP | WS_CHILD | WS_BORDER | ES_LEFT, 15 ,88,66,72
+    CONTROL "Options",      402,"BUTTON",WS_TABSTOP | WS_CHILD | BS_PUSHBUTTON,230,100,28,12
+    CONTROL "Block_4",      303,"EDIT", ES_AUTOHSCROLL | WS_TABSTOP | WS_CHILD | WS_BORDER | ES_CENTER, 111,76,67,13
+    CONTROL "find file(s)", 703,"BUTTON",WS_TABSTOP | WS_CHILD | BS_PUSHBUTTON,230,130,50,12
+    CONTROL "",             203,"EDIT", ES_AUTOHSCROLL | ES_AUTOVSCROLL | ES_OEMCONVERT | ES_WANTRETURN | ES_MULTILINE | WS_TABSTOP | WS_CHILD | WS_BORDER | ES_LEFT, 15,88,66,72
+    CONTROL "",             603,"EDIT", ES_AUTOHSCROLL | ES_AUTOVSCROLL | ES_OEMCONVERT | ES_WANTRETURN | ES_MULTILINE | WS_TABSTOP | WS_CHILD | WS_BORDER | ES_LEFT, 15 ,88,66,72
+    CONTROL "Options",      403,"BUTTON",WS_TABSTOP | WS_CHILD | BS_PUSHBUTTON,230,100,28,12
+    CONTROL "Block_5",      304,"EDIT", ES_AUTOHSCROLL | WS_TABSTOP | WS_CHILD | WS_BORDER | ES_CENTER, 111,76,67,13
+    CONTROL "find file(s)", 704,"BUTTON",WS_TABSTOP | WS_CHILD | BS_PUSHBUTTON,230,130,50,12
+    CONTROL "",             204,"EDIT", ES_AUTOHSCROLL | ES_AUTOVSCROLL | ES_OEMCONVERT | ES_WANTRETURN | ES_MULTILINE | WS_TABSTOP | WS_CHILD | WS_BORDER | ES_LEFT, 15,88,66,72
+    CONTROL "",             604,"EDIT", ES_AUTOHSCROLL | ES_AUTOVSCROLL | ES_OEMCONVERT | ES_WANTRETURN | ES_MULTILINE | WS_TABSTOP | WS_CHILD | WS_BORDER | ES_LEFT, 15 ,88,66,72
+    CONTROL "Options",      404,"BUTTON",WS_TABSTOP | WS_CHILD | BS_PUSHBUTTON,230,100,28,12
+    CONTROL "Block_6",      305,"EDIT", ES_AUTOHSCROLL | WS_TABSTOP | WS_CHILD | WS_BORDER | ES_CENTER, 111,76,67,13
+    CONTROL "find file(s)", 705,"BUTTON",WS_TABSTOP | WS_CHILD | BS_PUSHBUTTON,230,130,50,12
+    CONTROL "",             205,"EDIT", ES_AUTOHSCROLL | ES_AUTOVSCROLL | ES_OEMCONVERT | ES_WANTRETURN | ES_MULTILINE | WS_TABSTOP | WS_CHILD | WS_BORDER | ES_LEFT, 15,88,66,72
+    CONTROL "",             605,"EDIT", ES_AUTOHSCROLL | ES_AUTOVSCROLL | ES_OEMCONVERT | ES_WANTRETURN | ES_MULTILINE | WS_TABSTOP | WS_CHILD | WS_BORDER | ES_LEFT, 15 ,88,66,72
+    CONTROL "Options",      405,"BUTTON",WS_TABSTOP | WS_CHILD | BS_PUSHBUTTON,230,100,28,12
+    CONTROL "Block_7",      306,"EDIT", ES_AUTOHSCROLL | WS_TABSTOP | WS_CHILD | WS_BORDER | ES_CENTER, 111,76,67,13
+    CONTROL "find file(s)", 706,"BUTTON",WS_TABSTOP | WS_CHILD | BS_PUSHBUTTON,230,130,50,12
+    CONTROL "",             206,"EDIT", ES_AUTOHSCROLL | ES_AUTOVSCROLL | ES_OEMCONVERT | ES_WANTRETURN | ES_MULTILINE | WS_TABSTOP | WS_CHILD | WS_BORDER | ES_LEFT, 15,88,66,72
+    CONTROL "",             606,"EDIT", ES_AUTOHSCROLL | ES_AUTOVSCROLL | ES_OEMCONVERT | ES_WANTRETURN | ES_MULTILINE | WS_TABSTOP | WS_CHILD | WS_BORDER | ES_LEFT, 15 ,88,66,72
+    CONTROL "Options",      406,"BUTTON",WS_TABSTOP | WS_CHILD | BS_PUSHBUTTON,230,100,28,12
+    CONTROL "Block_8",      307,"EDIT", ES_AUTOHSCROLL | WS_TABSTOP | WS_CHILD | WS_BORDER | ES_CENTER, 111,76,67,13
+    CONTROL "find file(s)", 707,"BUTTON",WS_TABSTOP | WS_CHILD | BS_PUSHBUTTON,230,130,50,12
+    CONTROL "",             207,"EDIT", ES_AUTOHSCROLL | ES_AUTOVSCROLL | ES_OEMCONVERT | ES_WANTRETURN | ES_MULTILINE | WS_TABSTOP | WS_CHILD | WS_BORDER | ES_LEFT, 15,88,66,72
+    CONTROL "",             607,"EDIT", ES_AUTOHSCROLL | ES_AUTOVSCROLL | ES_OEMCONVERT | ES_WANTRETURN | ES_MULTILINE | WS_TABSTOP | WS_CHILD | WS_BORDER | ES_LEFT, 15 ,88,66,72
+    CONTROL "Options",      407,"BUTTON",WS_TABSTOP | WS_CHILD | BS_PUSHBUTTON,230,100,28,12
+    CONTROL "Block_9",      308,"EDIT", ES_AUTOHSCROLL | WS_TABSTOP | WS_CHILD | WS_BORDER | ES_CENTER, 111,76,67,13
+    CONTROL "find file(s)", 708,"BUTTON",WS_TABSTOP | WS_CHILD | BS_PUSHBUTTON,230,130,50,12
+    CONTROL "",             208,"EDIT", ES_AUTOHSCROLL | ES_AUTOVSCROLL | ES_OEMCONVERT | ES_WANTRETURN | ES_MULTILINE | WS_TABSTOP | WS_CHILD | WS_BORDER | ES_LEFT, 15,88,66,72
+    CONTROL "",             608,"EDIT", ES_AUTOHSCROLL | ES_AUTOVSCROLL | ES_OEMCONVERT | ES_WANTRETURN | ES_MULTILINE | WS_TABSTOP | WS_CHILD | WS_BORDER | ES_LEFT, 15 ,88,66,72
+    CONTROL "Options",      408,"BUTTON",WS_TABSTOP | WS_CHILD | BS_PUSHBUTTON,230,100,28,12
+    CONTROL "Block_10",     309,"EDIT", ES_AUTOHSCROLL | WS_TABSTOP | WS_CHILD | WS_BORDER | ES_CENTER, 111,76,67,13
+    CONTROL "find file(s)", 709,"BUTTON",WS_TABSTOP | WS_CHILD | BS_PUSHBUTTON,230,130,50,12
+    CONTROL "",             209,"EDIT", ES_AUTOHSCROLL | ES_AUTOVSCROLL | ES_OEMCONVERT | ES_WANTRETURN | ES_MULTILINE | WS_TABSTOP | WS_CHILD | WS_BORDER | ES_LEFT, 15,88,66,72
+    CONTROL "",             609,"EDIT", ES_AUTOHSCROLL | ES_AUTOVSCROLL | ES_OEMCONVERT | ES_WANTRETURN | ES_MULTILINE | WS_TABSTOP | WS_CHILD | WS_BORDER | ES_LEFT, 15 ,88,66,72
+    CONTROL "Options",      409,"BUTTON",WS_TABSTOP | WS_CHILD | BS_PUSHBUTTON,230,100,28,12
+
+    CONTROL "show",117,"STATIC",WS_CHILD | SS_LEFT,80,13,19,14
+    CONTROL "more",118,"BUTTON",WS_TABSTOP | WS_CHILD | BS_PUSHBUTTON,100,5,25,10
+    CONTROL "fewer",119,"BUTTON",WS_TABSTOP | WS_CHILD | BS_PUSHBUTTON,100,18,25,10
+    CONTROL "blocks",124,"STATIC",WS_CHILD | SS_LEFT,128,13,50,8
+    CONTROL "ADD BLOCK" , 120 , "BUTTON" , WS_TABSTOP | WS_CHILD | BS_PUSHBUTTON,10,10,45,15
+    CONTROL "",126,"BUTTON",BS_GROUPBOX | WS_TABSTOP | WS_CHILD,18,68,254,113
+END
+
+VERT_ONE BITMAP .\uno.bmp 
+VERT_TWO BITMAP .\dos.bmp
+
+SELECTDB DIALOG  0,40,297,200
+STYLE WS_POPUPWINDOW | WS_VISIBLE   
+CAPTION "Select ... "
+FONT 9,"Helv"
+BEGIN
+    CONTROL "Cancel",IDCANCEL,"button",WS_TABSTOP | WS_CHILD | BS_PUSHBUTTON,190,172,40,16
+    CONTROL "OK",IDOK,"button",BS_DEFPUSHBUTTON | WS_TABSTOP | WS_CHILD,     240,172,40,16
+    CONTROL "Selected",107,"STATIC",WS_CHILD | SS_LEFT,19,19,144,10
+    CONTROL "",105,"LISTBOX",  LBS_NOINTEGRALHEIGHT | LBS_EXTENDEDSEL | LBS_NOREDRAW | LBS_NOTIFY | WS_CHILD | WS_BORDER | WS_VSCROLL,17,33,100,121
+    CONTROL "Unselected",108,"STATIC",WS_CHILD | SS_LEFT,180,19,142,10
+    CONTROL "",106,"LISTBOX",  LBS_NOINTEGRALHEIGHT | LBS_EXTENDEDSEL | LBS_NOREDRAW | LBS_NOTIFY | WS_CHILD | WS_BORDER | WS_VSCROLL,178,33,100,121
+    CONTROL "Type name/number:",212,"STATIC",WS_CHILD | SS_LEFT,21,158,65,10
+    CONTROL "",111,"EDIT",WS_TABSTOP | WS_CHILD | WS_BORDER | ES_LEFT,19,172,110,15
+    CONTROL "> > >",109,"BUTTON",WS_TABSTOP | WS_CHILD | BS_PUSHBUTTON,127,48,36,14
+    CONTROL "< < <",110,"BUTTON",WS_TABSTOP | WS_CHILD | BS_PUSHBUTTON,127,68,36,14
+    CONTROL "invert",112,"BUTTON",WS_TABSTOP | WS_CHILD | BS_PUSHBUTTON,127,88,36,14
+    CONTROL "show",113,"BUTTON",BS_AUTOCHECKBOX | WS_TABSTOP | WS_CHILD,125,110,36,12
+    CONTROL "paths",114,"STATIC",WS_CHILD | SS_LEFT,                    135,122,36,12
+END
+
+ProgressDB DIALOG DISCARDABLE 20,30,200,40
+STYLE  WS_CHILD | WS_VISIBLE  | WS_BORDER 
+CAPTION "Processing..."
+FONT 12,"Helv"
+BEGIN
+    CONTROL "...done...     ",200,"STATIC",SS_LEFT | WS_CHILD,20,15,170,10
+END
+
+GetDoubleGeneDB DIALOG 0,0,165,155
+STYLE WS_POPUPWINDOW | WS_VISIBLE
+CAPTION "Define intergene..."
+FONT 9,"Helv"
+BEGIN
+
+    CONTROL "from gene"        ,203,"STATIC",WS_CHILD | SS_LEFT,                        15,10, 65,10
+    CONTROL "to gene"          ,204,"STATIC",WS_CHILD | SS_LEFT,                        90,10, 65,10
+
+    CONTROL "",             201,"EDIT", ES_AUTOHSCROLL | ES_AUTOVSCROLL | ES_OEMCONVERT | ES_WANTRETURN | ES_MULTILINE | WS_TABSTOP | WS_CHILD | WS_BORDER | ES_LEFT, 
+                                                                                                   15,25,65,70
+    CONTROL "",             202,"EDIT", ES_AUTOHSCROLL | ES_AUTOVSCROLL | ES_OEMCONVERT | ES_WANTRETURN | ES_MULTILINE | WS_TABSTOP | WS_CHILD | WS_BORDER | ES_LEFT, 
+                                                                                                   90,25,65,70
+    CONTROL "include gene" , 205,"BUTTON",BS_AUTOCHECKBOX | WS_TABSTOP | WS_CHILD,         15,105,65,12
+    CONTROL "include gene" , 206,"BUTTON",BS_AUTOCHECKBOX | WS_TABSTOP | WS_CHILD,         90,105,65,12
+
+    CONTROL "OK"       ,   IDOK , "BUTTON" , WS_TABSTOP | WS_CHILD | BS_PUSHBUTTON,                105,130,45,12
+    CONTROL "CANCEL"   ,   IDCANCEL , "BUTTON" , WS_TABSTOP | WS_CHILD | BS_PUSHBUTTON,             45,130,45,12
+END 
+
+GetTaxonomyChangesDB DIALOG 0,0,350,90
+STYLE WS_POPUPWINDOW | WS_VISIBLE
+CAPTION "Change in all GB files in /project/home/directory"
+FONT 9,"Helv"
+BEGIN
+
+    CONTROL "from:"        ,203,"STATIC",WS_CHILD | SS_LEFT,                        15,10, 65,10
+    CONTROL "",             201,"EDIT", ES_AUTOHSCROLL | ES_OEMCONVERT | ES_WANTRETURN | WS_TABSTOP | WS_CHILD | WS_BORDER | ES_LEFT, 
+                                                                                   15,25,320,12
+
+    CONTROL "to"          ,204,"STATIC",WS_CHILD | SS_LEFT,                        15,40, 65,10
+    CONTROL "",             202,"EDIT", ES_AUTOHSCROLL | ES_OEMCONVERT | ES_WANTRETURN | WS_TABSTOP | WS_CHILD | WS_BORDER | ES_LEFT, 
+                                                                                   15,55,320,12
+
+    CONTROL "OK"       ,   IDOK , "BUTTON" , WS_TABSTOP | WS_CHILD | BS_PUSHBUTTON,                300,75,40,12
+    CONTROL "CANCEL"   ,   IDCANCEL , "BUTTON" , WS_TABSTOP | WS_CHILD | BS_PUSHBUTTON,            250,75,40,12
+END 
+
+CreateMatrixDB DIALOG DISCARDABLE 50,-45,325,250
+STYLE WS_POPUPWINDOW | WS_VISIBLE
+CAPTION "Process..."
+FONT 9,"Helv"
+BEGIN
+
+    CONTROL "OK"         ,      IDOK , "BUTTON" , WS_TABSTOP | WS_CHILD | BS_PUSHBUTTON,                275,230,40,15
+    CONTROL "CANCEL"   ,          IDCANCEL , "BUTTON" , WS_TABSTOP | WS_CHILD | BS_PUSHBUTTON,          225,230,40,15
+
+    CONTROL "STEP 1: Extract sequences" ,           199 , "BUTTON" , BS_GROUPBOX | WS_TABSTOP | WS_CHILD,      10,10,190,55
+    CONTROL "based on dependencies",        200,"BUTTON",BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP | WS_CHILD ,20,20,130,12
+    CONTROL "all",                          201 ,"BUTTON",BS_AUTORADIOBUTTON | WS_TABSTOP | WS_CHILD           ,20,32,130,12
+    CONTROL "selected files",               202,"BUTTON",BS_AUTORADIOBUTTON | WS_TABSTOP | WS_CHILD,            20,44,130,12
+
+    CONTROL "STEP 2: Align sequences" ,   203 , "BUTTON" , BS_GROUPBOX | WS_TABSTOP | WS_CHILD,                70,70,190,111
+    CONTROL "based on dependencies",        204,"BUTTON",BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP | WS_CHILD ,82,85,130,12
+    CONTROL "all",                          205 ,"BUTTON",BS_AUTORADIOBUTTON | WS_TABSTOP | WS_CHILD           ,82,97,130,12
+    CONTROL "selected blocks",              206,"BUTTON",BS_AUTORADIOBUTTON | WS_TABSTOP | WS_CHILD,            82,109,130,12
+    CONTROL "" ,                            207 , "BUTTON" , BS_GROUPBOX | WS_TABSTOP | WS_CHILD,               82,121,120,5 
+    CONTROL "align with given parameters",208,"BUTTON",BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP | WS_CHILD ,80,133,130,12
+    CONTROL "specified parameters:",         209 ,"BUTTON",BS_AUTORADIOBUTTON | WS_TABSTOP | WS_CHILD           ,80,145,165,12
+    CONTROL "  (type parameters here)" ,      210,"EDIT",WS_TABSTOP | WS_CHILD | WS_BORDER | ES_LEFT ,            95,158,155,14
+    
+    CONTROL "STEP 3: TNT matrix" ,   211 , "BUTTON" , BS_GROUPBOX | WS_TABSTOP | WS_CHILD,              130,186,190,28
+    CONTROL "create matrix for TNT", 217,"BUTTON",BS_AUTOCHECKBOX | WS_TABSTOP | WS_CHILD,              145,198,80,12
+    CONTROL "launch TNT",            218,"BUTTON",BS_AUTOCHECKBOX | WS_TABSTOP | WS_CHILD,              235,198,60,12
+    
+END 
+
+InclusionCriteriaDB DIALOG DISCARDABLE 40,0,380,150
+STYLE WS_POPUPWINDOW | WS_VISIBLE
+CAPTION "Criteria for including, excluding, and comparing..."
+FONT 9,"Helv"
+BEGIN
+
+    CONTROL "OK"       ,      IDOK , "BUTTON" , WS_TABSTOP | WS_CHILD | BS_PUSHBUTTON,                       320,120,40,15
+    CONTROL "CANCEL"   ,    IDCANCEL , "BUTTON" , WS_TABSTOP | WS_CHILD | BS_PUSHBUTTON,                 270,120,40,15
+
+    CONTROL "Match taxon names..." ,        200 , "BUTTON" , BS_GROUPBOX | WS_TABSTOP | WS_CHILD,              10,10,190,38
+    CONTROL "if name similarity is",        201, "STATIC",WS_CHILD | SS_LEFT,                                  22,25,60,12
+    CONTROL "" ,                            202,"EDIT",WS_TABSTOP | WS_CHILD | WS_BORDER | ES_RIGHT ,          85,25,39,14
+    CONTROL "" ,                            203,"msctls_updown32", UDS_SETBUDDYINT | UDS_AUTOBUDDY | UDS_NOTHOUSANDS  | UDS_ARROWKEYS | WS_CHILD,125,25,20,14
+    CONTROL "or more",                      204, "STATIC",WS_CHILD | SS_LEFT,                                  145,25,25,12
+
+    CONTROL "Taxonomic categories for TNT matrix" , 
+                                            205 , "BUTTON" , BS_GROUPBOX | WS_TABSTOP | WS_CHILD,              210, 5,160,55
+    CONTROL "discard the first",            206,"BUTTON",BS_AUTOCHECKBOX | WS_TABSTOP | WS_CHILD,              222,20,70,12
+    CONTROL "" ,                            207,"EDIT",WS_TABSTOP | WS_CHILD | WS_BORDER | ES_RIGHT ,          295,20,39,14
+    CONTROL "" ,                            208,"msctls_updown32", UDS_SETBUDDYINT | UDS_AUTOBUDDY | UDS_NOTHOUSANDS  | UDS_ARROWKEYS | WS_CHILD,335,20,20,14
+    CONTROL "discard beyond"   ,            209,"BUTTON",BS_AUTOCHECKBOX | WS_TABSTOP | WS_CHILD,               222,40,70,12
+    CONTROL "" ,                            210,"EDIT",WS_TABSTOP | WS_CHILD | WS_BORDER | ES_RIGHT ,           295,40,39,14
+    CONTROL "" ,                            211,"msctls_updown32", UDS_SETBUDDYINT | UDS_AUTOBUDDY | UDS_NOTHOUSANDS  | UDS_ARROWKEYS | WS_CHILD,335,40,20,14
+
+    CONTROL "Taxonomy",                     212,"BUTTON",BS_GROUPBOX | WS_TABSTOP | WS_CHILD,                  155,60,215,50
+    CONTROL "only include seqs. in",        213,"BUTTON",BS_AUTOCHECKBOX | WS_TABSTOP | WS_CHILD,              165,75,80,12
+    CONTROL "(taxon list - blank separated)",214,"EDIT", ES_AUTOHSCROLL|ES_OEMCONVERT|WS_TABSTOP|WS_CHILD|WS_BORDER|ES_LEFT, 260,75,105,12    
+    CONTROL "exclude seqs. from"   ,        215,"BUTTON",BS_AUTOCHECKBOX | WS_TABSTOP | WS_CHILD,              165,89,80,12
+    CONTROL "(taxon list - blank separated)",216,"EDIT", ES_AUTOHSCROLL|ES_OEMCONVERT|WS_TABSTOP|WS_CHILD|WS_BORDER|ES_LEFT, 260,89,105,12    
+
+    CONTROL "Exclude",              217,"BUTTON",BS_GROUPBOX | WS_TABSTOP | WS_CHILD,                        10 , 55,135,70
+    CONTROL "hybrids",              218,"BUTTON",BS_AUTOCHECKBOX | WS_TABSTOP | WS_CHILD,                    25 , 70,50,12
+    CONTROL "confer \"cf.\"",         219,"BUTTON",BS_AUTOCHECKBOX | WS_TABSTOP | WS_CHILD,                    25 , 85,52,12
+    CONTROL "affinis \"aff.\"",       220,"BUTTON",BS_AUTOCHECKBOX | WS_TABSTOP | WS_CHILD,                    25 ,100,52,12
+    CONTROL "\"sp.\"",              221,"BUTTON",BS_AUTOCHECKBOX | WS_TABSTOP | WS_CHILD,                    80 , 70,50,12
+    CONTROL "environmental",        222,"BUTTON",BS_AUTOCHECKBOX | WS_TABSTOP | WS_CHILD,                    80 , 85,57,12
+    CONTROL "uncultured",           223,"BUTTON",BS_AUTOCHECKBOX | WS_TABSTOP | WS_CHILD,                    80 ,100,50,12
+
+END 
+
+
+BioEditCheckDB DIALOG DISCARDABLE 40,0,260,90
+STYLE WS_POPUPWINDOW | WS_VISIBLE
+CAPTION "Choose Aligned File to (Bio)Edit..."
+FONT 9,"Helv"
+BEGIN
+
+        CONTROL "", 200 ,"COMBOBOX", CBS_DROPDOWN | WS_CHILD | WS_VSCROLL, 30 , 10 , 180, 110
+        CONTROL "OK", IDOK, "BUTTON", BS_PUSHBUTTON | WS_CHILD | WS_VISIBLE | WS_TABSTOP | BS_DEFPUSHBUTTON,190, 40, 45, 15
+        CONTROL "cancel",          IDCANCEL, "BUTTON", BS_PUSHBUTTON | WS_CHILD | WS_VISIBLE | WS_TABSTOP,  190, 60, 45, 15
+
+        CONTROL "Note: if you modify the file with BioEdit",                    204, "STATIC",WS_CHILD | SS_LEFT, 15,35,165,12
+        CONTROL "    make sure that you save the file with" ,                   205, "STATIC",WS_CHILD | SS_LEFT, 15,48,165,12
+        CONTROL "    \"File/Save\" (instead of \"File/SaveAs\")",               206, "STATIC",WS_CHILD | SS_LEFT, 15,61,165,12
+        
+END 
+
+OptionsDB DIALOG DISCARDABLE 0,0,405,178
+STYLE WS_POPUPWINDOW | WS_VISIBLE
+CAPTION "Edit project..."
+FONT 9,"Helv"
+BEGIN
+
+    CONTROL "OK"       ,   IDOK , "BUTTON" , WS_TABSTOP | WS_CHILD | BS_PUSHBUTTON,                330,155,50,12
+    CONTROL "CANCEL"   ,   IDCANCEL , "BUTTON" , WS_TABSTOP | WS_CHILD | BS_PUSHBUTTON,            268,155,50,12
+    CONTROL "Delete This Block"  ,199 , "BUTTON" , WS_TABSTOP | WS_CHILD | BS_PUSHBUTTON,           15,155,80,12
+    CONTROL "Copy Options to Blocks"  ,198 , "BUTTON" , WS_TABSTOP | WS_CHILD | BS_PUSHBUTTON,     120,155,100,12
+
+    CONTROL "Genome",       200,"BUTTON",BS_GROUPBOX | WS_TABSTOP | WS_CHILD,                   10,10,86,68
+    CONTROL "nucleus",      201 ,"BUTTON",BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP | WS_CHILD,19,20,75,12
+    CONTROL "mitochondrion",202,"BUTTON",BS_AUTORADIOBUTTON | WS_TABSTOP | WS_CHILD,            19,33,75,12
+    CONTROL "chloroplast",  203,"BUTTON",BS_AUTORADIOBUTTON | WS_TABSTOP | WS_CHILD,            19,46,75,12
+    CONTROL "ANY!",         237,"BUTTON",BS_AUTORADIOBUTTON | WS_TABSTOP | WS_CHILD,            19,59,75,12
+    
+    CONTROL "Get",                  217,"BUTTON",BS_GROUPBOX | WS_TABSTOP | WS_CHILD,                   10,82,86,53
+    CONTROL "Nucleotides" ,         218 ,"BUTTON",BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP | WS_CHILD,19,92,60,12
+    CONTROL "Aminoacids" ,          219 ,"BUTTON",BS_AUTORADIOBUTTON | WS_TABSTOP | WS_CHILD,           19,108,60,12
+    
+    CONTROL "Match..." ,         223,"BUTTON",BS_GROUPBOX | WS_TABSTOP | WS_CHILD,                 100,105,145,40
+    CONTROL "genes with name similarity", 224, "STATIC",WS_CHILD | SS_LEFT,                        110,120,87,12
+    CONTROL "",                  226,"EDIT",WS_TABSTOP | WS_CHILD | WS_BORDER | ES_RIGHT ,         199,120,25,14
+    CONTROL "",                  227,"msctls_updown32", UDS_SETBUDDYINT | UDS_AUTOBUDDY | UDS_NOTHOUSANDS  | UDS_ARROWKEYS | WS_CHILD,225,120,10,14
+
+    CONTROL "Gaps as missing" ,  250,"BUTTON",BS_GROUPBOX | WS_TABSTOP | WS_CHILD,            250, 115,145,30
+    CONTROL "ALL"              , 251,"BUTTON",BS_AUTOCHECKBOX | WS_TABSTOP | WS_CHILD,        260, 125,30,12
+    CONTROL "leading"          , 252,"BUTTON",BS_AUTOCHECKBOX | WS_TABSTOP | WS_CHILD,        305, 125,36,12
+    CONTROL "trailing"         , 253,"BUTTON",BS_AUTOCHECKBOX | WS_TABSTOP | WS_CHILD,        350, 125,36,12
+
+    CONTROL "Discard sequences"  204,"BUTTON",BS_GROUPBOX | WS_TABSTOP | WS_CHILD,                  250,10,145,45
+    CONTROL "shorter than",      206 ,"BUTTON",BS_AUTOCHECKBOX | WS_TABSTOP | WS_CHILD     ,        260,20,55,12
+    CONTROL "longer than",       207 ,"BUTTON",BS_AUTOCHECKBOX | WS_TABSTOP | WS_CHILD ,            260,34,55,12
+    CONTROL "",                  209,"EDIT",WS_TABSTOP | WS_CHILD | WS_BORDER | ES_RIGHT ,          320,20,40,12
+    CONTROL "",                  210,"msctls_updown32", UDS_SETBUDDYINT | UDS_AUTOBUDDY | UDS_NOTHOUSANDS  | UDS_ARROWKEYS | WS_CHILD,360,20,10,12
+    CONTROL "b.p.",              211,"STATIC",WS_CHILD | SS_LEFT,                                   378,20,12,12
+    CONTROL "",                  309,"EDIT",WS_TABSTOP | WS_CHILD | WS_BORDER | ES_RIGHT ,          320,34,40,12
+    CONTROL "",                  310,"msctls_updown32", UDS_SETBUDDYINT | UDS_AUTOBUDDY | UDS_NOTHOUSANDS  | UDS_ARROWKEYS | WS_CHILD,360,34,10,12
+    CONTROL "b.p.",              311,"STATIC",WS_CHILD | SS_LEFT,                                   378,34,12,12
+    
+    CONTROL "Other" ,                 220,"BUTTON",BS_GROUPBOX | WS_TABSTOP | WS_CHILD,                  100, 10,145,94
+    CONTROL "search also under \"/Note=\"",221,"BUTTON",BS_AUTOCHECKBOX | WS_TABSTOP | WS_CHILD,         110, 20,110,10
+    CONTROL "get only vouchered accessions"     ,240,"BUTTON",BS_AUTOCHECKBOX | WS_TABSTOP | WS_CHILD,   110, 34,115,10
+    CONTROL "parse intergene"      ,             243,"BUTTON",BS_AUTOCHECKBOX | WS_TABSTOP | WS_CHILD,   110, 48,90,10
+    CONTROL "include all the accession if"      ,241,"BUTTON",BS_AUTOCHECKBOX | WS_TABSTOP | WS_CHILD,   110, 62,115,10
+    CONTROL "it contains specified gene"        ,242,"STATIC",WS_CHILD | SS_LEFT,                        125, 73,115,10
+    CONTROL "user-set alignment"                ,312,"BUTTON",BS_AUTOCHECKBOX | WS_TABSTOP | WS_CHILD,   110, 87,115,10
+    
+
+    CONTROL "Location" ,             230,"BUTTON",BS_GROUPBOX | WS_TABSTOP | WS_CHILD,            250, 60,145,50
+    CONTROL "GENE"                 , 231,"BUTTON",BS_AUTOCHECKBOX | WS_TABSTOP | WS_CHILD,        260, 70,45,12
+    CONTROL "CDS"                  , 232,"BUTTON",BS_AUTOCHECKBOX | WS_TABSTOP | WS_CHILD,        260, 83,45,12
+    CONTROL "rRNA"                 , 233,"BUTTON",BS_AUTOCHECKBOX | WS_TABSTOP | WS_CHILD,        260, 96,45,12
+    CONTROL "tRNA"                 , 234,"BUTTON",BS_AUTOCHECKBOX | WS_TABSTOP | WS_CHILD,        310, 70,80,12
+    CONTROL "misc_feature"         , 235,"BUTTON",BS_AUTOCHECKBOX | WS_TABSTOP | WS_CHILD,        310, 83,80,12
+    CONTROL "misc_rRNA"            , 236,"BUTTON",BS_AUTOCHECKBOX | WS_TABSTOP | WS_CHILD,        310, 96,80,12
+END 
+
+GetBlockAlignmentDB DIALOG 0,0,250,140
+STYLE WS_POPUPWINDOW | WS_VISIBLE
+CAPTION "Select block alignment options ..."
+FONT 9,"Helv"
+BEGIN
+
+    CONTROL "Align this block with", 200,"BUTTON",BS_GROUPBOX | WS_TABSTOP | WS_CHILD,          10,10,230,30
+    CONTROL "MAFFT",        201 ,"BUTTON",BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP | WS_CHILD,15,22,75,12
+    CONTROL "Muscle"       ,202,"BUTTON",BS_AUTORADIOBUTTON | WS_TABSTOP | WS_CHILD,            95,22,75,12
+    CONTROL "Other"      ,  203,"BUTTON",BS_AUTORADIOBUTTON | WS_TABSTOP | WS_CHILD,           175,22,55,12
+
+    CONTROL "Alignment parameters" , 204,"BUTTON",BS_GROUPBOX | WS_TABSTOP | WS_CHILD,           10,50,230,60
+    CONTROL "default",      205 ,"BUTTON",BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP | WS_CHILD,19,60,75,12
+    CONTROL "user-defined:",206,"BUTTON",BS_AUTORADIOBUTTON | WS_TABSTOP | WS_CHILD,            19,74,175,12
+    CONTROL "",             207,"EDIT", ES_AUTOHSCROLL | ES_OEMCONVERT | ES_WANTRETURN | WS_TABSTOP | WS_CHILD | WS_BORDER | ES_LEFT, 
+                                                                                                25, 88,205,12
+    CONTROL "OK"       ,   IDOK , "BUTTON" , WS_TABSTOP | WS_CHILD | BS_PUSHBUTTON,                200,120,40,12
+    CONTROL "CANCEL"   ,   IDCANCEL , "BUTTON" , WS_TABSTOP | WS_CHILD | BS_PUSHBUTTON,            150,120,40,12
+END 
+
+
+

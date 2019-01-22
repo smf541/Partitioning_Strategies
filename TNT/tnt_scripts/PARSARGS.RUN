@@ -1,0 +1,39 @@
+macro=; 
+lquote[ ; 
+var: optionA optionB numreplics numarg; 
+set optionA 0 ; 
+set optionB 0 ; 
+set numreplics 0 ; 
+
+
+loop 1 argnumber
+  set numarg #1 ; 
+  if ( eqstring[ %('numarg') optionA ] ) 
+      set optionA  1 ; 
+  else 
+   if ( eqstring[ %('numarg') optionB ] ) 
+       set optionB  1 ; 
+   else 
+    if ( eqstring[ %('numarg') replics ] ) 
+      if ( argnumber == #1 ) 
+        quote Option &34%('numarg')&34  must be followed; 
+        quote by the number of replications to do. ; 
+        errmsg Cannot run script !!! ; 
+        end 
+      set numarg ++ ; 
+      set numreplics %('numarg') ; 
+      set numarg ++ ; 
+      setloop 'numarg'; 
+    else 
+       errmsg Option &34%('numarg')&34 not recognized! ; 
+    end  
+  end 
+ end
+stop
+
+var optionA ; 
+var optionB ; 
+var numreplics ; 
+
+proc/; 
+

@@ -1,0 +1,49 @@
+macro= ;
+if ( argnumber < 2 )
+   errmsg
+/--------------------------------------------\
+|     This set of instructions requires      |
+|     two tree numbers as arguments. It      |
+|     calculates the number of three-taxon   |
+|     statements implied by the first tree   |
+|     that are true on the second tree.      |
+\--------------------------------------------/
+; 
+end
+report-;
+var =
+   10 inone 11 intwo 12 false 13 true 14 total ; 
+set true 0 ;
+set false 0 ;
+loop 0 (ntax-2)
+  progress #1 (ntax-2) Checking statements (trees %1 - %2) ; 
+  loop (#1+1) (ntax-1)
+    loop (#2+1) ntax
+      set 0 comnod[ %1 #1 #2 #3 ] ;
+      set inone 100000 ; 
+      if ( '0' != comnod[ %1 #1 #2 ] ) set inone #1 ; set intwo #2 ; end 
+      if ( '0' != comnod[ %1 #1 #3 ] ) set inone #1 ; set intwo #3 ; end 
+      if ( '0' != comnod[ %1 #2 #3 ] ) set inone #2 ; set intwo #3 ; end
+      if ( 'inone' == 100000 ) continue ; end 
+      if ( comnod[ %2 'inone' 'intwo'] == comnod [ %2 #1 #2 #3 ] )
+           set false ++ ;
+      else set true ++ ; end
+    stop
+  stop
+stop
+progress/; 
+set total 'true' + 'false' ;
+quote
+
+Of a total of 'total' statements in tree %1,
+'true' are true on tree %2, and 'false' are false.
+
+;
+proc/ ;
+
+
+
+
+
+
+

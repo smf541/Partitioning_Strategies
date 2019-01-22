@@ -1,0 +1,27 @@
+macro=;
+macfloat 8 ; 
+var = 0 best 1 myprog ;
+set 2 0 ; 
+set best score [ 0 ] ; 
+naked-; 
+report-; 
+macreport- ; 
+sprit 0 
+    progress percswap 100 Swapping ('best' steps) ; end
+    set myprog percswap ; 
+    set 2 ++ ; 
+    if ( score [ 0 ] < 'best' )
+       set 3 score [ 0 ] ; 
+       quote FOUND A BETTER TREE (score '3'), on rearrang. '2' ; 
+       set best score [ 0 ] ; 
+       resetswap ; 
+       end
+stop
+progress/; 
+silent - all ; 
+quote SPR-swapping, best length: 'best' steps; 
+proc/; 
+
+
+
+

@@ -1,0 +1,132 @@
+macro= ;
+
+/***************************************************\
+|                                                   |
+|   This macro provides another example of dialog   |
+|   definition, with the 'opendlg' command.  Note   |
+|   the dialog has interaction between buttons      |
+|   (e.g. the character selection button becomes    |
+|   active only if the user chooses to calculate    |
+|   statistics for some characters only).           |
+|                                                   |
+\***************************************************/
+
+if ( !windows )
+   errmsg This macro can be used only from the
+   Windows version of TNT!! ;
+end
+
+report- ;
+var =
+   10 themin
+   + themax
+   + this
+   + tlist [ ( ntrees + 1 ) ] 
+   + clist [ ( nchar + 1 ) ] 
+   + charbychar
+   + treesel 
+   + charsel
+   + todo
+   + done 
+;
+set treesel 0 ; 
+set charsel 0 ; 
+set charbychar 0 ; 
+loop 0 ntrees set tlist[#1] 0 ; stop
+loop 0 nchar set clist[#1] 0 ; stop
+
+opendlg 100 80 350 195 Calculate statistics... ; 
+   Frame 10 10 160 135 Display results for... 
+   choose charbychar
+        30 30 100 15 entire tree(s)
+        30 55 110 15 each character ; 
+         + choose charsel 
+              55 75 100 15 all characters  
+              55 95 90 15 selection ; 
+               + 
+               charsel clist 70 112 80 16 ; 
+               = 
+         = 
+   frame 180 10 140 90 Trees to evaluate ; 
+   choose treesel 
+        190 30 90 15 all trees 
+        190 55 90 15 selection ; 
+        + 
+         treesel tlist 205 72 80 16 ; 
+        = 
+closedlg ; 
+
+if ( !'treesel' )
+    loop 0 ntrees set tlist[#1] 1 ; stop
+    set todo ntrees + 1 ;
+else
+    set todo 0 ;
+    loop 0 ntrees
+       if ( 'tlist[#1]' ) set todo ++ ; end
+       stop
+end
+if ( !'charsel' )
+    loop 0 nchar set clist[#1] 1 ; stop
+    end
+
+macfloat 3 ; 
+set done 0 ;
+
+if ( !'charbychar' )
+
+ var =
+   + CIs [ (ntrees+1) ]
+   + RIs [ (ntrees+1) ] ; 
+ set themin minsteps ;
+ set themax maxsteps ;
+ loop 0 ntrees
+   progress 'done' 'todo' Calculating indices... ;
+   if ( 'tlist[#1]' < 1 ) 
+         set CIs[#1]  ( -1 ) ; 
+         set RIs[#1] ( -1 ) ; 
+         continue ; 
+       end ;
+   set done ++ ; 
+   set this length[#1] ;
+   set CIs[#1] 'themin'/'this' ;
+   set RIs[#1] ('themax'-'this')/('themax'-'themin') ;
+   stop
+ progress/ ;
+ report= ;
+ maketable CIs Consistency index ;
+ maketable RIs Retention index ;
+
+else 
+
+  var = 
+   + CIs [ (nchar+1) ]
+   + RIs [ (nchar+1) ] ; 
+  loop 0 ntrees
+     progress 'done' 'todo' Calculating indices... ;
+     if ( 'tlist[#1]' < 1 ) 
+         continue ; 
+         end
+     set done ++ ; 
+     loop 0 nchar 
+        set themin minsteps[#2] ; 
+        set themax maxsteps[#2] ;
+        if ( ( 'clist[#2]' < 1 ) || ( 'themin' >= 'themax' )
+            || ( isact[#2] == 0 ) )
+           set CIs[#2]  ( -1 ) ; 
+           set RIs[#2] ( -1 ) ; 
+           continue ; end 
+        set this length[#1 #2] ; 
+        set CIs[#2] 'themin'/'this' ;
+        set RIs[#2] ('themax'-'this')/('themax'-'themin') ;
+        stop 
+     maketable CIs Tree #1, character consistency indices ;
+     maketable RIs Tree #1, character retention indices ;
+     stop 
+  progress/ ;
+  report= ;
+
+end ; 
+
+proc/ ; 
+
+

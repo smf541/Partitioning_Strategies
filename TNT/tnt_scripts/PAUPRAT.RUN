@@ -1,0 +1,71 @@
+macro- ;
+macfloat 0 ; 
+macro [ 250 ; 
+macro *3 2500 ; 
+macro=;
+macseed 0 ; 
+if ( !argnumber )
+ quote *
+ This file contains instructions to do ratchet with PAUP*
+ The instructions for PAUP* are written onto a file called
+ pauprat.  The original weights must be 1 for all characters.
+ The seed is the seed for the macros in TNT (0 = time). 
+ Must give the number of ratchet iterations as first argument ; 
+ proc/; 
+ end
+var =
+  10 wt [ ( nchar + 1 ) ] ;
+report- ; 
+silent = all ; 
+log pauprat ;
+silent - file ; 
+quote begin paup.,; 
+set 0 getrandom[0 10000] ;
+quote set autoclose=yes notifybeep=no maxtrees = 500 ., ; 
+quote hsearch nreps=1 swap=tbr adds=rand rseed='0' nomult ., ;
+quote savetrees file=pauprat.tmp replace=yes append=no .,;
+loop 1 %1
+     progress #1 %1 Working ;
+     loop 0 nchar set wt[#2] 1 ; stop 
+     loop 0 nchar 
+        set 0 getrandom [ 0 99 ] ;
+        set wt[ #2 ] += ( '0' < 15 ) ;
+        stop
+     lquote = ; 
+     quote weight 1: ;
+     loop 0 nchar
+         if ( 'wt[#2]' == 1 )
+             set 0 #2+1 ; quote '0' ; end
+         stop
+     quote ., ;
+     quote weights 2: ; 
+     loop 0 nchar 
+         if ( 'wt[#2]' == 2 )
+             set 0 #2+1 ; quote '0' ; end
+         stop
+     lquote- ; 
+     quote .,;
+     quote hsearch start=1 ., ;
+     quote weights 1: all .,;
+     quote hsearch start=1 ., ;
+     quote savetrees append=yes replace=no ., ;
+stop ;
+quote gettrees file=pauprat.tmp allblocks ., ;
+quote pscore ., ; 
+quote filter best ., ;
+quote end ., ;
+log/;
+progress/;
+report= ;
+silent - buffer con ; 
+proc/;
+
+
+
+
+
+
+
+
+
+   

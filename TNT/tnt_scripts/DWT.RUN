@@ -1,0 +1,95 @@
+macro=; 
+if ( argnumber == 0 ) 
+quote * Este conjunto de instrucciones hara 
+pesado dinamico de transformaciones 
+entre estados (hasta 10 iteraciones
+de busquedas, si es necesario., notese
+que cada reasignacion de costos se hace
+tambien en forma iterativa, hasta que los
+costos/optimizacion sean estables).
+
+Deben darse comandos de buesqueda como argus.
+
+Nota: los costos se reasignan usando
+el minimo numero posible de transformaciones
+
+;
+proc/; end; 
+var =
+   44 maxist
+   45 all_wts_same
+   46 no_difference
+   47 tmp_cost
+   48 old_cost
+   49 iters_this_char
+   50 bufco [ 10 10 ] ; 
+;
+
+if(ntax<3) 
+    quote *MUST READ DATA BEFORE RUNNING !!!;
+    proc/; end
+if(ntrees<0) 
+    quote *THIS PROGRAM NEEDS TREES AS STARTING POINT ;
+    proc/; end
+
+cost . = ?/? 1; 
+watch-;
+macfloat 0 ; 
+cc(.; 
+loop 0 10
+       set no_difference 1; 
+       set iters_this_char 0; 
+       report- ; 
+       loop 0 nchar
+          if ( maxstate[#2] < 1 ) continue ; end
+          set maxist maxstate[#2];
+          loop 0 'maxist'
+             loop 0 'maxist'
+                set bufco[#3 #4] cost[#2 #3 #4 ] ;
+                stop
+             stop
+          cc-#2 ;
+          cc(#2 ; 
+          cost #2 = ?/? 1 ; 
+          set 0 1;
+          loop 0 'maxist'
+             loop 0 'maxist'
+                if(#3==#4) continue; end 
+                set '0' mintrans /#2/#3 #4 ; 
+                set 0 ++ ;
+                stop
+             stop
+          set all_wts_same 1; 
+          set 0 1; 
+          loop 0 'maxist'
+              loop 0 'maxist'
+                 if(#3==#4) continue; end 
+                 set old_cost 'bufco[ #3 #4]'; 
+                 set tmp_cost '('0')' ; 
+                 if('tmp_cost') 
+                    set tmp_cost 100/'tmp_cost'; 
+                 else set tmp_cost 100; end
+                 cost #2 = #3>#4 'tmp_cost' ;
+                 if('old_cost'!='tmp_cost') set all_wts_same 0; end
+                 set 0 ++ ;  
+                 stop
+              stop
+          if (!'all_wts_same')
+                set iters_this_char ++ ; 
+                set no_difference 0; 
+                if ('iters_this_char'>15) 
+                    quote NOTE: DID 'iters_this_char' ITERS. WITHOUT STAB. FOR CH. #2 ; 
+                    set iters_this_char 0 ; 
+                else
+                setloop #2; end
+          else set iters_this_char 0; end
+          stop
+       report= ; 
+       if('no_difference') 
+          quote * 
+             >>--------> STABILIZED ON ITER. #1; 
+          endloop; end 
+       quote Searching ; 
+       %1 %2 %3 %4 %5 %6 %7 %8 %9 ;
+       stop 
+proc/;

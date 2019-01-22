@@ -1,0 +1,29 @@
+macro= ;
+quote Performing PTP-test (Faith & Cranston, 1991) ;
+sub 0 ;
+mu1=ho1 spr ; 
+set 0 length [0] ;  /*  observed length */
+set 1 rseed ;
+set 2 0 ;         /*  Number of cases with length worse than observed */
+report- ; 
+silent = all ; 
+loop 1 99
+    progress #1 99 Doing PTP-test (rep. #1 of 99)... ;
+    rseed * ;
+    xp ;
+    keep 0 ;
+    mu1=ho1 spr ; 
+    if ( length[0] > '0' ) set 2 ++ ; end ;
+stop ;
+xp - ; 
+macfloat 2 ; 
+progress/; 
+report=;
+silent - all ; 
+Quote *
+Performed PTP-test. Data more structured than random, with p='2' ;
+proc/;
+
+
+
+    

@@ -1,0 +1,54 @@
+macro=; 
+silent=all;
+report- ; 
+keep 0 ; 
+tread ( 0 ( 1 2 ) ) ; 
+var = 
+   0 besdest 
+   1 beslen 
+   2 root 
+   3 previous ; 
+set root ntax + 1 ; 
+set previous 10000000 ; 
+loop 3 ntax 
+     set 4 ( #1 * 100 ) / ntax ; 
+     progress '4' 100 Creating wagner tree ; 
+     set beslen 1000000 ; 
+     loop 1 nnodes[0] 
+         if ( !isintree [ 0 #2 ] ) continue ; end 
+         edit ] 0 'root' #1 #2 ; 
+         set 4 length [ 0 ] ; 
+         if ( '4' == 'previous' ) 
+              set besdest #2 ; 
+              pruntax 0 / #1 ; 
+              endloop ; 
+              end ; 
+         if ( '4' < 'beslen' ) 
+              set besdest #2 ; 
+              set beslen '4' ; 
+              end 
+         pruntax 0 / #1 ; 
+         stop
+     set previous 'beslen' ; 
+     edit ] 0 'root' #1 'besdest' ; 
+     stop
+progress/ ; 
+set 0 length[0] ; 
+silent-con ; 
+quote FORMED WAGNER TREE OF '0' STEPS ; 
+silent=con ; 
+private 5 ; 
+/*   CALL THE BRANCH-SWAPPER */
+macswap ; 
+silent-con ; 
+silent-buff ; 
+proc/; 
+
+
+
+
+
+         
+
+
+

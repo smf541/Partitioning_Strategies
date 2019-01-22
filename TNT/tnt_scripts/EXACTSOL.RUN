@@ -1,0 +1,22 @@
+macro=;
+silent = all ;
+set 0 ntax + 2 ; 
+mxproc '0' ; 
+var = 
+   0 attax  
+   1 bound 
+   2 workdone ; 
+keep 0 ; 
+set workdone 0 ; 
+set bound 10000000 ; 
+tread ( 0 ( 1 2 ) ) ; 
+set attax 3 ; 
+report- ; 
+addtax ;
+progress/ ; 
+tc 1. ; 
+silent -all ; 
+report= ; 
+quote BEST LENGTH FOUND: 'bound' STEPS ; 
+keep ; 
+proc/ ; 
