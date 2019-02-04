@@ -133,7 +133,7 @@ charset hom23 = 4	9	11	29	34	45	81	32	36	47	72	77	87	92
 
 charset hom4567 = 7	63	70	95	82	93
 ;
-partition chartype=5: hom0, hom1, hom23, hom4567;
+partition chartype=4: hom0, hom1, hom23, hom4567;
 	
 set partition = chartype;
 	
