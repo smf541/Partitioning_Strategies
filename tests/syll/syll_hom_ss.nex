@@ -118,7 +118,11 @@ charset hom45 = 21	28	36	66	72	 60	74
   outgroup Sphaerodoropsis_anae;
   outgroup Chrysopetalum_maculata;
   
-  mcmcp ngen=5000000 samplefreq=200 nruns=8 nchains=8 burninfrac=0.25 append=no temp=0.05;
   
-  ss burninss=-1 nsteps=40 fromprior=yes;  
+
+mcmcp ngen=5000000 samplefreq=200 nruns=8 nchains=8 burninfrac=0.25 append=yes temp=0.05;
+ss burninss=-1 nsteps=40 fromprior=yes append=yes;  
+sumt burnin=0.25 nruns=8 filename="C:/Users/dxsb43/GitHub/Partitioning_Strategies/tests/syll/syll_hom_ss.nex";   
+
+
 END;
