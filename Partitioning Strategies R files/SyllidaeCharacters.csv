@@ -1,0 +1,108 @@
+char.no,Character,states,neotrans,,body.region
+1,Colour pattern., 0: absent; 1: present,neomorphic,acquired melanosomes/other colour generating cells/structures,axial
+2,Macrofaunal body size with few numbers of segments. ,0: absent; 1: present,neomorphic,considered that they fused as derived state,axial
+3,Shape of body. ,0: cylindrical; 1: ribbon?liked,transformational,no clear ancestral state,axial
+4,Shape of segments. ,0: rectangular; 1: trapezoidal,transformational,no clear ancestral state,axial
+5,Fusion of segments. ,0: absent; 1: present,neomorphic,presence considered derived,axial
+6,Constancy in number of segments. ,0: unfixed; 1: fixed,neomorphic,,axial
+7,Preanal segment without chaetae.,0: absent; 1: present,neomorphic,not sure whether present here means absence of chaetae?,axial
+8,Longitudinal crests on dorsum. ,0: absent; 1: present,neomorphic,,axial
+9,Dorsal papillae. ,0: absent; 1: present,neomorphic,related to cirri ,feeding&sensory
+10,Dorsal tubercles. ,0: absent; 1: present,neomorphic,,feeding&sensory
+11,Dorsal ciliary bands.,0: absent; 1: present,neomorphic,,feeding&sensory
+12,Eyes. ,0: absent; 1: present,neomorphic,,feeding&sensory
+13,Number of eyes. ,0: two pairs; 1: one pair,neomorphic,Martin's comment: second pair considered an additional state,feeding&sensory
+14,Prostomium. ,0: not retractile; 1: retractile,neomorphic,evolved muscle to retract,feeding&sensory
+15,Occipital lobe. ,0: absent; 1: present,neomorphic,differentiated as derived state,feeding&sensory
+16,Dorsal row of granules on peristomium.,0: absent; 1: present,neomorphic,,feeding&sensory
+17,Lateral wings on peristomium. ,0: absent; 1: present,neomorphic,,feeding&sensory
+18,Antennae. ,0: absent; 1: present,neomorphic,,feeding&sensory
+19,Shape of antennae. ,"0: tapering or digitiform; 1: papilliform; 2: fusiform, onion shaped, skittle shaped; 3: spherical; 4: ovoidal",transformational,Martin's comment,feeding&sensory
+20,Length of median antenna. ,0: long; 1: short; 2: very short; 3: very long,transformational,Martin's comment,feeding&sensory
+21,Length of lateral antenna. ,0: long; 1: short; 2: very short; 3: very long,transformational,Martin's comment,feeding&sensory
+22,Articulation of antennae.,0: smooth; 1: distinctly articulated; 2: indistinctly articulated,neomorphic,Martin's comment: articulation considered a novelty,feeding&sensory
+23,Palps. ,0: not articulated; 1: biarticulated,neomorphic,evolved joint,feeding&sensory
+24,Size of palps. ,0: similar to prostomium; 1: reduced or absent; 2: larger than prostomium (considerably); 3: shorter than prostomium,transformational,,feeding&sensory
+25,Shape of palps. ,0: digitiform or rectangular; 1: triangular,neomorphic,Martin's comment: triangularity considered derived,feeding&sensory
+26,Insertion of palps. ,0: anterior to prostomium; 1: ventrally to prostomium,transformational,Martin's comment,feeding&sensory
+27,Orientation of palps. ,0: straight; 1: ventrally folded,neomorphic,Martin's comment: folding considered derived,feeding&sensory
+28,Degree in fusion of palps to each other. ,0: free; 1: fused basally or nearly to the middle; 2: totally or practically fused,neomorphic,Martin's comment: fusion considered derived,feeding&sensory
+29,Palps fused to prostomium. ,0: absent; 1: present,neomorphic,why not,feeding&sensory
+30,Terminal papillae on palps. ,0: absent; 1: present,neomorphic,,feeding&sensory
+31,Nuchal organs. ,0: ciliary grooves; 1: nuchal epaulettes,transformational,"from what I understand, epaulettes are enlarged nuchal organs",feeding&sensory
+32,Number of ‘tentacular’ cirri. ,0: one pair; 1: two pairs; 2: more than two pairs,neomorphic,Martin's comment: additional pairs considered derived,feeding&sensory
+33,Articulation of ‘tentacular’ cirri. ,0: smooth; 1: distinctly articulated; 2: indistinctly articulated,neomorphic,Martin's comment: articulation considered derived,feeding&sensory
+34,Length of dorsal ‘tentacular’ cirri. ,0: long; 1: short; 2: very short; 3: very long,transformational,Martin's comment,feeding&sensory
+35,Parapodia (not reproducing individuals). ,0: birameus; 1: unirameus,neomorphic,biramous considered ancestral,parapodia&chaetae
+36,Parapodial lobes developed. ,0: absent; 1: present,neomorphic,,parapodia&chaetae
+37,Dorsal parapodial glands opened by pores. ,0: absent; 1: present,neomorphic,,parapodia&chaetae
+38,Ventral cirri. ,0: present; 1: absent or fused to parapodia,neomorphic,ventral cirri considered ancestral,feeding&sensory
+39,Ventral cirri inflated. ,0: absent; 1: present,neomorphic,Martin's comment: inflation considered derived,feeding&sensory
+40,Ventral cirri insertion.,0: proximal; 1: medial; 2: distal,transformational,Martin's comment,feeding&sensory
+41,Pores on anterior ventral cirri.,0: absent; 1: present,neomorphic,pores considered derived,feeding&sensory
+42,Posterior ventral cirri elongated. ,0: absent; 1: present,transformational,change in length,feeding&sensory
+43,Dorsal cirri. ,0: Present in all (or practically all) segments; 1: Absent in all (or practically all) segments,neomorphic,dorsal cirri considered ancestral,feeding&sensory
+44,Shape of dorsal cirri. ,"0: tapering or digitiform; 1: papilliform; 2: fusiform, onion shape, skittle; 3: spherical; 4: ovoidal",transformational,Martin's comment,feeding&sensory
+45,Dorsal cirri inflated. ,0: absent; 1: present,neomorphic,Martin's comment,feeding&sensory
+46,Dorsal cirri in spiral over dorsum. ,0: absent; 1: present,neomorphic,inapplicable if dorsal cirri missing. Spiral shape considered derived,feeding&sensory
+47,Articulation of anterior dorsal cirri. ,0: smooth; 1: distinctly articulated; 2: indistinctly articulated,neomorphic,Martin's comment: Articulation considered derived,feeding&sensory
+48,Articulation of midbody and posterior dorsal cirri. ,0: smooth; 1: distinctly articulated; 2: indistinctly articulated,neomorphic,Martin's comment: Articulation considered derived,feeding&sensory
+49,Dorsal cirri showing a fixed articulation pattern. ,0: absent; 1: present,neomorphic,Martin's comment,feeding&sensory
+50,Length of first dorsal cirri. ,0: similar to remainder; 1: considerably longer,transformational,"Martin's comment: Differentiation considered derived. He thinks it's neomorphic, I think elongation of present character",feeding&sensory
+51,Length of anterior dorsal cirri. ,0: long; 1: short; 2: very short; 3: very long,transformational,Martin's comment,feeding&sensory
+52,Length of midbody and posterior dorsal cirri. ,0: long; 1: short; 2: very short; 3: very long,transformational,Martin's comment,feeding&sensory
+53,Articulation pattern.,0: 1111; 1: 1011,neomorphic,Martin's comment: Differentiation considered derived,axial
+54,Insertion of dorsal cirri. ,0: at same level; 1: at different levels (alternating),neomorphic,Martin's comment: Alternation considered derived. Not sure if I agree it's neo. Seems like change of location of expression to give rise to cirri?,feeding&sensory
+55,Length of anal cirri. ,0: long; 1: short,transformational,Martin's comment,feeding&sensory
+56,Shape of anal cirri. ,"0: tapering or digitiform; 1: papilliform; 2: fusiform, onion shape, skittle; 3: spherical; 4: ovoidal",transformational,Martin's comment,feeding&sensory
+57,Articulation of anal cirri. ,0: smooth; 1: distinctly articulated; 2: indistinctly articulated,neomorphic,Martin's comment: Articulation considered derived,feeding&sensory
+58,Cirrophore. ,0: absent; 1: present,neomorphic,Martin's comment,feeding&sensory
+59,Anterior aciculae enlarged. ,0: absent; 1: present,transformational,enlargement of existing structure,parapodia&chaetae
+60,Shape of aciculae. ,"0: straight; 1: acuminate, tricuspid, lanceolate; 2: rounded or distally expanded",transformational,change in extisting structure,parapodia&chaetae
+61,Aciculae distally hollow. ,0: absent; 1: present,neomorphic,hollowing considered derived,parapodia&chaetae
+62,Dorsal simple chaetae.,0: absent; 1: present,neomorphic,Martin's comment,parapodia&chaetae
+63,Dorsal simple chaetae. ,0: from the beginning; 1: only on posterior segments,neomorphic,Martin's comment: Restriction considered derived,parapodia&chaetae
+64,Shape of dorsal simple chaetae. ,0: bidentate; 1: unidentate; 2: bayonet,transformational,Martin's comment,parapodia&chaetae
+65,Anterior dorsal simple chaetae modified. ,0: absent; 1: present,neomorphic,modifications should be transformational but could be neomorphic if new function arises specific to anterior pair.,parapodia&chaetae
+66,Ventral simple chaetae. ,0: absent; 1: present,neomorphic,absence of chaetae considered ancestral,parapodia&chaetae
+67,Shape of ventral simple chaetae. ,0: bidentate; 1: unidentate,transformational,Martin's comment,parapodia&chaetae
+68,Neurochaetae. ,0: compound; 1: simple,neomorphic,compound state considered ancestral,parapodia&chaetae
+69,Anterior neurochaetae distinctly different. ,0: absent; 1: present,neomorphic,distinction of anterior chaetae -> new function?,parapodia&chaetae
+70,Length of articles in same fascicle. ,0: all similar; 1: differences in length,neomorphic,Martin's comment: Differences considered derived,parapodia&chaetae
+71,Pseudospiniger?like chaetae. ,0: absent; 1: present,neomorphic,,parapodia&chaetae
+72,Anterior chaetae. ,0: unidentate; 1: bidentate,neomorphic,,parapodia&chaetae
+73,Anterior chaetae bidentate. ,0: with similar teeth; 1: with distal tooth larger than proximal one; 2: with proximal tooth larger than distal one,neomorphic,Martin's comment: Differentiation considered derived,parapodia&chaetae
+74,Posterior chaetae. ,0: unidentate; 1: bidentate,neomorphic,,parapodia&chaetae
+75,Posterior chaetae bidentate. ,0: teeth similar is size; 1: distal tooth larger than proximal one; 2: proximal tooth larger than distal one,neomorphic,Martin's comment: Differentiation considered derived,parapodia&chaetae
+76,Unidentate falcigers with rounded tip. ,0: absent; 1: present,neomorphic,"one specific change, not range of states",parapodia&chaetae
+77,Bidentate neurochaetae in two levels. ,0: absent; 1: present,neomorphic,,parapodia&chaetae
+78,Chaetal spinulation. ,0: absent; 1: present,neomorphic,,parapodia&chaetae
+79,Shafts chambered. ,0: present; 1: absent,neomorphic,,parapodia&chaetae
+80,Hemigomph compound chaetae. ,0: absent; 1: present,neomorphic,hemigomph=articulated at right angle,parapodia&chaetae
+81,Proventricle. ,0: absent; 1: present,neomorphic,,feeding&sensory
+82,Shape of proventricle. ,0: cuadrangular or rectangular; 1: barrel shaped,transformational,Martin's comment,feeding&sensory
+83,Thickened inner proboscis lining. ,0: absent; 1: present,transformational,"other taxa have same sclerotized lining, but in Syllidae it is thicker",feeding&sensory
+84,Length of pharynx. ,0: similar or longer than proventricle; 1: shorter than proventricle,transformational,Martin's comment,feeding&sensory
+85,Shape of pharynx. ,0: straight; 1: sinuose,transformational,,feeding&sensory
+86,Width of pharynx. ,0: narrow; 1: broad; 2: very narrow,transformational,,feeding&sensory
+87,Papillae on the verge of the pharynx. ,0: absent; 1: present,neomorphic,,feeding&sensory
+88,Jaws. ,0: absent; 1: present,neomorphic,,feeding&sensory
+89,Pharyngeal armature. ,0: absent; 1: present,neomorphic,,feeding&sensory
+90,Pharyngeal tooth. ,0: absent; 1: present,neomorphic,,feeding&sensory
+91,Pharyngeal tooth shape. ,0: conical; 1: rhomboidal,transformational,Martin's comment,feeding&sensory
+92,Position of pharyngeal tooth. ,0: anterior or retarded; 1: middle to posterior,transformational,Martin's comment,feeding&sensory
+93,Trepan. ,0: absent; 1: present,neomorphic,trepan=toothed anterior margin of eversible proboscis,feeding&sensory
+94,Ventral denticled arc. ,0: absent; 1: present,neomorphic,,feeding&sensory
+95,Modifications for reproduction. ,0: absent; 1: present,neomorphic,,reproductive
+96,Desintegration of pharynx when reproducing. ,0: absent; 1: present,neomorphic,,reproductive
+97,Reproductive mode. ,0: epigamy; 1: schizogamy,transformational,Martin's comment,reproductive
+98,Modified segments. ,0: from anterior or midbody segments; 1: from posterior segments,transformational,Martin's comment,axial
+99,Stolons. ,0: dimorphic; 1: without dimorphism,transformational,Martin's comment,reproductive
+100,Stolons with a regionalized body. ,0: present; 1: absent,neomorphic,Martin's comment,reproductive
+101,Regeneration of posterior segments while stolon is still attached to the stock. ,0: absent; 1: present,neomorphic,Martin's comment,reproductive
+102,Brooding. ,0: absent; 1: present,neomorphic,,reproductive
+103,Kind of brooding. ,0: dorsally attached; 1: ventrally attached; 2: in gelatinous masses; 3: in sacks; 4: viviparity,transformational,Martin's comment,reproductive
+104,Embryonic development. ,0: not in connection with parental body; 1: in connection,neomorphic,unconnected development considered ancestral,reproductive
+105,Kind of sperm. ,0: ect?aquasperm; 1: ent?aquasperm; 2: introsperm,transformational,no clear ancestral state,reproductive
+106,Change in articulation of dorsal cirri towards adulthood. ,0: absent; 1: present,neomorphic,joints are the neomorphic feature,feeding&sensory
+107,Association with other organisms. ,0: absent; 1: present,transformational,might have to leave this character out if I canny assign it!,axial
