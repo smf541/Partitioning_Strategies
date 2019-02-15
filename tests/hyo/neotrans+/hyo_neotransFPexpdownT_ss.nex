@@ -81,7 +81,7 @@ BEGIN MRBAYES;
   
   mcmcp ngen=5000000 samplefreq=100 nruns=8 nchains=8 burninfrac=0.25 append=yes temp=0.05;
   
-  ss burninss=-1 nsteps=40 FromPrior=yes append=yes;
-  sumt burnin=0.25 nruns=8 filename="C:/Users/dxsb43/GitHub/Partitioning_Strategies/tests/hyo/neotrans+/hyo_neotransFPexpdownT_ss.nex";
+  ss burninss=-1 nsteps=40 fromprior=yes append=yes; 
+  sumt relburnin=no burnin=48731 nruns=8 filename="C:/Users/dxsb43/GitHub/Partitioning_Strategies/tests/hyo/neotrans+/hyo_neotransFPexpdownT_ss.nex";
 
 END;

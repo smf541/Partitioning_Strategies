@@ -71,7 +71,8 @@ BEGIN MRBAYES;
   
   outgroup Loxosomella;
   
-  mcmcp ngen=5000000 samplefreq=100 nruns=8 nchains=8 burninfrac=0.25 append=no temp=0.05;
+  mcmcp ngen=5000000 samplefreq=100 nruns=8 nchains=8 burninfrac=0.25 append=yes temp=0.05;
   
-  ss burninss=-1 nsteps=40 fromprior=yes; 
+  ss burninss=-1 nsteps=40 fromprior=yes append=yes; 
+  sumt relburnin=yes burnin=48731 nruns=8 filename="C:/Users/dxsb43/GitHub/Partitioning_Strategies/tests/hyo/unpart+/hyo_unpartFPexpdownT_ss.nex";  
 END;
