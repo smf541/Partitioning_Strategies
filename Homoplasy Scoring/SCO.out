@@ -1,0 +1,340 @@
+Tree 0, homoplasy 
+       зддддддбддддддбддддддбддддддбддддддбддддддбддддддбддддддбддддддбдддддд©
+       Ё    +0Ё    +1Ё    +2Ё    +3Ё    +4Ё    +5Ё    +6Ё    +7Ё    +8Ё    +9Ё
+зддддддеддддддеддддддеддддддеддддддеддддддеддддддеддддддеддддддеддддддедддддд╢
+Ё     0Ё     1Ё     0Ё     2Ё     1Ё     2Ё     0Ё     3Ё     1Ё     1Ё     3Ё
+Ё    10Ё     0Ё     1Ё     1Ё     0Ё     0Ё     0Ё     0Ё     1Ё     2Ё     2Ё
+Ё    20Ё     3Ё     1Ё     0Ё     0Ё     0Ё     1Ё     1Ё      Ё      Ё      Ё
+юддддддаддддддаддддддаддддддаддддддаддддддаддддддаддддддаддддддаддддддадддддды 
+Tree 1, homoplasy 
+       зддддддбддддддбддддддбддддддбддддддбддддддбддддддбддддддбддддддбдддддд©
+       Ё    +0Ё    +1Ё    +2Ё    +3Ё    +4Ё    +5Ё    +6Ё    +7Ё    +8Ё    +9Ё
+зддддддеддддддеддддддеддддддеддддддеддддддеддддддеддддддеддддддеддддддедддддд╢
+Ё     0Ё     1Ё     0Ё     2Ё     1Ё     2Ё     0Ё     3Ё     1Ё     1Ё     3Ё
+Ё    10Ё     0Ё     1Ё     1Ё     0Ё     0Ё     0Ё     0Ё     1Ё     2Ё     2Ё
+Ё    20Ё     3Ё     1Ё     0Ё     0Ё     0Ё     1Ё     1Ё      Ё      Ё      Ё
+юддддддаддддддаддддддаддддддаддддддаддддддаддддддаддддддаддддддаддддддадддддды 
+Tree 2, homoplasy 
+       зддддддбддддддбддддддбддддддбддддддбддддддбддддддбддддддбддддддбдддддд©
+       Ё    +0Ё    +1Ё    +2Ё    +3Ё    +4Ё    +5Ё    +6Ё    +7Ё    +8Ё    +9Ё
+зддддддеддддддеддддддеддддддеддддддеддддддеддддддеддддддеддддддеддддддедддддд╢
+Ё     0Ё     1Ё     0Ё     2Ё     1Ё     2Ё     0Ё     3Ё     1Ё     1Ё     3Ё
+Ё    10Ё     0Ё     1Ё     1Ё     0Ё     0Ё     0Ё     0Ё     1Ё     2Ё     2Ё
+Ё    20Ё     3Ё     1Ё     0Ё     0Ё     0Ё     1Ё     1Ё      Ё      Ё      Ё
+юддддддаддддддаддддддаддддддаддддддаддддддаддддддаддддддаддддддаддддддадддддды 
+Time 0.02 secs. 
+Log file: C:\Users\dxsb43\GitHub\Partitioning_Strategies\Homoplasy Scoring\SCO.out 
+Implied Weighting is ON 
+Weighting strength is 2.00000 
+Constraints is OFF 
+Random seed is 1 
+0 trees in memory 
+Repl. Algor.     Tree        Score       Best Score   Time       Rearrangs.
+3     FUSE       5           ------      ------       0:00:00    1,438,171     
+Completed search.
+Total rearrangements examined: 1,438,171. 
+No target score defined.  Best score hit 4 times.
+Best score: 7.13333.  3 trees retained. 
+Time 0.08 secs. 
+Tree 0, homoplasy 
+       зддддддбддддддбддддддбддддддбддддддбддддддбддддддбддддддбддддддбдддддд©
+       Ё    +0Ё    +1Ё    +2Ё    +3Ё    +4Ё    +5Ё    +6Ё    +7Ё    +8Ё    +9Ё
+зддддддеддддддеддддддеддддддеддддддеддддддеддддддеддддддеддддддеддддддедддддд╢
+Ё     0Ё     1Ё     0Ё     2Ё     1Ё     2Ё     0Ё     3Ё     0Ё     1Ё     3Ё
+Ё    10Ё     0Ё     2Ё     2Ё     0Ё     0Ё     0Ё     0Ё     1Ё     2Ё     2Ё
+Ё    20Ё     3Ё     1Ё     0Ё     0Ё     0Ё     1Ё     1Ё      Ё      Ё      Ё
+юддддддаддддддаддддддаддддддаддддддаддддддаддддддаддддддаддддддаддддддадддддды 
+Tree 1, homoplasy 
+       зддддддбддддддбддддддбддддддбддддддбддддддбддддддбддддддбддддддбдддддд©
+       Ё    +0Ё    +1Ё    +2Ё    +3Ё    +4Ё    +5Ё    +6Ё    +7Ё    +8Ё    +9Ё
+зддддддеддддддеддддддеддддддеддддддеддддддеддддддеддддддеддддддеддддддедддддд╢
+Ё     0Ё     1Ё     0Ё     2Ё     1Ё     2Ё     0Ё     3Ё     0Ё     1Ё     3Ё
+Ё    10Ё     0Ё     2Ё     2Ё     0Ё     0Ё     0Ё     0Ё     1Ё     2Ё     2Ё
+Ё    20Ё     3Ё     1Ё     0Ё     0Ё     0Ё     1Ё     1Ё      Ё      Ё      Ё
+юддддддаддддддаддддддаддддддаддддддаддддддаддддддаддддддаддддддаддддддадддддды 
+Tree 2, homoplasy 
+       зддддддбддддддбддддддбддддддбддддддбддддддбддддддбддддддбддддддбдддддд©
+       Ё    +0Ё    +1Ё    +2Ё    +3Ё    +4Ё    +5Ё    +6Ё    +7Ё    +8Ё    +9Ё
+зддддддеддддддеддддддеддддддеддддддеддддддеддддддеддддддеддддддеддддддедддддд╢
+Ё     0Ё     1Ё     0Ё     2Ё     1Ё     2Ё     0Ё     3Ё     0Ё     1Ё     3Ё
+Ё    10Ё     0Ё     2Ё     2Ё     0Ё     0Ё     0Ё     0Ё     1Ё     2Ё     2Ё
+Ё    20Ё     3Ё     1Ё     0Ё     0Ё     0Ё     1Ё     1Ё      Ё      Ё      Ё
+юддддддаддддддаддддддаддддддаддддддаддддддаддддддаддддддаддддддаддддддадддддды 
+Time 0.02 secs. 
+Log file: C:\Users\dxsb43\GitHub\Partitioning_Strategies\Homoplasy Scoring\SCO.out 
+Implied Weighting is ON 
+Weighting strength is 2.00000 
+Constraints is OFF 
+Random seed is 1 
+0 trees in memory 
+Repl. Algor.     Tree        Score       Best Score   Time       Rearrangs.
+3     FUSE       5           ------      ------       0:00:00    1,438,171     
+Completed search.
+Total rearrangements examined: 1,438,171. 
+No target score defined.  Best score hit 4 times.
+Best score: 7.13333.  3 trees retained. 
+Time 0.08 secs. 
+Saved data and trees (Nexus format) to file C:\Users\dxsb43\GitHub\Partitioning_Strategies\Homoplasy Scoring\sco_homk2_tree.nex 
+Implied Weighting is ON 
+Weighting strength is 3.00000 
+Constraints is OFF 
+Random seed is 1 
+0 trees in memory 
+Repl. Algor.     Tree        Score       Best Score   Time       Rearrangs.
+3     FUSE       5           ------      ------       0:00:00    1,416,797     
+Completed search.
+Total rearrangements examined: 1,416,797. 
+No target score defined.  Best score hit 4 times.
+Best score: 5.60000.  3 trees retained. 
+Time 0.08 secs. 
+Saved data and trees (Nexus format) to file C:\Users\dxsb43\GitHub\Partitioning_Strategies\Homoplasy Scoring\sco_homk3_trees.nex 
+Implied Weighting is ON 
+Weighting strength is 1.00000 
+Constraints is OFF 
+Random seed is 1 
+0 trees in memory 
+Repl. Algor.     Tree        Score       Best Score   Time       Rearrangs.
+3     FUSE       5           ------      ------       0:00:00    1,389,671     
+Completed search.
+Total rearrangements examined: 1,389,671. 
+No target score defined.  Best score hit 4 times.
+Best score: 9.75000.  3 trees retained. 
+Time 0.08 secs. 
+Tree 0, homoplasy 
+       зддддддбддддддбддддддбддддддбддддддбддддддбддддддбддддддбддддддбдддддд©
+       Ё    +0Ё    +1Ё    +2Ё    +3Ё    +4Ё    +5Ё    +6Ё    +7Ё    +8Ё    +9Ё
+зддддддеддддддеддддддеддддддеддддддеддддддеддддддеддддддеддддддеддддддедддддд╢
+Ё     0Ё     1Ё     0Ё     2Ё     1Ё     2Ё     0Ё     3Ё     0Ё     1Ё     3Ё
+Ё    10Ё     0Ё     2Ё     2Ё     0Ё     0Ё     0Ё     0Ё     1Ё     2Ё     2Ё
+Ё    20Ё     3Ё     1Ё     0Ё     0Ё     0Ё     1Ё     1Ё      Ё      Ё      Ё
+юддддддаддддддаддддддаддддддаддддддаддддддаддддддаддддддаддддддаддддддадддддды 
+Tree 1, homoplasy 
+       зддддддбддддддбддддддбддддддбддддддбддддддбддддддбддддддбддддддбдддддд©
+       Ё    +0Ё    +1Ё    +2Ё    +3Ё    +4Ё    +5Ё    +6Ё    +7Ё    +8Ё    +9Ё
+зддддддеддддддеддддддеддддддеддддддеддддддеддддддеддддддеддддддеддддддедддддд╢
+Ё     0Ё     1Ё     0Ё     2Ё     1Ё     2Ё     0Ё     3Ё     0Ё     1Ё     3Ё
+Ё    10Ё     0Ё     2Ё     2Ё     0Ё     0Ё     0Ё     0Ё     1Ё     2Ё     2Ё
+Ё    20Ё     3Ё     1Ё     0Ё     0Ё     0Ё     1Ё     1Ё      Ё      Ё      Ё
+юддддддаддддддаддддддаддддддаддддддаддддддаддддддаддддддаддддддаддддддадддддды 
+Tree 2, homoplasy 
+       зддддддбддддддбддддддбддддддбддддддбддддддбддддддбддддддбддддддбдддддд©
+       Ё    +0Ё    +1Ё    +2Ё    +3Ё    +4Ё    +5Ё    +6Ё    +7Ё    +8Ё    +9Ё
+зддддддеддддддеддддддеддддддеддддддеддддддеддддддеддддддеддддддеддддддедддддд╢
+Ё     0Ё     1Ё     0Ё     2Ё     1Ё     2Ё     0Ё     3Ё     0Ё     1Ё     3Ё
+Ё    10Ё     0Ё     2Ё     2Ё     0Ё     0Ё     0Ё     0Ё     1Ё     2Ё     2Ё
+Ё    20Ё     3Ё     1Ё     0Ё     0Ё     0Ё     1Ё     1Ё      Ё      Ё      Ё
+юддддддаддддддаддддддаддддддаддддддаддддддаддддддаддддддаддддддаддддддадддддды 
+Time 0.02 secs. 
+Log file: C:\Users\dxsb43\GitHub\Partitioning_Strategies\Homoplasy Scoring\SCO.out 
+Saved data and trees (Nexus format) to file C:\Users\dxsb43\GitHub\Partitioning_Strategies\Homoplasy Scoring\sco_homk1_trees.nex 
+Implied Weighting is ON 
+Weighting strength is 0.50000 
+Constraints is OFF 
+Random seed is 1 
+0 trees in memory 
+Repl. Algor.     Tree        Score       Best Score   Time       Rearrangs.
+3     FUSE       5           ------      ------       0:00:00    1,393,958     
+Completed search.
+Total rearrangements examined: 1,393,958. 
+No target score defined.  Best score hit 4 times.
+Best score: 12.03810.  3 trees retained. 
+Time 0.08 secs. 
+Saved data and trees (Nexus format) to file C:\Users\dxsb43\GitHub\Partitioning_Strategies\Homoplasy Scoring\sco_homk0_5_trees.nex 
+Tree 0, homoplasy 
+       зддддддбддддддбддддддбддддддбддддддбддддддбддддддбддддддбддддддбдддддд©
+       Ё    +0Ё    +1Ё    +2Ё    +3Ё    +4Ё    +5Ё    +6Ё    +7Ё    +8Ё    +9Ё
+зддддддеддддддеддддддеддддддеддддддеддддддеддддддеддддддеддддддеддддддедддддд╢
+Ё     0Ё     1Ё     0Ё     2Ё     1Ё     2Ё     0Ё     3Ё     0Ё     1Ё     3Ё
+Ё    10Ё     0Ё     2Ё     2Ё     0Ё     0Ё     0Ё     0Ё     1Ё     2Ё     2Ё
+Ё    20Ё     3Ё     1Ё     0Ё     0Ё     0Ё     1Ё     1Ё      Ё      Ё      Ё
+юддддддаддддддаддддддаддддддаддддддаддддддаддддддаддддддаддддддаддддддадддддды 
+Tree 1, homoplasy 
+       зддддддбддддддбддддддбддддддбддддддбддддддбддддддбддддддбддддддбдддддд©
+       Ё    +0Ё    +1Ё    +2Ё    +3Ё    +4Ё    +5Ё    +6Ё    +7Ё    +8Ё    +9Ё
+зддддддеддддддеддддддеддддддеддддддеддддддеддддддеддддддеддддддеддддддедддддд╢
+Ё     0Ё     1Ё     0Ё     2Ё     1Ё     2Ё     0Ё     3Ё     0Ё     1Ё     3Ё
+Ё    10Ё     0Ё     2Ё     2Ё     0Ё     0Ё     0Ё     0Ё     1Ё     2Ё     2Ё
+Ё    20Ё     3Ё     1Ё     0Ё     0Ё     0Ё     1Ё     1Ё      Ё      Ё      Ё
+юддддддаддддддаддддддаддддддаддддддаддддддаддддддаддддддаддддддаддддддадддддды 
+Tree 2, homoplasy 
+       зддддддбддддддбддддддбддддддбддддддбддддддбддддддбддддддбддддддбдддддд©
+       Ё    +0Ё    +1Ё    +2Ё    +3Ё    +4Ё    +5Ё    +6Ё    +7Ё    +8Ё    +9Ё
+зддддддеддддддеддддддеддддддеддддддеддддддеддддддеддддддеддддддеддддддедддддд╢
+Ё     0Ё     1Ё     0Ё     2Ё     1Ё     2Ё     0Ё     3Ё     0Ё     1Ё     3Ё
+Ё    10Ё     0Ё     2Ё     2Ё     0Ё     0Ё     0Ё     0Ё     1Ё     2Ё     2Ё
+Ё    20Ё     3Ё     1Ё     0Ё     0Ё     0Ё     1Ё     1Ё      Ё      Ё      Ё
+юддддддаддддддаддддддаддддддаддддддаддддддаддддддаддддддаддддддаддддддадддддды 
+Time 0.00 secs. 
+Log file: C:\Users\dxsb43\GitHub\Partitioning_Strategies\Homoplasy Scoring\SCO.out 
+Implied Weighting is ON 
+Weighting strength is 0.25000 
+Constraints is OFF 
+Random seed is 1 
+0 trees in memory 
+Repl. Algor.     Tree        Score       Best Score   Time       Rearrangs.
+3     FUSE       5           ------      ------       0:00:00    1,389,757     
+Completed search.
+Total rearrangements examined: 1,389,757. 
+No target score defined.  Best score hit 4 times.
+Best score: 13.70256.  3 trees retained. 
+Time 0.08 secs. 
+Saved data and trees (Nexus format) to file C:\Users\dxsb43\GitHub\Partitioning_Strategies\Homoplasy Scoring\sco_homk0_25_trees.nex 
+Tree 0, homoplasy 
+       зддддддбддддддбддддддбддддддбддддддбддддддбддддддбддддддбддддддбдддддд©
+       Ё    +0Ё    +1Ё    +2Ё    +3Ё    +4Ё    +5Ё    +6Ё    +7Ё    +8Ё    +9Ё
+зддддддеддддддеддддддеддддддеддддддеддддддеддддддеддддддеддддддеддддддедддддд╢
+Ё     0Ё     1Ё     0Ё     2Ё     1Ё     2Ё     0Ё     3Ё     0Ё     1Ё     3Ё
+Ё    10Ё     0Ё     2Ё     2Ё     0Ё     0Ё     0Ё     0Ё     1Ё     2Ё     2Ё
+Ё    20Ё     3Ё     1Ё     0Ё     0Ё     0Ё     1Ё     1Ё      Ё      Ё      Ё
+юддддддаддддддаддддддаддддддаддддддаддддддаддддддаддддддаддддддаддддддадддддды 
+Tree 1, homoplasy 
+       зддддддбддддддбддддддбддддддбддддддбддддддбддддддбддддддбддддддбдддддд©
+       Ё    +0Ё    +1Ё    +2Ё    +3Ё    +4Ё    +5Ё    +6Ё    +7Ё    +8Ё    +9Ё
+зддддддеддддддеддддддеддддддеддддддеддддддеддддддеддддддеддддддеддддддедддддд╢
+Ё     0Ё     1Ё     0Ё     2Ё     1Ё     2Ё     0Ё     3Ё     0Ё     1Ё     3Ё
+Ё    10Ё     0Ё     2Ё     2Ё     0Ё     0Ё     0Ё     0Ё     1Ё     2Ё     2Ё
+Ё    20Ё     3Ё     1Ё     0Ё     0Ё     0Ё     1Ё     1Ё      Ё      Ё      Ё
+юддддддаддддддаддддддаддддддаддддддаддддддаддддддаддддддаддддддаддддддадддддды 
+Tree 2, homoplasy 
+       зддддддбддддддбддддддбддддддбддддддбддддддбддддддбддддддбддддддбдддддд©
+       Ё    +0Ё    +1Ё    +2Ё    +3Ё    +4Ё    +5Ё    +6Ё    +7Ё    +8Ё    +9Ё
+зддддддеддддддеддддддеддддддеддддддеддддддеддддддеддддддеддддддеддддддедддддд╢
+Ё     0Ё     1Ё     0Ё     2Ё     1Ё     2Ё     0Ё     3Ё     0Ё     1Ё     3Ё
+Ё    10Ё     0Ё     2Ё     2Ё     0Ё     0Ё     0Ё     0Ё     1Ё     2Ё     2Ё
+Ё    20Ё     3Ё     1Ё     0Ё     0Ё     0Ё     1Ё     1Ё      Ё      Ё      Ё
+юддддддаддддддаддддддаддддддаддддддаддддддаддддддаддддддаддддддаддддддадддддды 
+Time 0.02 secs. 
+Implied Weighting is ON 
+Weighting strength is 4.00000 
+Constraints is OFF 
+Random seed is 1 
+0 trees in memory 
+Repl. Algor.     Tree        Score       Best Score   Time       Rearrangs.
+3     FUSE       5           ------      ------       0:00:00    1,395,036     
+Completed search.
+Total rearrangements examined: 1,395,036. 
+No target score defined.  Best score hit 4 times.
+Best score: 4.61905.  3 trees retained. 
+Time 0.09 secs. 
+Saved data and trees (Nexus format) to file C:\Users\dxsb43\GitHub\Partitioning_Strategies\Homoplasy Scoring\sco_homk4.nex 
+Tree 0, homoplasy 
+       зддддддбддддддбддддддбддддддбддддддбддддддбддддддбддддддбддддддбдддддд©
+       Ё    +0Ё    +1Ё    +2Ё    +3Ё    +4Ё    +5Ё    +6Ё    +7Ё    +8Ё    +9Ё
+зддддддеддддддеддддддеддддддеддддддеддддддеддддддеддддддеддддддеддддддедддддд╢
+Ё     0Ё     1Ё     0Ё     2Ё     1Ё     2Ё     0Ё     3Ё     1Ё     1Ё     3Ё
+Ё    10Ё     0Ё     1Ё     1Ё     0Ё     0Ё     0Ё     0Ё     1Ё     2Ё     2Ё
+Ё    20Ё     3Ё     1Ё     0Ё     0Ё     0Ё     1Ё     1Ё      Ё      Ё      Ё
+юддддддаддддддаддддддаддддддаддддддаддддддаддддддаддддддаддддддаддддддадддддды 
+Tree 1, homoplasy 
+       зддддддбддддддбддддддбддддддбддддддбддддддбддддддбддддддбддддддбдддддд©
+       Ё    +0Ё    +1Ё    +2Ё    +3Ё    +4Ё    +5Ё    +6Ё    +7Ё    +8Ё    +9Ё
+зддддддеддддддеддддддеддддддеддддддеддддддеддддддеддддддеддддддеддддддедддддд╢
+Ё     0Ё     1Ё     0Ё     2Ё     1Ё     2Ё     0Ё     3Ё     1Ё     1Ё     3Ё
+Ё    10Ё     0Ё     1Ё     1Ё     0Ё     0Ё     0Ё     0Ё     1Ё     2Ё     2Ё
+Ё    20Ё     3Ё     1Ё     0Ё     0Ё     0Ё     1Ё     1Ё      Ё      Ё      Ё
+юддддддаддддддаддддддаддддддаддддддаддддддаддддддаддддддаддддддаддддддадддддды 
+Tree 2, homoplasy 
+       зддддддбддддддбддддддбддддддбддддддбддддддбддддддбддддддбддддддбдддддд©
+       Ё    +0Ё    +1Ё    +2Ё    +3Ё    +4Ё    +5Ё    +6Ё    +7Ё    +8Ё    +9Ё
+зддддддеддддддеддддддеддддддеддддддеддддддеддддддеддддддеддддддеддддддедддддд╢
+Ё     0Ё     1Ё     0Ё     2Ё     1Ё     2Ё     0Ё     3Ё     1Ё     1Ё     3Ё
+Ё    10Ё     0Ё     1Ё     1Ё     0Ё     0Ё     0Ё     0Ё     1Ё     2Ё     2Ё
+Ё    20Ё     3Ё     1Ё     0Ё     0Ё     0Ё     1Ё     1Ё      Ё      Ё      Ё
+юддддддаддддддаддддддаддддддаддддддаддддддаддддддаддддддаддддддаддддддадддддды 
+Time 0.00 secs. 
+Log file: C:\Users\dxsb43\GitHub\Partitioning_Strategies\Homoplasy Scoring\SCO.out 
+Implied Weighting is ON 
+Weighting strength is 8.00000 
+Constraints is OFF 
+Random seed is 1 
+0 trees in memory 
+Repl. Algor.     Tree        Score       Best Score   Time       Rearrangs.
+3     FUSE       5           ------      ------       0:00:00    1,402,344     
+Completed search.
+Total rearrangements examined: 1,402,344. 
+No target score defined.  Best score hit 4 times.
+Best score: 2.72929.  3 trees retained. 
+Time 0.09 secs. 
+Saved data and trees (Nexus format) to file C:\Users\dxsb43\GitHub\Partitioning_Strategies\Homoplasy Scoring\sco_homk8_trees.nex 
+Tree 0, homoplasy 
+       зддддддбддддддбддддддбддддддбддддддбддддддбддддддбддддддбддддддбдддддд©
+       Ё    +0Ё    +1Ё    +2Ё    +3Ё    +4Ё    +5Ё    +6Ё    +7Ё    +8Ё    +9Ё
+зддддддеддддддеддддддеддддддеддддддеддддддеддддддеддддддеддддддеддддддедддддд╢
+Ё     0Ё     1Ё     0Ё     2Ё     1Ё     2Ё     0Ё     3Ё     1Ё     1Ё     3Ё
+Ё    10Ё     0Ё     1Ё     1Ё     0Ё     0Ё     0Ё     0Ё     1Ё     2Ё     2Ё
+Ё    20Ё     3Ё     1Ё     0Ё     0Ё     0Ё     1Ё     1Ё      Ё      Ё      Ё
+юддддддаддддддаддддддаддддддаддддддаддддддаддддддаддддддаддддддаддддддадддддды 
+Tree 1, homoplasy 
+       зддддддбддддддбддддддбддддддбддддддбддддддбддддддбддддддбддддддбдддддд©
+       Ё    +0Ё    +1Ё    +2Ё    +3Ё    +4Ё    +5Ё    +6Ё    +7Ё    +8Ё    +9Ё
+зддддддеддддддеддддддеддддддеддддддеддддддеддддддеддддддеддддддеддддддедддддд╢
+Ё     0Ё     1Ё     0Ё     2Ё     1Ё     2Ё     0Ё     3Ё     1Ё     1Ё     3Ё
+Ё    10Ё     0Ё     1Ё     1Ё     0Ё     0Ё     0Ё     0Ё     1Ё     2Ё     2Ё
+Ё    20Ё     3Ё     1Ё     0Ё     0Ё     0Ё     1Ё     1Ё      Ё      Ё      Ё
+юддддддаддддддаддддддаддддддаддддддаддддддаддддддаддддддаддддддаддддддадддддды 
+Tree 2, homoplasy 
+       зддддддбддддддбддддддбддддддбддддддбддддддбддддддбддддддбддддддбдддддд©
+       Ё    +0Ё    +1Ё    +2Ё    +3Ё    +4Ё    +5Ё    +6Ё    +7Ё    +8Ё    +9Ё
+зддддддеддддддеддддддеддддддеддддддеддддддеддддддеддддддеддддддеддддддедддддд╢
+Ё     0Ё     1Ё     0Ё     2Ё     1Ё     2Ё     0Ё     3Ё     1Ё     1Ё     3Ё
+Ё    10Ё     0Ё     1Ё     1Ё     0Ё     0Ё     0Ё     0Ё     1Ё     2Ё     2Ё
+Ё    20Ё     3Ё     1Ё     0Ё     0Ё     0Ё     1Ё     1Ё      Ё      Ё      Ё
+юддддддаддддддаддддддаддддддаддддддаддддддаддддддаддддддаддддддаддддддадддддды 
+Time 0.02 secs. 
+Implied Weighting is ON 
+Weighting strength is 16.00000 
+Saved data and trees (Nexus format) to file C:\Users\dxsb43\GitHub\Partitioning_Strategies\Homoplasy Scoring\sco_homk16_trees.nex 
+Constraints is OFF 
+Random seed is 1 
+0 trees in memory 
+Repl. Algor.     Tree        Score       Best Score   Time       Rearrangs.
+3     FUSE       5           ------      ------       0:00:00    1,411,886     
+Completed search.
+Total rearrangements examined: 1,411,886. 
+No target score defined.  Best score hit 4 times.
+Best score: 1.50636.  3 trees retained. 
+Time 0.08 secs. 
+ 
+WARNING: 
+File "C:\Users\dxsb43\GitHub\Partitioning_Strategies\Homoplasy Scoring\sco_homk16_trees.nex" already exists.  It will be overwritten. 
+ 
+Saved data and trees (Nexus format) to file C:\Users\dxsb43\GitHub\Partitioning_Strategies\Homoplasy Scoring\sco_homk16_trees.nex 
+Tree 0, homoplasy 
+       зддддддбддддддбддддддбддддддбддддддбддддддбддддддбддддддбддддддбдддддд©
+       Ё    +0Ё    +1Ё    +2Ё    +3Ё    +4Ё    +5Ё    +6Ё    +7Ё    +8Ё    +9Ё
+зддддддеддддддеддддддеддддддеддддддеддддддеддддддеддддддеддддддеддддддедддддд╢
+Ё     0Ё     1Ё     0Ё     2Ё     1Ё     2Ё     0Ё     3Ё     1Ё     1Ё     3Ё
+Ё    10Ё     0Ё     1Ё     1Ё     0Ё     0Ё     0Ё     0Ё     1Ё     2Ё     2Ё
+Ё    20Ё     3Ё     1Ё     0Ё     0Ё     0Ё     1Ё     1Ё      Ё      Ё      Ё
+юддддддаддддддаддддддаддддддаддддддаддддддаддддддаддддддаддддддаддддддадддддды 
+Tree 1, homoplasy 
+       зддддддбддддддбддддддбддддддбддддддбддддддбддддддбддддддбддддддбдддддд©
+       Ё    +0Ё    +1Ё    +2Ё    +3Ё    +4Ё    +5Ё    +6Ё    +7Ё    +8Ё    +9Ё
+зддддддеддддддеддддддеддддддеддддддеддддддеддддддеддддддеддддддеддддддедддддд╢
+Ё     0Ё     1Ё     0Ё     2Ё     1Ё     2Ё     0Ё     3Ё     1Ё     1Ё     3Ё
+Ё    10Ё     0Ё     1Ё     1Ё     0Ё     0Ё     0Ё     0Ё     1Ё     2Ё     2Ё
+Ё    20Ё     3Ё     1Ё     0Ё     0Ё     0Ё     1Ё     1Ё      Ё      Ё      Ё
+юддддддаддддддаддддддаддддддаддддддаддддддаддддддаддддддаддддддаддддддадддддды 
+Tree 2, homoplasy 
+       зддддддбддддддбддддддбддддддбддддддбддддддбддддддбддддддбддддддбдддддд©
+       Ё    +0Ё    +1Ё    +2Ё    +3Ё    +4Ё    +5Ё    +6Ё    +7Ё    +8Ё    +9Ё
+зддддддеддддддеддддддеддддддеддддддеддддддеддддддеддддддеддддддеддддддедддддд╢
+Ё     0Ё     1Ё     0Ё     2Ё     1Ё     2Ё     0Ё     3Ё     1Ё     1Ё     3Ё
+Ё    10Ё     0Ё     1Ё     1Ё     0Ё     0Ё     0Ё     0Ё     1Ё     2Ё     2Ё
+Ё    20Ё     3Ё     1Ё     0Ё     0Ё     0Ё     1Ё     1Ё      Ё      Ё      Ё
+юддддддаддддддаддддддаддддддаддддддаддддддаддддддаддддддаддддддаддддддадддддды 
+Time 0.00 secs. 
+Reading from C:\Users\dxsb43\GitHub\Partitioning_Strategies\Homoplasy Scoring\CEA.txt 
+Matrix (205x25, 16 states). Memory required for data:   0.16 Mbytes 
+Time 5.89 secs. 
+Implied Weighting is ON 
+Weighting strength is 3.00000 
+Constraints is OFF 
+Random seed is 1 
+0 trees in memory 
+Repl. Algor.     Tree        Score       Best Score   Time       Rearrangs.
+3     FUSE       5           ------      ------       0:00:00    5,106,331     
+Completed search.
+Total rearrangements examined: 5,106,331. 
+No target score defined.  Best score hit 4 times.
+Best score: 31.07738.  1 trees retained. 
