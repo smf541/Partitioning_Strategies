@@ -6,11 +6,11 @@ require(Quartet)
 n_tips <- 14
 AllQuartets(n_tips) 
 
-trees <- read.nexus("sco_optimal_tree.nex")
+trees <- read.nexus("comp_sco_homk.nex")
 
-plot(trees)
 
 QStrees <- QuartetStatus(trees) 
+
 #output of QuartetStatus:
 #     N = 2Q, total number of quartet statements
 #     Q = total number of quartets for n tips
