@@ -24,11 +24,8 @@ get.char.vector <- function(level) {
 char.vector.array <- as.array(sapply(partition.levels, 
                                      FUN=get.char.vector))
 
-
 #print results
 print(char.vector.array)
-
-
 
 #histogram of partition sizes
 #vector of partition names and no. of characters in each
