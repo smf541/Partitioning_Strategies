@@ -41,7 +41,7 @@ END;
 BEGIN MRBAYES;
 	set autoclose=yes nowarn=yes;
 
-	lset coding=all rates=gamma;
+	lset coding=variable rates=gamma;
 	prset brlenspr=unconstrained: exp(6.6);
 
 charset partA = 6	8	9	10	11	12	14	16	17	19	21	23	24	25	26	27	28	29	31	34	35	

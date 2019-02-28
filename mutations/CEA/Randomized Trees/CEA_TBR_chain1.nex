@@ -1,0 +1,144 @@
+﻿#NEXUS
+[R-package APE, Thu Feb 28 15:41:01 2019]
+
+BEGIN TAXA;
+	DIMENSIONS NTAX = 65;
+	TAXLABELS
+		Dromaeosauridae
+		Archaeopteryx
+		Ambiortus
+		Anas
+		Apsaravis
+		Archaeorhynchus
+		Baptornis_advenus
+		Baptornis_varneri
+		Boluochia
+		Cathyaornis
+		Changchengornis
+		Chaoyangia
+		Columba
+		Concornis
+		Confuciusornis_dui
+		Confuciusornis_sanctus
+		Crypturellus
+		Didactylornis
+		Elsornis
+		Enaliornis
+		Eoalulavis
+		Eocathayornis
+		Eoconfuciusornis
+		Eoenantiornis
+		Gallinuloides
+		Gallus
+		Gansus
+		Gobipteryx
+		Hesperornis
+		Hollanda
+		Hongshanornis
+		Iberomesornis
+		Ichthyornis
+		Jeholornis
+		Jianchangornis
+		Jinzhouornis
+		Jixiangornis
+		Liaoningornis
+		Limenavis
+		Lithornis
+		Longicrusavis
+		Longipteryx
+		Longirostravis
+		Neuquenornis
+		Otogornis
+		Parahesperornis
+		Patagopteryx
+		Pengornis
+		Protopteryx
+		Rahonavis
+		Rapaxavis
+		Sapeornis
+		Schizooura
+		Shanweiniao
+		Shenqiornis
+		Shenzhouraptor
+		Songlingornis
+		Vegavis
+		Vescornis
+		Vorona
+		Waimanu
+		Yanornis
+		Yixianornis
+		Zhongjianornis
+		Zhongornis
+	;
+END;
+BEGIN TREES;
+	TRANSLATE
+		1	Dromaeosauridae,
+		2	Archaeopteryx,
+		3	Ambiortus,
+		4	Anas,
+		5	Apsaravis,
+		6	Archaeorhynchus,
+		7	Baptornis_advenus,
+		8	Baptornis_varneri,
+		9	Boluochia,
+		10	Cathyaornis,
+		11	Changchengornis,
+		12	Chaoyangia,
+		13	Columba,
+		14	Concornis,
+		15	Confuciusornis_dui,
+		16	Confuciusornis_sanctus,
+		17	Crypturellus,
+		18	Didactylornis,
+		19	Elsornis,
+		20	Enaliornis,
+		21	Eoalulavis,
+		22	Eocathayornis,
+		23	Eoconfuciusornis,
+		24	Eoenantiornis,
+		25	Gallinuloides,
+		26	Gallus,
+		27	Gansus,
+		28	Gobipteryx,
+		29	Hesperornis,
+		30	Hollanda,
+		31	Hongshanornis,
+		32	Iberomesornis,
+		33	Ichthyornis,
+		34	Jeholornis,
+		35	Jianchangornis,
+		36	Jinzhouornis,
+		37	Jixiangornis,
+		38	Liaoningornis,
+		39	Limenavis,
+		40	Lithornis,
+		41	Longicrusavis,
+		42	Longipteryx,
+		43	Longirostravis,
+		44	Neuquenornis,
+		45	Otogornis,
+		46	Parahesperornis,
+		47	Patagopteryx,
+		48	Pengornis,
+		49	Protopteryx,
+		50	Rahonavis,
+		51	Rapaxavis,
+		52	Sapeornis,
+		53	Schizooura,
+		54	Shanweiniao,
+		55	Shenqiornis,
+		56	Shenzhouraptor,
+		57	Songlingornis,
+		58	Vegavis,
+		59	Vescornis,
+		60	Vorona,
+		61	Waimanu,
+		62	Yanornis,
+		63	Yixianornis,
+		64	Zhongjianornis,
+		65	Zhongornis
+	;
+	TREE CEA1 = [&R] (1,(2,((55,((((((3,((27,(5,((33,((39,(((61,(4,13)),(25,58)),(17,40))),(20,(7,(8,(29,46)))))),(26,30)))),((31,41),(63,(57,62))))),(53,(47,60))),(12,64)),(6,35)),(38,(((9,42),(32,(51,(43,54)))),((19,(22,((21,(24,(10,14))),((28,59),(44,48))))),(45,49))))),((65,(23,((11,16),(15,36)))),(18,52)))),(37,(50,(34,56))))));
+	
+END;
