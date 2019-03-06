@@ -3,10 +3,10 @@
 require(ape)
 require(phytools)
 require(Quartet)
-n_tips <- 14
-AllQuartets(n_tips) 
-
-trees <- read.nexus("comp_sco_homk.nex")
+setwd("C:/Users/dxsb43/GitHub/Partitioning_Strategies/mutations/SCO")
+startTree <- read.nexus("sco_homk0_5_tree.nex")
+conTree <- read.nexus("sco_homk0_5.nex.con.tre")
+trees <- list(startTree, conTree)
 
 
 QStrees <- QuartetStatus(trees) 
