@@ -3,10 +3,13 @@
 require(ape)
 require(phytools)
 require(Quartet)
-setwd("C:/Users/dxsb43/GitHub/Partitioning_Strategies/mutations/SCO")
-startTree <- read.nexus("sco_homk0_5_tree.nex")
-conTree <- read.nexus("sco_homk0_5.nex.con.tre")
-trees <- list(startTree, conTree)
+setwd("C:/Users/dxsb43/GitHub/Partitioning_Strategies/mutations")
+startTree <- read.nexus("./CEA/Randomized Trees/CEA_TBR_chain3.nex")
+conTree1 <- read.nexus("./CEA/CEA_TBRch_3.nex.tree1.con.tre")
+conTree2 <- read.nexus("./CEA/CEA_TBRch_3.nex.tree2.con.tre")
+conTree3 <- read.nexus("./CEA/CEA_TBRch_3.nex.tree3.con.tre")
+conTree4 <- read.nexus("./CEA/CEA_TBRch_3.nex.tree4.con.tre")
+trees <- list(startTree, conTree1, conTree2, conTree3, conTree4)
 
 
 QStrees <- QuartetStatus(trees) 
