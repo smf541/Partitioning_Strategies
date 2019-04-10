@@ -56,7 +56,7 @@ BEGIN MRBAYES;
 	unlink brlen = (all);
 	prset brlenspr = Unconstrained:Exp(0.282);
 	lset coding=variable rates=gamma;
-mcmc;
-[sumt relburnin=yes burnin=0.25 nruns=8;]
+[mcmc;]
+sumt relburnin=yes burnin=0.25 nruns=8;
 
 END;
