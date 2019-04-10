@@ -42,7 +42,7 @@ BEGIN MRBAYES;
 
 	ctype ordered: 1 9 12 24 32 53 55 62 63 67 69-70 72 77 79 82 106 114 119 141 144 151 155 160 162 173 178 180 183 185 188 191 195-199 205;
 
-	mcmcp Ngen=5000000 Samplefreq=200 nruns=8 nchains=8 burninfrac=0.25 append=no temp=0.05;
+	mcmcp Ngen=5000000 Samplefreq=200 nruns=8 nchains=8 burninfrac=0.25 append=yes temp=0.05;
 	charset partA = 62	59	144	191	195	183	193	197	9	69	79	82	88	106	114	141	160	162	12	63	94	97	99	102	107	113	135	137	152	159	169	170	185	188	194	205	1	4	5	7	53	56	67	76	77	87	95	108	150	155	173
 ;
 	charset partB = 175	178	181	196	198	199	2	24	32	38	54	55	72	91	98	100	103	118	119	120	139	143	148	151	153	165	167	200	202	11	15	23	28	31	39	70	71	75	78	81	89	92	115	126	146	149	164	171	180	192	3
@@ -56,7 +56,7 @@ BEGIN MRBAYES;
 	unlink brlen = (all);
 	prset brlenspr = Unconstrained:Exp(0.219);
 	lset coding=variable rates=gamma;
-mcmc;
-[sumt relburnin=yes burnin=0.25 nruns=8;]
+[mcmc;]
+sumt relburnin=yes burnin=0.25 nruns=8;
 
 END;
