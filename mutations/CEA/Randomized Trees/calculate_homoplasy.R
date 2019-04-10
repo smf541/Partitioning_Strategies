@@ -2,9 +2,9 @@
 require(TreeSearch)
 require(ape)
 require(phangorn)
-setwd('C:/Users/dxsb43/GitHub/Partitioning_Strategies/mutations/CEA/Randomized Trees')
+setwd('C:/local/dxsb43/GitHub/Partitioning_Strategies/mutations/OZL/Randomized Trees')
 
-file <- 'CEA_TBR_chain100.nex'
+file <- 'OZL_TBR_chain100.nex'
 tree <- read.nexus(file)
 data <- ReadAsPhyDat(file)
 
@@ -29,7 +29,7 @@ obsSteps <- FitchSteps(tree, data)
 
 
 
-#calculate Goloboff's unbiased measure of homoplasy for a given k and data set
+#calculate Goloboff's unbiased measure of homoplasy for a given k (concavity constant) and data set
 
 k <- 3
 f <- (k+1)/(obsSteps+k+1+minSteps)
