@@ -9,7 +9,7 @@ tree <- read.nexus(file)
 data <- ReadAsPhyDat(file)
 
 parsScore <- Fitch(tree, data)
-expVal <- ncol(tab)/parsScore
+print(parsScore)
 
 powerOf2 <- 2^(0:ncol(attr(data, "contrast"))) #contrast shows the possible permutations of 
     #the character states, i.e. 0, 1, 2, 3, 4, 5, {01}, {02} etc.
@@ -19,6 +19,8 @@ decode <- apply(attr(data, "contrast"), 1, function(r) #
   )
 
 tab <- t(vapply(data, I, data[[1]])) # translates lists of taxa and character data into matrix
+#calculate number to go in exp() for branch lengths prior
+expVal <- ncol(tab)/parsScore
 
 minSteps <- apply(tab, 2, function(char) 
   TreeSearch:::MinimumSteps(decode[char])
@@ -49,7 +51,7 @@ nPart <- 4 #number of partitions
 prop <- 1/nPart # proportion of characters per partition
 chunk <- round(prop*ncol(tab)) # number of characters per partition
 
-partA <- sortedMat[1, 1:chunk]
+partA <- t(sortedMat[1, 1:chunk])
 partB <- sortedMat[1, (chunk+1) : (2*chunk)]
 partC <- sortedMat[1, (2*chunk+1):(3*chunk)]
 partD <- sortedMat[1, (3*chunk +1) : ncol(sortedMat)]
