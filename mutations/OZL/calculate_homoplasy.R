@@ -2,9 +2,9 @@
 require(TreeSearch)
 require(ape)
 require(phangorn)
-setwd('C:/local/dxsb43/GitHub/Partitioning_Strategies/mutations/OZL/Randomized Trees')
+setwd('C:/local/dxsb43/GitHub/Partitioning_Strategies/mutations/SCO/Randomized Trees')
 
-file <- 'OZL_TBR_chain100.nex'
+file <- 'SCO_TBR_chain1.nex'
 tree <- read.nexus(file)
 data <- ReadAsPhyDat(file)
 
@@ -29,15 +29,11 @@ minSteps <- apply(tab, 2, function(char)
 obsSteps <- FitchSteps(tree, data)
  
 
-
-
 #calculate Goloboff's unbiased measure of homoplasy for a given k (concavity constant) and data set
 
 k <- 3
 f <- (k+1)/(obsSteps+k+1+minSteps)
 f
-
-
 
 
 #rank characters by homoplasy values and then divide equally into a number of partitions
@@ -51,7 +47,7 @@ nPart <- 4 #number of partitions
 prop <- 1/nPart # proportion of characters per partition
 chunk <- round(prop*ncol(tab)) # number of characters per partition
 
-partA <- t(sortedMat[1, 1:chunk])
+partA <- sortedMat[1, 1:chunk]
 partB <- sortedMat[1, (chunk+1) : (2*chunk)]
 partC <- sortedMat[1, (2*chunk+1):(3*chunk)]
 partD <- sortedMat[1, (3*chunk +1) : ncol(sortedMat)]

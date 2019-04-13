@@ -3,13 +3,13 @@
 require(ape)
 require(phytools)
 require(Quartet)
-setwd("C:/local/dxsb43/GitHub/Partitioning_Strategies/mutations")
-startTree <- read.nexus("./CEA/Randomized Trees/CEA_TBR_chain4.nex")
-conTree1 <- read.nexus("./CEA/CEA_TBRch_4.nex.tree1.con.tre")
-conTree2 <- read.nexus("./CEA/CEA_TBRch_4.nex.tree2.con.tre")
-conTree3 <- read.nexus("./CEA/CEA_TBRch_4.nex.tree3.con.tre")
-conTree4 <- read.nexus("./CEA/CEA_TBRch_4.nex.tree4.con.tre")
-trees <- list(startTree, conTree1, conTree2, conTree3, conTree4)
+setwd("C:/local/dxsb43/GitHub/Partitioning_Strategies/mutations/CEA")
+startTree <- read.nexus("./Randomized Trees/CEA_TBR_chain1.nex")
+conTree1 <- read.nexus("./CEA_TBRch_1.nex.tree1.con.tre")
+conTree2 <- read.nexus("./CEA_TBRch_1.nex.tree2.con.tre")
+conTree3 <- read.nexus("./CEA_TBRch_1.nex.tree3.con.tre")
+conTree4 <- read.nexus("./CEA_TBRch_1.nex.tree4.con.tre")
+trees <- list(startTree, conTree1,conTree2,conTree3,conTree4)
 
 
 QStrees <- QuartetStatus(trees) 
@@ -23,4 +23,6 @@ QStrees <- QuartetStatus(trees)
 #     r2 = noq resolved in tree 2, but not tree 1
 #     u = noq that are unresolved in both trees
 
-SimilarityMetrics(QStrees)
+sim <- SimilarityMetrics(QStrees)
+sim
+writeClipboard(as.character(sim[2,]))
