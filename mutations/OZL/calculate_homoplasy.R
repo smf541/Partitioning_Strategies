@@ -2,14 +2,16 @@
 require(TreeSearch)
 require(ape)
 require(phangorn)
-setwd('C:/local/dxsb43/GitHub/Partitioning_Strategies/mutations/SCO/Randomized Trees')
+setwd('C:/local/dxsb43/GitHub/Partitioning_Strategies/mutations/OZL/Randomized Trees')
 
-file <- 'SCO_TBR_chain1.nex'
+file <- 'OZL_TBR_chain19.nex'
 tree <- read.nexus(file)
 data <- ReadAsPhyDat(file)
+#df <- as.data.frame(data)                     ### SCO data phyDat object has 27 observations of 16 variables
 
+#calculate parsimony score
 parsScore <- Fitch(tree, data)
-print(parsScore)
+#print(parsScore)
 
 powerOf2 <- 2^(0:ncol(attr(data, "contrast"))) #contrast shows the possible permutations of 
     #the character states, i.e. 0, 1, 2, 3, 4, 5, {01}, {02} etc.
@@ -19,6 +21,9 @@ decode <- apply(attr(data, "contrast"), 1, function(r) #
   )
 
 tab <- t(vapply(data, I, data[[1]])) # translates lists of taxa and character data into matrix
+tab <- tab[, attr(data, 'index')]
+                                                                ### SCO tab holds 26 values for each taxon
+
 #calculate number to go in exp() for branch lengths prior
 expVal <- ncol(tab)/parsScore
 
@@ -33,7 +38,7 @@ obsSteps <- FitchSteps(tree, data)
 
 k <- 3
 f <- (k+1)/(obsSteps+k+1+minSteps)
-f
+#f
 
 
 #rank characters by homoplasy values and then divide equally into a number of partitions
