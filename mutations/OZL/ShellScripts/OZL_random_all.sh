@@ -1,0 +1,59 @@
+#!/bin/csh
+
+## By default SLURM combines the standard output and error streams in a single
+## file based on the jobID and with extension .out
+## These streams can be directed to separate files with these two directives
+
+#SBATCH  -o  %j.out
+#SBATCH  -e  %j.err
+
+## where SLURM will expand %j to the jobID of the job.
+
+
+
+## Request email to the user when certain type of events occur to
+## the job
+
+#SBATCH  --mail-type=FAIL
+
+## where <type> can be one of BEGIN, END, FAIL, REQUEUE or ALL,
+## and send to email address
+
+#SBATCH  --mail-user  stella.m.felsinger@durham.ac.uk
+#SBATCH -t 1-04
+##form     hh:mm:ss, or d-hh
+##SBATCH --exclude cn7051
+## The default email name is that of the submitting user as known to the system.
+
+
+module purge
+module load slurm/current
+
+##load any modules required here
+
+module load mrbayes/ompi/gcc/3.2.6
+
+
+##execute the MPI program
+
+mpirun -n $SLURM_NTASKS mb /ddn/data/dxsb43/mutateOZL/OZLrandom/OZL_random.nex.1.nex
+mpirun -n $SLURM_NTASKS mb /ddn/data/dxsb43/mutateOZL/OZLrandom/OZL_random.nex.2.nex
+mpirun -n $SLURM_NTASKS mb /ddn/data/dxsb43/mutateOZL/OZLrandom/OZL_random.nex.3.nex
+mpirun -n $SLURM_NTASKS mb /ddn/data/dxsb43/mutateOZL/OZLrandom/OZL_random.nex.4.nex
+mpirun -n $SLURM_NTASKS mb /ddn/data/dxsb43/mutateOZL/OZLrandom/OZL_random.nex.5.nex
+mpirun -n $SLURM_NTASKS mb /ddn/data/dxsb43/mutateOZL/OZLrandom/OZL_random.nex.6.nex
+mpirun -n $SLURM_NTASKS mb /ddn/data/dxsb43/mutateOZL/OZLrandom/OZL_random.nex.7.nex
+mpirun -n $SLURM_NTASKS mb /ddn/data/dxsb43/mutateOZL/OZLrandom/OZL_random.nex.8.nex
+mpirun -n $SLURM_NTASKS mb /ddn/data/dxsb43/mutateOZL/OZLrandom/OZL_random.nex.9.nex
+mpirun -n $SLURM_NTASKS mb /ddn/data/dxsb43/mutateOZL/OZLrandom/OZL_random.nex.10.nex
+mpirun -n $SLURM_NTASKS mb /ddn/data/dxsb43/mutateOZL/OZLrandom/OZL_random.nex.11.nex
+mpirun -n $SLURM_NTASKS mb /ddn/data/dxsb43/mutateOZL/OZLrandom/OZL_random.nex.12.nex
+mpirun -n $SLURM_NTASKS mb /ddn/data/dxsb43/mutateOZL/OZLrandom/OZL_random.nex.13.nex
+mpirun -n $SLURM_NTASKS mb /ddn/data/dxsb43/mutateOZL/OZLrandom/OZL_random.nex.14.nex
+mpirun -n $SLURM_NTASKS mb /ddn/data/dxsb43/mutateOZL/OZLrandom/OZL_random.nex.15.nex
+mpirun -n $SLURM_NTASKS mb /ddn/data/dxsb43/mutateOZL/OZLrandom/OZL_random.nex.16.nex
+mpirun -n $SLURM_NTASKS mb /ddn/data/dxsb43/mutateOZL/OZLrandom/OZL_random.nex.17.nex
+mpirun -n $SLURM_NTASKS mb /ddn/data/dxsb43/mutateOZL/OZLrandom/OZL_random.nex.18.nex
+mpirun -n $SLURM_NTASKS mb /ddn/data/dxsb43/mutateOZL/OZLrandom/OZL_random.nex.19.nex
+mpirun -n $SLURM_NTASKS mb /ddn/data/dxsb43/mutateOZL/OZLrandom/OZL_random.nex.20.nex
+

@@ -3,13 +3,13 @@
 require(ape)
 require(phytools)
 require(Quartet)
-setwd("C:/local/dxsb43/GitHub/Partitioning_Strategies/mutations/CEA")
-startTree <- read.nexus("./Randomized Trees/CEA_random17.nex")
-conTree1 <- read.nexus("./CEA_ran_17.nex.tree1.con.tre")
-conTree2 <- read.nexus("./CEA_ran_17.nex.tree2.con.tre")
-conTree3 <- read.nexus("./CEA_ran_17.nex.tree3.con.tre")
-conTree4 <- read.nexus("./CEA_ran_17.nex.tree4.con.tre")
-trees <- list(startTree, conTree1,conTree2,conTree3,conTree4)
+setwd("C:/local/dxsb43/GitHub/Partitioning_Strategies/mutations/OZL")
+startTree <- read.nexus("./Randomized Trees/OZL_TBR_chain19.nex")
+conTree1 <- read.nexus("./OZL_TBRch_19.nex.con.tre")
+#conTree2 <- read.nexus("./OZL_TBRch_4.nex.tree2.con.tre")
+#conTree3 <- read.nexus("./OZL_TBRch_4.nex.tree3.con.tre")
+#conTree4 <- read.nexus("./OZL_TBRch_4.nex.tree4.con.tre")
+trees <- list(startTree, conTree1)
 
 
 QStrees <- QuartetStatus(trees) 
@@ -33,10 +33,10 @@ writeClipboard(as.character(sim[2,]))
 
 #compare start tree to ideal tree
 
-idealTree <- read.nexus("./CEA_optimal_tree.nex")
-#startTree <- read.nexus("./Randomized Trees/CEA_random20.nex")
-conTree <- read.nexus("./CEA_ran_15.nex.tree1.con.tre")
-trees <- list(idealTree, conTree)
+idealTree <- read.nexus("./OZL_optimal_tree.nex")
+startTree <- read.nexus("./Randomized Trees/OZL_TBR_chain19.nex")
+#conTree <- read.nexus("./OZL_TBRch_19.nex.con.tre")
+trees <- list(idealTree, startTree)
 
 
 QStrees <- QuartetStatus(trees) 

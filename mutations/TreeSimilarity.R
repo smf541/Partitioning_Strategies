@@ -9,8 +9,19 @@ library(tidyr)
 #read in excel file 
 setwd("C:/local/dxsb43/GitHub/Partitioning_Strategies/mutations")
 file <- "TreeComparisonsQuartet.xlsx"
-sheet <- "CEA_ran"
+sheet <- "OZL_TBR start to ideal"
 data <- read_excel(file, sheet = sheet, skip=0, col_names=TRUE)
+
+
+#read in Bayes Factor data
+BFfile <- "TreeComparisonsBayesFactors.xlsx"
+BFsheet <- "OZL_TBRch"
+BFdata <- read_excel(BFfile, BFsheet, col_names = TRUE)
+BF <- BFdata[nrow(BFdata) ,]
+BF <- gather(BF, 'start tree', 'Bayes Factor', "1":"20")
+BF <- BF[,complete.cases(t(BF))] #get rid of any NA columns
+
+
 
 data.no.na <- data[complete.cases(data), ] #removes rows with any na
 #data.no.contre <- data.no.na[,c(1,2,4,5,6,7,8,9,10,11)] #removes column with consensus tree number
@@ -26,9 +37,22 @@ by.metric.data <- spread(clean.data, Metric, Similarity)
 # plot similarity against distance from parsimony tree (=no. of starting tree)
 
 ggplot(data=by.metric.data) +
-  geom_point(aes(x=`start tree`, y=QuartetDivergence)) + # aes(colour=`type of tree`)
+  geom_point(aes(x=`start tree`, y=QuartetDivergence, colour = `type of tree`)) + # aes(colour=`type of tree`)
 #  facet_wrap(~ Metric) +
   scale_y_continuous(name='Similarity', limits = c(0,1)) +
-  scale_x_discrete(name = 'Distance from published tree',breaks = c(1,10,50,100)) +
-  ggtitle('OZL Similarity of Bayesian result tree to parsimony start tree')
-ggsave(filename="OZL_random_similarity.pdf", path="C:/local/dxsb43/GitHub/Partitioning_Strategies/mutations")
+  scale_x_discrete(name = 'Distance from published tree',breaks = c(1,10,20,50,100), limits=c(1:100)) +
+  ggtitle('OZL Similarity of Bayesian result tree to parsimony start tree') #+
+  #geom_smooth(method = 'lm', mapping = aes(x=`start tree`, y=QuartetDivergence))
+
+#breaks = where ticks go
+#limits in discrete scale = which data points are plotted
+#limits in continuous scale = first and last data point to plot
+
+BFplot <-ggplot(data = BF) +
+  geom_point(aes(x=BF$`start tree`, y=BF$`Bayes Factor`)) +
+  scale_y_continuous(name = "Bayes Factor", limits = c(0,max(BF$`Bayes Factor`)))+
+  scale_x_discrete(name="Distance from start tree", limits=c(1:20)) 
+BFplot
+
+#ggsave(filename="OZL_QD_vsideal_100.pdf", path="C:/local/dxsb43/GitHub/Partitioning_Strategies/mutations")
+
