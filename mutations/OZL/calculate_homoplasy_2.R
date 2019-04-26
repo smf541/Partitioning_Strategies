@@ -2,12 +2,20 @@
 require(TreeSearch)
 require(ape)
 require(phangorn)
-setwd('C:/local/dxsb43/GitHub/Partitioning_Strategies/mutations/OZL/Randomized Trees')
 
-file <- 'OZL_random1.nex'
+dataset <- "CEA"
+start.tree.number <- "12"
+start.tree.method <- "_TBR_chain"
+
+
+setwd(paste0("C:/local/dxsb43/GitHub/Partitioning_Strategies/mutations/", dataset))
+
+
+
+file <- paste0(dataset, start.tree.method,start.tree.number,".nex")
 tree <- read.nexus(file)
 data <- ReadAsPhyDat(file)
-#df <- as.data.frame(data)                     ### SCO data phyDat object has 27 observations of 16 variables
+#df <- as.data.frame(data)
 
 #calculate parsimony score
 parsScore <- Fitch(tree, data)
@@ -22,7 +30,7 @@ decode <- apply(attr(data, "contrast"), 1, function(r) #
 
 tab <- t(vapply(data, I, data[[1]])) # translates lists of taxa and character data into matrix
 tab <- tab[, attr(data, 'index')]
-                                                                ### SCO tab holds 26 values for each taxon
+                                                              
 
 #calculate number to go in exp() for branch lengths prior
 expVal <- ncol(tab)/parsScore
@@ -58,4 +66,28 @@ partC <- sortedMat[1, (2*chunk+1):(3*chunk)]
 partD <- sortedMat[1, (3*chunk +1) : ncol(sortedMat)]
 
 writeClipboard(as.character(partD))
+
+
+
+# chunk of .nex file that partitions go into:
+#
+#   charset partA =	62	144	191	59	195	183	197	114	141	160 199	1165	169	173	17	5	7	32	38	55	56	67	;
+#   
+#   charset partB = 	72	76	91	95	97	70	92	100	107	108	115	140	149	15	23	28	30	31	33	34	39	;
+#   
+#   charset partC = 	43	54	58	71	75	78	83	86	89	105	109	111	112	125	127	129	130	133	134	136	145	;
+#   
+#   charset partD = 	147	157	158	166	176	104	110	116	117	121	122	123	80	154	177	189	204	46	131	132	172 ;
+#   
+
+
+
+
+
+
+
+
+
+
+
 

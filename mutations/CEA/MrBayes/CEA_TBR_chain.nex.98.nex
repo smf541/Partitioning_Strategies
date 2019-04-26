@@ -1,5 +1,5 @@
 ﻿#NEXUS 
-[File: 4_part_unlink_brlen_exp10_gamma_shared.nex]
+[From tree CEA_random1.nex]
 
 BEGIN DATA;
 	DIMENSIONS  NTAX=25 NCHAR=205;
@@ -41,17 +41,24 @@ END;
 BEGIN MRBAYES;
 
 	ctype ordered: 1 9 12 24 32 53 55 62 63 67 69-70 72 77 79 82 106 114 119 141 144 151 155 160 162 173 178 180 183 185 188 191 195-199 205;
+
 	mcmcp Ngen=5000000 Samplefreq=200 nruns=8 nchains=8 burninfrac=0.25 append=no temp=0.05;
-	charset cranial = 1-52;
-	charset axial = 53-71;
-	charset pectoral = 72-154;
-	charset pelvic = 155-205;
-	partition fourpart = 4: cranial, axial, pectoral, pelvic;
-	set partition = fourpart; 
+	
+charset partA = 62 144 191 195 59 183 197 9 69 79 82 141 160 169 170 53 63 99 102 114 135 137 159 162 185 188 193 194 196 1 2 4 5 12 56 67 76 77 87 88 94 107 108 113 150 152 155 173 178 181 198 ;
+charset partB = 199 205 7 23 24 32 38 54 55 72 91 97 100 103 106 118 126 139 143 151 165 167 175 202 11 15 28 31 39 43 44 60 70 71 78 81 89 92 95 98 101 119 120 140 146 148 149 153 171 180 182 ;
+charset partC = 3 13 14 16 21 25 33 34 52 58 74 75 83 86 109 115 127 128 129 133 156 161 163 164 187 192 200 201 203 10 17 18 22 30 37 42 48 51 57 61 64 65 73 84 85 90 96 105 111 112 117 ;
+charset partD = 125 130 134 136 145 147 157 158 166 176 179 190 8 19 20 27 29 35 36 41 45 49 66 68 93 104 110 116 121 122 123 124 138 142 168 174 184 186 204 6 26 40 47 50 80 154 177 189 46 131 132 172 ;
+
+partition chartype=4: partA, partB, partC, partD;
+set partition=chartype;
+
+
+	
 	unlink brlen = (all);
-	prset brlenspr = Unconstrained:Exp(10);
+	prset brlenspr = Unconstrained:Exp(0.402);
 	lset coding=variable rates=gamma;
-mcmc;
-sumt relburnin=yes burnin=0.25 nruns=8;
+	outgroup Dromaeosauridae;
+	mcmc;
+	sumt relburnin=yes burnin=0.25 nruns=8 contype = allcompat;
 
 END;
