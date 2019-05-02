@@ -1,9 +1,14 @@
 library(TreeSearch)
 library(ape)
-setwd('C:/Users/dxsb43/GitHub/Partitioning_Strategies/mutations/CEA')
+
+tla <- 'SCO'
+
+
+setwd(paste0('C:/local/dxsb43/GitHub/Partitioning_Strategies/mutations/', tla))
+
 File <- function (suffix) paste0(tla, '/', tla, suffix)
 Chain <- function (Func, oTree) {
-  ret <- vector('list', 100)
+  ret <- vector('list', 500)
   for (i in reps) {
     oTree <- Func(oTree)
     ret[[i]] <- oTree
@@ -11,14 +16,13 @@ Chain <- function (Func, oTree) {
   structure(ret, class='multiPhylo')
 }
 
-tla <- 'CEA'
-dir.create(tla)
+
 
 inputTree <- read.nexus(paste0(tla, '_optimal_tree.nex'))
 inputTree$edge.length <- NULL
 inputLabels <- inputTree$tip.label
 plot(inputTree)
-reps <- seq_len(100)
+reps <- seq_len(10)
 
 write.nexus(structure(lapply(reps, function (i) NNI(inputTree)),
                       class='multiPhylo'),
