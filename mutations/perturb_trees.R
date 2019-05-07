@@ -1,14 +1,14 @@
 library(TreeSearch)
 library(ape)
+reps <- seq_len(100)
 
-tla <- 'SCO'
 
 
-setwd(paste0('C:/local/dxsb43/GitHub/Partitioning_Strategies/mutations/', tla))
+setwd(paste0('C:/local/dxsb43/GitHub/Partitioning_Strategies/mutations/'))
 
 File <- function (suffix) paste0(tla, '/', tla, suffix)
 Chain <- function (Func, oTree) {
-  ret <- vector('list', 500)
+  ret <- vector('list', length(reps))
   for (i in reps) {
     oTree <- Func(oTree)
     ret[[i]] <- oTree
@@ -16,13 +16,12 @@ Chain <- function (Func, oTree) {
   structure(ret, class='multiPhylo')
 }
 
-
+tla <- 'SCO'
 
 inputTree <- read.nexus(paste0(tla, '_optimal_tree.nex'))
 inputTree$edge.length <- NULL
 inputLabels <- inputTree$tip.label
 plot(inputTree)
-reps <- seq_len(10)
 
 write.nexus(structure(lapply(reps, function (i) NNI(inputTree)),
                       class='multiPhylo'),
