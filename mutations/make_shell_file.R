@@ -8,9 +8,10 @@ shellTemplate <- readLines(shellTemplateFile)
 shellDir <- "ShellScripts"
 if (!dir.exists(shellDir)) dir.create(shellDir)
   
+m <- "TBR_chain"    ##set tree generation method
+
 ## to make a shell file for each analysis
 
-m <- "TBR_chain"    ##set tree generation method
 j <- 1
 
   for (j in c(1:100)) {
@@ -47,22 +48,30 @@ writeLines(shellOutput, shellOutputFile)
       # turned to \r\n. 
       # Setting sep="\n" in writeLines() or cat() does nothing.
 
+chunk1 <- c(1:20)
+chunk2 <- c(21:40)
+chunk3 <- c(41:60)
+chunk4 <- c(61:80)
+chunk5 <- c(81:100)
+chunks <- list(chunk1, chunk2, chunk3, chunk4, chunk5)
 
-k <- 1
-howManyTrees <- c(81:100)
-lines <- character(length(howManyTrees))
-for (k in 1:length(howManyTrees)) {
-  lines[k] <- paste0('mpirun -n $SLURM_NTASKS mb /ddn/data/dxsb43/mutate',datasetName,
-            '/',datasetName,m,'/',datasetName,'_',m,'.nex.',howManyTrees[k],'.nex')
+for (howManyTrees in chunks) {
+  lines <- character(length(howManyTrees))
+  for (k in 1:length(howManyTrees)) {
+    lines[k] <- paste0('mpirun -n $SLURM_NTASKS mb /ddn/data/dxsb43/mutate',datasetName,
+              '/',datasetName,m,'/',datasetName,'_',m,'.nex.',howManyTrees[k],'.nex')
+  }
+  
+  shellOutput <- c(shellTemplate, 
+                   lines,  
+                   ""
+  )
+  
+  shellOutputFile <- paste0(shellDir, '/', datasetName, '_',m,'_', min(howManyTrees), '_', max(howManyTrees),
+                            '.sh')  ##name of .sh file
+  #cat(shellOutput, file=shellOutputFile, sep="\n")
+  writeLines(shellOutput, shellOutputFile, sep="\n")
+  
 }
-
-shellOutput <- c(shellTemplate, 
-                 lines,  
-                 ""
-)
-
-shellOutputFile <- paste0(shellDir, '/', datasetName, '_',m,'_', min(howManyTrees), '_', max(howManyTrees),
-                          '.sh')  ##name of .sh file
-#cat(shellOutput, file=shellOutputFile, sep="\n")
-writeLines(shellOutput, shellOutputFile, sep="\n")
+  
 

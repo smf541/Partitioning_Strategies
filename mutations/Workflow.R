@@ -65,6 +65,7 @@ for (ourFile in list.files('StartingTrees', pattern='*.nex')) {
     partD <- sortedMat[1, (3*chunk +1) : nChar]
     
     mrBayesOutput <- c(mrBayesTemplate[seq_len(insertLine - 1)], 
+                       paste("prset brlenspr = unconstrained: exp(",expVal, ");"),
                        paste("charset partA =", paste(partA, collapse=' '), ";"),
                        paste("charset partB =", paste(partB, collapse=' '), ";"),
                        paste("charset partC =", paste(partC, collapse=' '), ";"),

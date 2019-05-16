@@ -6,7 +6,7 @@ require(ggplot2)
 require(tidyr)
 
 # Select dataset
-datasetName <- "CEA"
+datasetName <- "SCO"
 rootDir <- paste0("C:/local/dxsb43/GitHub/Partitioning_Strategies/mutations/", datasetName)
 setwd(rootDir)
 mrBayesTemplateFile <- paste0(rootDir, '/', datasetName, '_TEMPLATE.nex')
@@ -46,7 +46,10 @@ for (i in seq_along(trees)) {
   f <- (k+1)/(obsSteps+k+1+minSteps)
   
   CImat[i, ] <- f     #fill ith row with the vector of CIs
-}  
+}  ###################################################### doesn't work because obsSteps and minSteps are different lengths. 
+############################################# obsSteps is calculated directly from the tree (from read.nexus) while minSteps
+############################################# is calculated from tab < dataset < ReadAsPhyDat. 
+############################################# obsSteps has 26 elements, while minSteps has 27 
 
 #reshape CImat into long format
 CImat <- as.data.frame(CImat)
