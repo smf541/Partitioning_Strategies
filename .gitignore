@@ -2,3 +2,13 @@
 .Rhistory
 .RData
 .Ruserdata
+*.nex
+*.nex.ckp
+*.nex.ckp~
+*nex*.con.tre
+*.nex.mcmc
+*.nex.parts
+*.nex.trprobs
+*.nex.tstat
+*.nex.vstat
+*.sh
