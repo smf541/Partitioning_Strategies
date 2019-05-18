@@ -3,7 +3,6 @@ library(ape)
 reps <- seq_len(100)
 
 
-
 setwd(paste0('C:/local/dxsb43/GitHub/Partitioning_Strategies/mutations/'))
 
 File <- function (suffix) paste0(tla, '/', tla, suffix)
@@ -21,10 +20,11 @@ tla <- 'SYL'
 inputTree <- read.nexus(paste0(tla, '_optimal_tree.nex'))
 inputTree$edge.length <- NULL
 inputLabels <- inputTree$tip.label
+inputTree <- multi2di(inputTree)
 plot(inputTree)
 
-write.nexus(structure(lapply(reps, function (i) NNI(inputTree)),
-                      class='multiPhylo'),
+
+write.nexus(structure(lapply(reps, function (i) NNI(inputTree)), class='multiPhylo'), 
             file=File('_single_NNI_move.nex'))
 
 

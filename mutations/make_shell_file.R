@@ -1,6 +1,6 @@
 #making a shell script
 
-datasetName <- "OZL"
+datasetName <- "SYL"
 rootDir <- paste0("C:/local/dxsb43/GitHub/Partitioning_Strategies/mutations/", datasetName)
 setwd(rootDir)
 shellTemplateFile <- '../shell_TEMPLATE.sh.txt'
@@ -8,7 +8,7 @@ shellTemplate <- readLines(shellTemplateFile)
 shellDir <- "ShellScripts"
 if (!dir.exists(shellDir)) dir.create(shellDir)
   
-m <- "TBR_chain"    ##set tree generation method
+m <- "random"    ##set tree generation method
 
 ## to make a shell file for each analysis
 
@@ -59,7 +59,7 @@ for (howManyTrees in chunks) {
   lines <- character(length(howManyTrees))
   for (k in 1:length(howManyTrees)) {
     lines[k] <- paste0('mpirun -n $SLURM_NTASKS mb /ddn/data/dxsb43/mutate',datasetName,
-              '/',datasetName,m,'/',datasetName,'_',m,'.nex.',howManyTrees[k],'.nex')
+              '/',datasetName,'_',m,'/',datasetName,'_',m,'.nex.',howManyTrees[k],'.nex')
   }
   
   shellOutput <- c(shellTemplate, 

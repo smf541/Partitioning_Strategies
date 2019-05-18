@@ -76,7 +76,7 @@ for (ourFile in list.files('StartingTrees', pattern='*.nex')) {
                        "",
                        mrBayesTemplate[(insertLine + 1L):length(mrBayesTemplate)])
     
-    outputFile <- paste0(bayesFilesDir, '/', ourFile, '.', i, '.nex')
+    outputFile <- paste0(bayesFilesDir, '/', ourFile, '_varExpVal.', i, '.nex')
     writeLines(mrBayesOutput, outputFile)
   }
 }
