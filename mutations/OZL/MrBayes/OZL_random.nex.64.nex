@@ -174,6 +174,7 @@ begin mrbayes;
 	PRSET nodeagepr = calibrated;
 	
 	
+prset brlenspr = unconstrained: exp( 0.139390519187359 );
 charset partA = 64 129 104 236 61 177 222 95 118 176 168 232 51 107 229 4 109 111 159 1 204 34 69 92 96 131 144 145 166 169 193 212 226 233 70 89 105 112 114 122 132 139 154 167 173 191 197 214 231 36 54 72 79 103 121 123 128 156 160 164 171 178 ;
 charset partB = 209 225 228 2 28 110 134 183 188 224 8 57 74 84 106 125 126 133 135 148 161 162 172 203 205 216 217 221 227 237 243 3 7 56 67 87 113 124 175 184 186 198 201 202 213 234 41 46 75 78 83 97 117 127 138 142 143 151 165 189 196 211 ;
 charset partC = 230 235 40 47 58 73 81 82 90 93 100 115 116 119 136 141 150 152 157 163 190 207 238 5 9 10 12 17 25 31 50 52 62 66 91 130 147 149 158 174 179 182 185 199 215 241 24 26 37 43 44 45 53 55 63 86 88 137 146 181 192 210 ;
@@ -187,12 +188,10 @@ set partition=chartype;
 	prset applyto = (all) ratepr=variable;  		[allowing rate to vary across partitions. how will this interact with clockrateps?]
 	[END OF MANUAL ADDITIONS]	
 		
-	mcmcp temp=0.2 samplefreq=4000 printfr=4000 nruns=8 nchain=8 relburnin=yes burninfrac=0.25 append=no;
+	mcmcp ngen=5000000 temp=0.2 samplefreq=4000 printfr=4000 nruns=8 nchain=8 relburnin=yes burninfrac=0.25 append=yes;
 	mcmcp savebrlens=yes;
-
-	mcmc ngen=5000000;
 	
 	sumt relburnin=yes burninfrac=0.25 contype=allcompat;
-	[sump relburnin=yes burninfrac=0.25;]
+	sump relburnin=yes burninfrac=0.25;
 
 end;
