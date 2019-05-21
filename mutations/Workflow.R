@@ -36,7 +36,7 @@ minSteps <- apply(tab, 2, function(char)
   TreeSearch:::MinimumSteps(decode[char])
 )
 
-
+#make MrBayes files from perturbed trees
 for (ourFile in list.files('StartingTrees', pattern='*.nex')) {
   trees <- read.nexus(paste0('StartingTrees/', ourFile))
   for (i in seq_along(trees)) {
