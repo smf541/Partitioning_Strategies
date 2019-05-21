@@ -22,7 +22,6 @@
 #SBATCH  --mail-user  stella.m.felsinger@durham.ac.uk
 #SBATCH -t 1-02
 ##form     hh:mm:ss or d-hh
-##SBATCH --exclude cn7051
 ## The default email name is that of the submitting user as known to the system.
 
 
@@ -36,24 +35,24 @@ module load mrbayes/ompi/gcc/3.2.6
 
 ##execute the MPI program
 
-mpirun -n $SLURM_NTASKS mb /ddn/data/dxsb43/mutateOZL/OZLNNI_chain/OZL_NNI_chain.nex.81.nex
-mpirun -n $SLURM_NTASKS mb /ddn/data/dxsb43/mutateOZL/OZLNNI_chain/OZL_NNI_chain.nex.82.nex
-mpirun -n $SLURM_NTASKS mb /ddn/data/dxsb43/mutateOZL/OZLNNI_chain/OZL_NNI_chain.nex.83.nex
-mpirun -n $SLURM_NTASKS mb /ddn/data/dxsb43/mutateOZL/OZLNNI_chain/OZL_NNI_chain.nex.84.nex
-mpirun -n $SLURM_NTASKS mb /ddn/data/dxsb43/mutateOZL/OZLNNI_chain/OZL_NNI_chain.nex.85.nex
-mpirun -n $SLURM_NTASKS mb /ddn/data/dxsb43/mutateOZL/OZLNNI_chain/OZL_NNI_chain.nex.86.nex
-mpirun -n $SLURM_NTASKS mb /ddn/data/dxsb43/mutateOZL/OZLNNI_chain/OZL_NNI_chain.nex.87.nex
-mpirun -n $SLURM_NTASKS mb /ddn/data/dxsb43/mutateOZL/OZLNNI_chain/OZL_NNI_chain.nex.88.nex
-mpirun -n $SLURM_NTASKS mb /ddn/data/dxsb43/mutateOZL/OZLNNI_chain/OZL_NNI_chain.nex.89.nex
-mpirun -n $SLURM_NTASKS mb /ddn/data/dxsb43/mutateOZL/OZLNNI_chain/OZL_NNI_chain.nex.90.nex
-mpirun -n $SLURM_NTASKS mb /ddn/data/dxsb43/mutateOZL/OZLNNI_chain/OZL_NNI_chain.nex.91.nex
-mpirun -n $SLURM_NTASKS mb /ddn/data/dxsb43/mutateOZL/OZLNNI_chain/OZL_NNI_chain.nex.92.nex
-mpirun -n $SLURM_NTASKS mb /ddn/data/dxsb43/mutateOZL/OZLNNI_chain/OZL_NNI_chain.nex.93.nex
-mpirun -n $SLURM_NTASKS mb /ddn/data/dxsb43/mutateOZL/OZLNNI_chain/OZL_NNI_chain.nex.94.nex
-mpirun -n $SLURM_NTASKS mb /ddn/data/dxsb43/mutateOZL/OZLNNI_chain/OZL_NNI_chain.nex.95.nex
-mpirun -n $SLURM_NTASKS mb /ddn/data/dxsb43/mutateOZL/OZLNNI_chain/OZL_NNI_chain.nex.96.nex
-mpirun -n $SLURM_NTASKS mb /ddn/data/dxsb43/mutateOZL/OZLNNI_chain/OZL_NNI_chain.nex.97.nex
-mpirun -n $SLURM_NTASKS mb /ddn/data/dxsb43/mutateOZL/OZLNNI_chain/OZL_NNI_chain.nex.98.nex
-mpirun -n $SLURM_NTASKS mb /ddn/data/dxsb43/mutateOZL/OZLNNI_chain/OZL_NNI_chain.nex.99.nex
-mpirun -n $SLURM_NTASKS mb /ddn/data/dxsb43/mutateOZL/OZLNNI_chain/OZL_NNI_chain.nex.100.nex
+mpirun -n $SLURM_NTASKS mb /ddn/data/dxsb43/mutateOZL/OZL_NNI_chain/OZL_NNI_chain.nex.81.nex
+mpirun -n $SLURM_NTASKS mb /ddn/data/dxsb43/mutateOZL/OZL_NNI_chain/OZL_NNI_chain.nex.82.nex
+mpirun -n $SLURM_NTASKS mb /ddn/data/dxsb43/mutateOZL/OZL_NNI_chain/OZL_NNI_chain.nex.83.nex
+mpirun -n $SLURM_NTASKS mb /ddn/data/dxsb43/mutateOZL/OZL_NNI_chain/OZL_NNI_chain.nex.84.nex
+mpirun -n $SLURM_NTASKS mb /ddn/data/dxsb43/mutateOZL/OZL_NNI_chain/OZL_NNI_chain.nex.85.nex
+mpirun -n $SLURM_NTASKS mb /ddn/data/dxsb43/mutateOZL/OZL_NNI_chain/OZL_NNI_chain.nex.86.nex
+mpirun -n $SLURM_NTASKS mb /ddn/data/dxsb43/mutateOZL/OZL_NNI_chain/OZL_NNI_chain.nex.87.nex
+mpirun -n $SLURM_NTASKS mb /ddn/data/dxsb43/mutateOZL/OZL_NNI_chain/OZL_NNI_chain.nex.88.nex
+mpirun -n $SLURM_NTASKS mb /ddn/data/dxsb43/mutateOZL/OZL_NNI_chain/OZL_NNI_chain.nex.89.nex
+mpirun -n $SLURM_NTASKS mb /ddn/data/dxsb43/mutateOZL/OZL_NNI_chain/OZL_NNI_chain.nex.90.nex
+mpirun -n $SLURM_NTASKS mb /ddn/data/dxsb43/mutateOZL/OZL_NNI_chain/OZL_NNI_chain.nex.91.nex
+mpirun -n $SLURM_NTASKS mb /ddn/data/dxsb43/mutateOZL/OZL_NNI_chain/OZL_NNI_chain.nex.92.nex
+mpirun -n $SLURM_NTASKS mb /ddn/data/dxsb43/mutateOZL/OZL_NNI_chain/OZL_NNI_chain.nex.93.nex
+mpirun -n $SLURM_NTASKS mb /ddn/data/dxsb43/mutateOZL/OZL_NNI_chain/OZL_NNI_chain.nex.94.nex
+mpirun -n $SLURM_NTASKS mb /ddn/data/dxsb43/mutateOZL/OZL_NNI_chain/OZL_NNI_chain.nex.95.nex
+mpirun -n $SLURM_NTASKS mb /ddn/data/dxsb43/mutateOZL/OZL_NNI_chain/OZL_NNI_chain.nex.96.nex
+mpirun -n $SLURM_NTASKS mb /ddn/data/dxsb43/mutateOZL/OZL_NNI_chain/OZL_NNI_chain.nex.97.nex
+mpirun -n $SLURM_NTASKS mb /ddn/data/dxsb43/mutateOZL/OZL_NNI_chain/OZL_NNI_chain.nex.98.nex
+mpirun -n $SLURM_NTASKS mb /ddn/data/dxsb43/mutateOZL/OZL_NNI_chain/OZL_NNI_chain.nex.99.nex
+mpirun -n $SLURM_NTASKS mb /ddn/data/dxsb43/mutateOZL/OZL_NNI_chain/OZL_NNI_chain.nex.100.nex
 
