@@ -15,7 +15,7 @@ Chain <- function (Func, oTree) {
   structure(ret, class='multiPhylo')
 }
 
-tla <- 'SYL'
+tla <- 'THER'
 
 inputTree <- read.nexus(paste0(tla, '_optimal_tree.nex'))
 inputTree$edge.length <- NULL

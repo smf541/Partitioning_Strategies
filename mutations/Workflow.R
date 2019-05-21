@@ -11,7 +11,7 @@ bayesFilesDir <- 'MrBayes'
 
 
 # Select dataset
-datasetName <- "SCO"
+datasetName <- "OZL"
 rootDir <- paste0("C:/local/dxsb43/GitHub/Partitioning_Strategies/mutations/", datasetName)
 setwd(rootDir)
 mrBayesTemplateFile <- paste0(rootDir, '/', datasetName, '_TEMPLATE.nex')
@@ -76,7 +76,7 @@ for (ourFile in list.files('StartingTrees', pattern='*.nex')) {
                        "",
                        mrBayesTemplate[(insertLine + 1L):length(mrBayesTemplate)])
     
-    outputFile <- paste0(bayesFilesDir, '/', ourFile, '_varExpVal.', i, '.nex')
+    outputFile <- paste0(bayesFilesDir, '/', ourFile, '.', i, '.nex')
     writeLines(mrBayesOutput, outputFile)
   }
 }
