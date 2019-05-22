@@ -11,7 +11,7 @@ bayesFilesDir <- 'MrBayes'
 
 
 # Select dataset
-datasetName <- "OZL"
+datasetName <- "CEA"
 rootDir <- paste0("C:/local/dxsb43/GitHub/Partitioning_Strategies/mutations/", datasetName)
 setwd(rootDir)
 mrBayesTemplateFile <- paste0(rootDir, '/', datasetName, '_TEMPLATE.nex')
