@@ -19,7 +19,7 @@ idealTree <- read.nexus(paste0("./",datasetName, "_optimal_tree.nex"))
 
 
 for (ourFile in list.files('StartingTrees', pattern='*.nex')) {
-ourFile <- list.files('StartingTrees',pattern='*.nex')[2]  ##specify perturbation method (if one of the sets of results isn't complete)
+#ourFile <- list.files('StartingTrees',pattern='*.nex')[2]  ##specify perturbation method (if one of the sets of results isn't complete)
   startTrees <- read.nexus(paste0("StartingTrees/", ourFile))
   
   resultTrees <- lapply(c(1:100), function (i)  #####works only if there are 100 con.tre's

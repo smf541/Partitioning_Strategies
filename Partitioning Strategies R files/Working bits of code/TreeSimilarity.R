@@ -18,14 +18,6 @@ setwd(paste0(rootDir, '/', dataSet, '/', 'Results'))
 file <- paste0(dataSet, '_', perturbMove, '.nex.', baseTree, '-sim.csv')  #e.g. SYL_random.nex.ideal-sim.csv
 data <- read.csv(file, skip=0, header=TRUE)
 
-# #read in Bayes Factor data
-# BFfile <- "TreeComparisonsBayesFactors.xlsx"
-# BFsheet <- "OZL_TBRch"
-# BFdata <- read_excel(BFfile, BFsheet, col_names = TRUE)
-# BF <- BFdata[nrow(BFdata) ,]
-# BF <- gather(BF, 'start tree', 'Bayes Factor', "1":"20")
-# BF <- BF[,complete.cases(t(BF))] #get rid of any NA columns
-# 
 
 StartTree <- data$X
 QuartetDivergence <- data$QuartetDivergence
@@ -51,12 +43,6 @@ ggplot(data=QD) +
 #breaks = where ticks go
 #limits in discrete scale = which data points are plotted
 #limits in continuous scale = first and last data point to plot
-
-# BFplot <-ggplot(data = BF) +
-#   geom_point(aes(x=BF$`start tree`, y=BF$`Bayes Factor`)) +
-#   scale_y_continuous(name = "Bayes Factor", limits = c(0,max(BF$`Bayes Factor`)))+
-#   scale_x_discrete(name="Distance from start tree", limits=c(1:20)) 
-# BFplot
 
 ggsave(filename=paste0(dataSet,'_',perturbMove,'_QD_vs_', baseTree,'.pdf'), path="C:/local/dxsb43/GitHub/Partitioning_Strategies/mutations/SimPlots")
 
