@@ -4,6 +4,8 @@
 require(readxl)
 require(ggplot2)
 require(tidyr)
+require(stringr)
+require(readr)
 require(utils)
 
 #first i need to extract the marginal likelihoods from the .out files 
@@ -49,7 +51,7 @@ perturbMove <- "NNI_chain"       #random, NNI_chain, TBR_chain
 
 #read in .out file 
 rootDir <-"C:/local/dxsb43/GitHub/Partitioning_Strategies/mutations"
-setwd(paste0(rootDir, '/', dataSet, '/', 'MrBayes'))
+setwd(paste0(rootDir, '/', dataSet, '/', 'MrBayesExperimental'))
 
 
 treeNo <- c(1:100)
@@ -58,13 +60,16 @@ for (ourFile in list.files(pattern=paste0(dataSet, '_', perturbMove, '.+out'))) 
 } 
 
 #to go into the for loop
-ourFile <- 'SCO_NNI_chain.nex_varExpVal_1to20.out'
-  outFiles <- readLines(ourFile)
-#find 
+ourFile <- 'SCO_NNI_chain_1to20.out'
+  outFile <- read_file(ourFile)
+#find title of nexus file within output (if used readLines, list of character vectors, each line is a )
+for (line in outFile)
+    str_match(line,'Executing file')  ##'Executing file ./ddn/data/dxsb43/mutate',dataSet,'/',dataSet,'_',perturbMove,'/',dataSet,'_',perturbMove,'.nex_varExpVal.1.nex.'
 
   
-  
-  
+splits <- split(outFile, ceiling(seq_along(outFile)/8835)) 
+length(outFile)/20     #####length of one analysis oyutput block in a .out file is 8835 lines (2 blank lines at start, one at end) 
+
   
 #next step: plot ratio ML of each result tree against ML of result tree generated from parsimony (published) tree
         #this will tell us if model fit is impacted even if the tree that is used for weighting is not ideal!
