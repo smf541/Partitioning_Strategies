@@ -22,7 +22,6 @@
 #SBATCH  --mail-user  stella.m.felsinger@durham.ac.uk
 #SBATCH -t 1-02
 ##form     hh:mm:ss or d-hh
-##SBATCH --exclude cn7051
 ## The default email name is that of the submitting user as known to the system.
 
 
@@ -36,24 +35,24 @@ module load mrbayes/ompi/gcc/3.2.6
 
 ##execute the MPI program
 
-mpirun -n $SLURM_NTASKS mb /ddn/data/dxsb43/mutateCEA/CEANNI_chain/CEA_NNI_chain.nex.1.nex
-mpirun -n $SLURM_NTASKS mb /ddn/data/dxsb43/mutateCEA/CEANNI_chain/CEA_NNI_chain.nex.2.nex
-mpirun -n $SLURM_NTASKS mb /ddn/data/dxsb43/mutateCEA/CEANNI_chain/CEA_NNI_chain.nex.3.nex
-mpirun -n $SLURM_NTASKS mb /ddn/data/dxsb43/mutateCEA/CEANNI_chain/CEA_NNI_chain.nex.4.nex
-mpirun -n $SLURM_NTASKS mb /ddn/data/dxsb43/mutateCEA/CEANNI_chain/CEA_NNI_chain.nex.5.nex
-mpirun -n $SLURM_NTASKS mb /ddn/data/dxsb43/mutateCEA/CEANNI_chain/CEA_NNI_chain.nex.6.nex
-mpirun -n $SLURM_NTASKS mb /ddn/data/dxsb43/mutateCEA/CEANNI_chain/CEA_NNI_chain.nex.7.nex
-mpirun -n $SLURM_NTASKS mb /ddn/data/dxsb43/mutateCEA/CEANNI_chain/CEA_NNI_chain.nex.8.nex
-mpirun -n $SLURM_NTASKS mb /ddn/data/dxsb43/mutateCEA/CEANNI_chain/CEA_NNI_chain.nex.9.nex
-mpirun -n $SLURM_NTASKS mb /ddn/data/dxsb43/mutateCEA/CEANNI_chain/CEA_NNI_chain.nex.10.nex
-mpirun -n $SLURM_NTASKS mb /ddn/data/dxsb43/mutateCEA/CEANNI_chain/CEA_NNI_chain.nex.11.nex
-mpirun -n $SLURM_NTASKS mb /ddn/data/dxsb43/mutateCEA/CEANNI_chain/CEA_NNI_chain.nex.12.nex
-mpirun -n $SLURM_NTASKS mb /ddn/data/dxsb43/mutateCEA/CEANNI_chain/CEA_NNI_chain.nex.13.nex
-mpirun -n $SLURM_NTASKS mb /ddn/data/dxsb43/mutateCEA/CEANNI_chain/CEA_NNI_chain.nex.14.nex
-mpirun -n $SLURM_NTASKS mb /ddn/data/dxsb43/mutateCEA/CEANNI_chain/CEA_NNI_chain.nex.15.nex
-mpirun -n $SLURM_NTASKS mb /ddn/data/dxsb43/mutateCEA/CEANNI_chain/CEA_NNI_chain.nex.16.nex
-mpirun -n $SLURM_NTASKS mb /ddn/data/dxsb43/mutateCEA/CEANNI_chain/CEA_NNI_chain.nex.17.nex
-mpirun -n $SLURM_NTASKS mb /ddn/data/dxsb43/mutateCEA/CEANNI_chain/CEA_NNI_chain.nex.18.nex
-mpirun -n $SLURM_NTASKS mb /ddn/data/dxsb43/mutateCEA/CEANNI_chain/CEA_NNI_chain.nex.19.nex
-mpirun -n $SLURM_NTASKS mb /ddn/data/dxsb43/mutateCEA/CEANNI_chain/CEA_NNI_chain.nex.20.nex
+mpirun -n $SLURM_NTASKS mb /ddn/data/dxsb43/mutateCEA/CEA_NNI_chain/CEA_NNI_chain.nex.1.nex
+mpirun -n $SLURM_NTASKS mb /ddn/data/dxsb43/mutateCEA/CEA_NNI_chain/CEA_NNI_chain.nex.2.nex
+mpirun -n $SLURM_NTASKS mb /ddn/data/dxsb43/mutateCEA/CEA_NNI_chain/CEA_NNI_chain.nex.3.nex
+mpirun -n $SLURM_NTASKS mb /ddn/data/dxsb43/mutateCEA/CEA_NNI_chain/CEA_NNI_chain.nex.4.nex
+mpirun -n $SLURM_NTASKS mb /ddn/data/dxsb43/mutateCEA/CEA_NNI_chain/CEA_NNI_chain.nex.5.nex
+mpirun -n $SLURM_NTASKS mb /ddn/data/dxsb43/mutateCEA/CEA_NNI_chain/CEA_NNI_chain.nex.6.nex
+mpirun -n $SLURM_NTASKS mb /ddn/data/dxsb43/mutateCEA/CEA_NNI_chain/CEA_NNI_chain.nex.7.nex
+mpirun -n $SLURM_NTASKS mb /ddn/data/dxsb43/mutateCEA/CEA_NNI_chain/CEA_NNI_chain.nex.8.nex
+mpirun -n $SLURM_NTASKS mb /ddn/data/dxsb43/mutateCEA/CEA_NNI_chain/CEA_NNI_chain.nex.9.nex
+mpirun -n $SLURM_NTASKS mb /ddn/data/dxsb43/mutateCEA/CEA_NNI_chain/CEA_NNI_chain.nex.10.nex
+mpirun -n $SLURM_NTASKS mb /ddn/data/dxsb43/mutateCEA/CEA_NNI_chain/CEA_NNI_chain.nex.11.nex
+mpirun -n $SLURM_NTASKS mb /ddn/data/dxsb43/mutateCEA/CEA_NNI_chain/CEA_NNI_chain.nex.12.nex
+mpirun -n $SLURM_NTASKS mb /ddn/data/dxsb43/mutateCEA/CEA_NNI_chain/CEA_NNI_chain.nex.13.nex
+mpirun -n $SLURM_NTASKS mb /ddn/data/dxsb43/mutateCEA/CEA_NNI_chain/CEA_NNI_chain.nex.14.nex
+mpirun -n $SLURM_NTASKS mb /ddn/data/dxsb43/mutateCEA/CEA_NNI_chain/CEA_NNI_chain.nex.15.nex
+mpirun -n $SLURM_NTASKS mb /ddn/data/dxsb43/mutateCEA/CEA_NNI_chain/CEA_NNI_chain.nex.16.nex
+mpirun -n $SLURM_NTASKS mb /ddn/data/dxsb43/mutateCEA/CEA_NNI_chain/CEA_NNI_chain.nex.17.nex
+mpirun -n $SLURM_NTASKS mb /ddn/data/dxsb43/mutateCEA/CEA_NNI_chain/CEA_NNI_chain.nex.18.nex
+mpirun -n $SLURM_NTASKS mb /ddn/data/dxsb43/mutateCEA/CEA_NNI_chain/CEA_NNI_chain.nex.19.nex
+mpirun -n $SLURM_NTASKS mb /ddn/data/dxsb43/mutateCEA/CEA_NNI_chain/CEA_NNI_chain.nex.20.nex
 

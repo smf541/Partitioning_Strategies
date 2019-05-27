@@ -1,6 +1,6 @@
 #making a shell script
 
-datasetName <- "OZL"
+datasetName <- "CEA"
 rootDir <- paste0("C:/local/dxsb43/GitHub/Partitioning_Strategies/mutations/", datasetName)
 setwd(rootDir)
 shellTemplateFile <- '../shell_TEMPLATE.sh.txt'
@@ -8,7 +8,7 @@ shellTemplate <- readLines(shellTemplateFile)
 shellDir <- "ShellScripts"
 if (!dir.exists(shellDir)) dir.create(shellDir)
   
-m <- "NNI_chain"    ##set tree generation method
+m <- "TBR_chain"    ##set tree generation method
 
 ## to make a shell file for each analysis
 
