@@ -8,7 +8,7 @@ require(utils)
 # plot similarity of result tree to starting tree on y against number# of starting tree (TBRch_#)
 
 #set dataset and type of baseline tree (ideal or start tree)
-dataSet <- "SYL"              #CEA, OZL, SCO, SYL, THER
+dataSet <- "SCO"              #CEA, OZL, SCO, SYL, THER
 perturbMove <- "random"       #random, NNI_chain, TBR_chain
 baseTree <- "published"           #published (=optimal), start (=tree that homoplasy was calculated based on)
 
