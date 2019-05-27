@@ -45,7 +45,7 @@ BEGIN MRBAYES;
 	outgroup Dromaeosauridae;
 
 	[INSERT PARTITIONS HERE]
-
+	
 	mcmcp Ngen=5000000 Samplefreq=200 nruns=8 nchains=8 burninfrac=0.25 append=no temp=0.05;
 	mcmc;
 	sumt relburnin=yes burnin=0.25 nruns=8 contype = allcompat;
