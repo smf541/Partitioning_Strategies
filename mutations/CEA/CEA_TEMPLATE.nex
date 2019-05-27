@@ -41,17 +41,14 @@ END;
 BEGIN MRBAYES;
 
 	ctype ordered: 1 9 12 24 32 53 55 62 63 67 69-70 72 77 79 82 106 114 119 141 144 151 155 160 162 173 178 180 183 185 188 191 195-199 205;
-
-	mcmcp Ngen=5000000 Samplefreq=200 nruns=8 nchains=8 burninfrac=0.25 append=no temp=0.05;
-	
-	[INSERT PARTITIONS HERE]
-
-	
-	unlink brlen = (all);
-	prset brlenspr = Unconstrained:Exp(0.402);
 	lset coding=variable rates=gamma;
 	outgroup Dromaeosauridae;
+
+	[INSERT PARTITIONS HERE]
+
+	mcmcp Ngen=5000000 Samplefreq=200 nruns=8 nchains=8 burninfrac=0.25 append=no temp=0.05;
 	mcmc;
 	sumt relburnin=yes burnin=0.25 nruns=8 contype = allcompat;
+	sump relburnin=yes burnin=0.25;
 
 END;
