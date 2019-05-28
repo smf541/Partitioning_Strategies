@@ -6,11 +6,49 @@ require(ggplot2)
 require(tidyr)
 
 # Select dataset
-datasetName <- "SCO"
-rootDir <- paste0("C:/local/dxsb43/GitHub/Partitioning_Strategies/mutations/", datasetName)
+datasetName <- "THER"
+rootDir <- "C:/local/dxsb43/GitHub/Partitioning_Strategies/mutations/"
 setwd(rootDir)
-mrBayesTemplateFile <- paste0(rootDir, '/', datasetName, '_TEMPLATE.nex')
+mrBayesTemplateFile <- paste0(rootDir, '/',datasetName,'/', datasetName, '_TEMPLATE.nex')
 dataset <- ReadAsPhyDat(mrBayesTemplateFile)
+
+
+##################################################################################################
+############################# make a .nex file with 500 random trees #############################
+##################################################################################################
+#how many trees to write to file
+rep <- seq_len(500)
+
+#functions
+File <- function (suffix) paste0('CharStructure/', datasetName, suffix)  ##path and name of the target file
+
+#read optimal tree
+inputTree <- read.nexus(paste0(datasetName, '_optimal_tree.nex'))   ###optimal tree is in dir 'mutations', not in dataset subdir
+inputTree$edge.length <- NULL
+inputLabels <- inputTree$tip.label
+inputTree <- multi2di(inputTree)
+plot(inputTree)
+
+#write 500 trees to file, located in dir "mutations/CharStructure"
+write.nexus(structure(lapply(reps, function (i)
+  ape::rtree(n = length(inputLabels), br=NULL, tip.label = inputLabels)),
+  class='multiPhylo'), file=File(paste0('_random_',length(rep),'.nex')))
+
+
+
+# Visualize distance of trees in chain from 'best' tree
+library(Quartet)
+trees <- read.nexus(File('_random.nex'))
+stati <- lapply(trees, QuartetStatus, cf=inputTree)
+plot(vapply(stati, QuartetDivergence, double(1)))
+
+
+
+###################################################################################
+###### calculate homoplasy for each character, 500 times ##########################
+###################################################################################
+
+setwd(paste0(rootDir,datasetName))    #####which wd do I need here? The mrBayes template is already in memory, so don't need to call that
 
 
 powerOf2 <- 2^(0:ncol(attr(dataset, "contrast"))) #contrast shows the possible permutations of 
@@ -27,11 +65,12 @@ minSteps <- apply(tab, 2, function(char)
   TreeSearch:::MinimumSteps(decode[char])
 )
 
-CImat <- matrix(, nrow=500, ncol=nChar)
+CImat <- matrix(data=NA,nrow=length(rep), ncol=nChar) #preallocate a matrix of NAs, with as many rows as trees and as many columns as characters
 colnames(CImat) <- chars
 #which trees to calculate CI for
-trees <- read.nexus(paste0('StartingTrees/', datasetName, '_random500.nex')) # reads all 500 random trees 
-                            
+trees <- read.nexus(paste0('CharStructure/', datasetName, '_random_',length(rep),'.nex')) # reads all 500 random trees 
+
+#loop through trees, calculating f for all characters for each tree i
 for (i in seq_along(trees)) {
   tree <- trees[[i]]
   parsScore <- Fitch(tree, dataset)
@@ -40,16 +79,15 @@ for (i in seq_along(trees)) {
   expVal <- ncol(tab)/parsScore
   
   obsSteps <- FitchSteps(tree, dataset)
+  obsSteps <- obsSteps[attr(dataset, 'index')] #if two characters have the same profile, they are now not collapsed into one
   
   #calculate Goloboff's unbiased measure of homoplasy for a given k (concavity constant) and data set
   k <- 3
   f <- (k+1)/(obsSteps+k+1+minSteps)
   
-  CImat[i, ] <- f     #fill ith row with the vector of CIs
-}  ###################################################### doesn't work because obsSteps and minSteps are different lengths. 
-############################################# obsSteps is calculated directly from the tree (from read.nexus) while minSteps
-############################################# is calculated from tab < dataset < ReadAsPhyDat. 
-############################################# obsSteps has 26 elements, while minSteps has 27 
+  #fill ith row with the vector of CIs
+  CImat[i, ] <- f     
+}
 
 #reshape CImat into long format
 CImat <- as.data.frame(CImat)
