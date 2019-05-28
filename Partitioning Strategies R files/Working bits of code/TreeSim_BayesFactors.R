@@ -53,9 +53,11 @@ perturbMove <- "NNI_chain"       #random, NNI_chain, TBR_chain
 rootDir <-"C:/local/dxsb43/GitHub/Partitioning_Strategies/mutations"
 setwd(paste0(rootDir, '/', dataSet, '/', 'MrBayesExperimental'))
 
+#preallocate matrix of arithmetic means of MLs
+amMatrix <- matrix(data=NA,nrow=100, ncol=2)
+amMatrix[,1] <- seq_len(100)
 
-treeNo <- c(1:100)
-for (ourFile in list.files(pattern='lstat')) {     #e.g. SCO_NNI_chain.nex.1.nex.lstat    paste0(dataSet, '_', perturbMove, '.+lstat')
+for (ourFile in list.files(pattern=paste0(perturbMove,'.+lstat'))) {     #e.g. SCO_NNI_chain.nex.1.nex.lstat    paste0(dataSet, '_', perturbMove, '.+lstat')
   outFile <- read_tsv(ourFile,skip=1)   ## reads the data into a tibble of dim nrow=9, ncol=4
   ##the number I want is the arithmetic mean of the harmonic means
   #calculate arithmetic mean of harmonic means
