@@ -6,7 +6,7 @@ require(ggplot2)
 require(tidyr)
 
 # Select dataset
-datasetName <- "THER"
+datasetName <- "SYL"
 rootDir <- "C:/local/dxsb43/GitHub/Partitioning_Strategies/mutations/"
 setwd(rootDir)
 mrBayesTemplateFile <- paste0(rootDir, '/',datasetName,'/', datasetName, '_TEMPLATE.nex')
@@ -100,5 +100,7 @@ ggplot(CImat, aes(character,CI )) +
 #  geom_jitter(alpha=0.3) +
   scale_x_discrete() +
   stat_bin_2d()
+
+ggsave() ###specify the size of the plot and path to it (should end up in dir CharStructure)
 
 

@@ -55,20 +55,24 @@ setwd(paste0(rootDir, '/', dataSet, '/', 'MrBayesExperimental'))
 
 
 treeNo <- c(1:100)
-for (ourFile in list.files(pattern=paste0(dataSet, '_', perturbMove, '.+out'))) {     #e.g. SCO_NNI_chain.nex_varExpVal_1to20.out
-  outFiles <- readLines(ourFile)
+for (ourFile in list.files(pattern='lstat')) {     #e.g. SCO_NNI_chain.nex.1.nex.lstat    paste0(dataSet, '_', perturbMove, '.+lstat')
+  outFile <- read_tsv(ourFile,skip=1)   ## reads the data into a tibble of dim nrow=9, ncol=4
+  ##the number I want is the arithmetic mean of the harmonic means
+  #calculate arithmetic mean of harmonic means
+  ariMean <- mean(outFile[['harmonic_mean']])
+  
+  
 } 
 
 #to go into the for loop
-ourFile <- 'SCO_NNI_chain_1to20.out'
-  outFile <- read_file(ourFile)
-#find title of nexus file within output (if used readLines, list of character vectors, each line is a )
-for (line in outFile)
-    str_match(line,'Executing file')  ##'Executing file ./ddn/data/dxsb43/mutate',dataSet,'/',dataSet,'_',perturbMove,'/',dataSet,'_',perturbMove,'.nex_varExpVal.1.nex.'
-
+ourFile <- 'SCO_NNI_chain.nex.1.nex.lstat'
+  outFile <- read_tsv(ourFile,skip=1)
   
-splits <- split(outFile, ceiling(seq_along(outFile)/8835)) 
-length(outFile)/20     #####length of one analysis oyutput block in a .out file is 8835 lines (2 blank lines at start, one at end) 
+  #calculate arithmetic mean of harmonic means
+  ariMean <- mean(outFile[['harmonic_mean']])
+  
+  
+
 
   
 #next step: plot ratio ML of each result tree against ML of result tree generated from parsimony (published) tree
